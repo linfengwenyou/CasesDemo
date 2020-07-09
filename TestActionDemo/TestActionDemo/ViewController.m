@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ViewShowManager.h"
 
 @interface ViewController ()
 /* 容器视图 */
@@ -23,15 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(gestureAction:)];
-    [self.view addGestureRecognizer:tap];
-}
-
-- (void)gestureAction:(UITapGestureRecognizer *)gesture {
-    NSLog(@"执行手势事件");
-    
-    ViewShowManager *manager = [ViewShowManager new];
-    [manager showActionDescription];
     [self updateAlbumRectGradientMaskRatio:1];
 }
 
