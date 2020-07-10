@@ -14,6 +14,8 @@
 		67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7124B6AF9500913664 /* FrameObserverController.m */; };
 		67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7424B6F8E000913664 /* TouchPassViewController.m */; };
 		67413A7824B6FC8200913664 /* MyCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7724B6FC8200913664 /* MyCoverView.m */; };
+		67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637524B81C3E00C80AEE /* MaskViewController.m */; };
+		67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637824B842E800C80AEE /* ViewHiracyController.m */; };
 		67D0342424AE1129008A676A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342324AE1129008A676A /* AppDelegate.m */; };
 		67D0342724AE1129008A676A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342624AE1129008A676A /* SceneDelegate.m */; };
 		67D0342A24AE1129008A676A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342924AE1129008A676A /* ViewController.m */; };
@@ -57,6 +59,10 @@
 		67413A7424B6F8E000913664 /* TouchPassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPassViewController.m; sourceTree = "<group>"; };
 		67413A7624B6FC8200913664 /* MyCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoverView.h; sourceTree = "<group>"; };
 		67413A7724B6FC8200913664 /* MyCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoverView.m; sourceTree = "<group>"; };
+		67C6637424B81C3E00C80AEE /* MaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
+		67C6637524B81C3E00C80AEE /* MaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
+		67C6637724B842E800C80AEE /* ViewHiracyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHiracyController.h; sourceTree = "<group>"; };
+		67C6637824B842E800C80AEE /* ViewHiracyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewHiracyController.m; sourceTree = "<group>"; };
 		67D0341F24AE1129008A676A /* TestActionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestActionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D0342224AE1129008A676A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67D0342324AE1129008A676A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +161,10 @@
 				67413A7424B6F8E000913664 /* TouchPassViewController.m */,
 				67413A7624B6FC8200913664 /* MyCoverView.h */,
 				67413A7724B6FC8200913664 /* MyCoverView.m */,
+				67C6637424B81C3E00C80AEE /* MaskViewController.h */,
+				67C6637524B81C3E00C80AEE /* MaskViewController.m */,
+				67C6637724B842E800C80AEE /* ViewHiracyController.h */,
+				67C6637824B842E800C80AEE /* ViewHiracyController.m */,
 			);
 			path = TestActionDemo;
 			sourceTree = "<group>";
@@ -445,7 +455,9 @@
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */,
+				67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */,
 				67D0343524AE112C008A676A /* main.m in Sources */,
+				67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */,
 				67D0342724AE1129008A676A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
