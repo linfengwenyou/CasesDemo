@@ -26,6 +26,8 @@
 		67D0343524AE112C008A676A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0343424AE112C008A676A /* main.m */; };
 		67D0343F24AE112C008A676A /* TestActionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0343E24AE112C008A676A /* TestActionDemoTests.m */; };
 		67D0344A24AE112C008A676A /* TestActionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0344924AE112C008A676A /* TestActionDemoUITests.m */; };
+		67DF52E024F4AD780021D7BF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DF52DF24F4AD780021D7BF /* 1.png */; };
+		67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DF52E224F4AD960021D7BF /* MaskAnimateController.m */; };
 		9760385D9610F4214F87FB43 /* Pods_TestActionDemo_TestActionDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D106F799607724852FF83BDA /* Pods_TestActionDemo_TestActionDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,9 @@
 		67D0344524AE112C008A676A /* TestActionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestActionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D0344924AE112C008A676A /* TestActionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestActionDemoUITests.m; sourceTree = "<group>"; };
 		67D0344B24AE112C008A676A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DF52DF24F4AD780021D7BF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		67DF52E124F4AD960021D7BF /* MaskAnimateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskAnimateController.h; sourceTree = "<group>"; };
+		67DF52E224F4AD960021D7BF /* MaskAnimateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskAnimateController.m; sourceTree = "<group>"; };
 		7C11BDF327C55DB42DCC2593 /* Pods-TestActionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo.release.xcconfig"; path = "Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B954A417B50E1085CA0801BF /* Pods_TestActionDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestActionDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D106F799607724852FF83BDA /* Pods_TestActionDemo_TestActionDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestActionDemo_TestActionDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +158,7 @@
 				67413A6D24B6AEC500913664 /* MyTableViewController.h */,
 				67413A6E24B6AEC500913664 /* MyTableViewController.m */,
 				67D0342B24AE1129008A676A /* Main.storyboard */,
+				67DF52DF24F4AD780021D7BF /* 1.png */,
 				67413A6824B5C72B00913664 /* 11.png */,
 				67D0342E24AE112C008A676A /* Assets.xcassets */,
 				67D0343024AE112C008A676A /* LaunchScreen.storyboard */,
@@ -170,6 +176,8 @@
 				67C6637824B842E800C80AEE /* ViewHiracyController.m */,
 				677A95C524BC33C70035144E /* MyLayoutController.h */,
 				677A95C624BC33C70035144E /* MyLayoutController.m */,
+				67DF52E124F4AD960021D7BF /* MaskAnimateController.h */,
+				67DF52E224F4AD960021D7BF /* MaskAnimateController.m */,
 			);
 			path = TestActionDemo;
 			sourceTree = "<group>";
@@ -327,6 +335,7 @@
 				67D0342F24AE112C008A676A /* Assets.xcassets in Resources */,
 				67D0342D24AE1129008A676A /* Main.storyboard in Resources */,
 				67413A6924B5C72C00913664 /* 11.png in Resources */,
+				67DF52E024F4AD780021D7BF /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +468,7 @@
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
+				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
 				67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */,
 				67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */,
 				67D0343524AE112C008A676A /* main.m in Sources */,

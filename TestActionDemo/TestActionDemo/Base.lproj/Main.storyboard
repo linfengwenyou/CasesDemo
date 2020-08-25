@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ka0-GI-UzY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ka0-GI-UzY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -136,6 +136,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="PR9-nx-MpT" kind="show" id="Yw8-1Z-UjS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ohf-Ad-Dx9" style="IBUITableViewCellStyleDefault" id="IXl-tk-Vqc">
+                                        <rect key="frame" x="0.0" y="289" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IXl-tk-Vqc" id="pve-P2-nWi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="下移遮罩动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ohf-Ad-Dx9">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JTi-Ma-lS8" kind="show" id="Uej-ph-ctE"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -440,10 +460,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozG-Di-owm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="498"/>
+            <point key="canvasLocation" x="28" y="585"/>
+        </scene>
+        <!--Mask Animate Controller-->
+        <scene sceneID="QZA-c4-JOP">
+            <objects>
+                <viewController id="JTi-Ma-lS8" customClass="MaskAnimateController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p09-Q8-Z1z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S20-Vg-e7F">
+                                <rect key="frame" x="0.0" y="856" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vyy-Le-9d4"/>
+                                </constraints>
+                                <state key="normal" title="动画"/>
+                                <connections>
+                                    <action selector="didTapAction:" destination="JTi-Ma-lS8" eventType="touchUpInside" id="i6A-wT-0h9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ly5-ty-kvq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="836"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S20-Vg-e7F" firstAttribute="top" secondItem="ly5-ty-kvq" secondAttribute="bottom" constant="20" id="0ll-o2-eMf"/>
+                            <constraint firstAttribute="bottom" secondItem="S20-Vg-e7F" secondAttribute="bottom" id="8ps-Ih-e7n"/>
+                            <constraint firstItem="ly5-ty-kvq" firstAttribute="leading" secondItem="ISL-aL-jwc" secondAttribute="leading" id="DiI-Vg-XlI"/>
+                            <constraint firstItem="S20-Vg-e7F" firstAttribute="leading" secondItem="ISL-aL-jwc" secondAttribute="leading" id="I9X-Hp-95L"/>
+                            <constraint firstItem="ly5-ty-kvq" firstAttribute="trailing" secondItem="ISL-aL-jwc" secondAttribute="trailing" id="cNW-dk-6hb"/>
+                            <constraint firstItem="ly5-ty-kvq" firstAttribute="top" secondItem="p09-Q8-Z1z" secondAttribute="top" id="kVL-20-Sg1"/>
+                            <constraint firstItem="S20-Vg-e7F" firstAttribute="trailing" secondItem="ISL-aL-jwc" secondAttribute="trailing" id="sZb-ho-zPM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ISL-aL-jwc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7IN-KE-Vlb"/>
+                    <connections>
+                        <outlet property="picView" destination="ly5-ty-kvq" id="gWj-Fs-ZhI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcU-ZE-vV3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="548"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1.png" width="640" height="1136"/>
         <image name="11.png" width="720" height="1560"/>
     </resources>
 </document>
