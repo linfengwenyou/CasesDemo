@@ -15,6 +15,8 @@
 		67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7424B6F8E000913664 /* TouchPassViewController.m */; };
 		67413A7824B6FC8200913664 /* MyCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7724B6FC8200913664 /* MyCoverView.m */; };
 		677A95C724BC33C70035144E /* MyLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677A95C624BC33C70035144E /* MyLayoutController.m */; };
+		67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67810F0224F662E700F6C423 /* RippleAnimationView.m */; };
+		67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67810F0624F662FD00F6C423 /* RippleAnmationController.m */; };
 		67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637524B81C3E00C80AEE /* MaskViewController.m */; };
 		67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637824B842E800C80AEE /* ViewHiracyController.m */; };
 		67D0342424AE1129008A676A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342324AE1129008A676A /* AppDelegate.m */; };
@@ -64,6 +66,10 @@
 		67413A7724B6FC8200913664 /* MyCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoverView.m; sourceTree = "<group>"; };
 		677A95C524BC33C70035144E /* MyLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLayoutController.h; sourceTree = "<group>"; };
 		677A95C624BC33C70035144E /* MyLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLayoutController.m; sourceTree = "<group>"; };
+		67810F0224F662E700F6C423 /* RippleAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleAnimationView.m; sourceTree = "<group>"; };
+		67810F0324F662E700F6C423 /* RippleAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleAnimationView.h; sourceTree = "<group>"; };
+		67810F0524F662FD00F6C423 /* RippleAnmationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RippleAnmationController.h; sourceTree = "<group>"; };
+		67810F0624F662FD00F6C423 /* RippleAnmationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RippleAnmationController.m; sourceTree = "<group>"; };
 		67C6637424B81C3E00C80AEE /* MaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		67C6637524B81C3E00C80AEE /* MaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		67C6637724B842E800C80AEE /* ViewHiracyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHiracyController.h; sourceTree = "<group>"; };
@@ -124,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67810F0124F662E700F6C423 /* Ripple */ = {
+			isa = PBXGroup;
+			children = (
+				67810F0224F662E700F6C423 /* RippleAnimationView.m */,
+				67810F0324F662E700F6C423 /* RippleAnimationView.h */,
+			);
+			path = Ripple;
+			sourceTree = "<group>";
+		};
 		67D0341624AE1129008A676A = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +164,7 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				67810F0124F662E700F6C423 /* Ripple */,
 				67D0342224AE1129008A676A /* AppDelegate.h */,
 				67D0342324AE1129008A676A /* AppDelegate.m */,
 				67D0342524AE1129008A676A /* SceneDelegate.h */,
@@ -178,6 +194,8 @@
 				677A95C624BC33C70035144E /* MyLayoutController.m */,
 				67DF52E124F4AD960021D7BF /* MaskAnimateController.h */,
 				67DF52E224F4AD960021D7BF /* MaskAnimateController.m */,
+				67810F0524F662FD00F6C423 /* RippleAnmationController.h */,
+				67810F0624F662FD00F6C423 /* RippleAnmationController.m */,
 			);
 			path = TestActionDemo;
 			sourceTree = "<group>";
@@ -465,7 +483,9 @@
 			files = (
 				67413A7824B6FC8200913664 /* MyCoverView.m in Sources */,
 				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
+				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
+				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
