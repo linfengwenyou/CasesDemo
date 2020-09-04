@@ -198,6 +198,26 @@
                                             <segue destination="55c-Ku-JH1" kind="show" id="RTz-zZ-ZJo"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="rPd-gc-4eW" style="IBUITableViewCellStyleDefault" id="Szn-At-muP">
+                                        <rect key="frame" x="0.0" y="419.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Szn-At-muP" id="Atq-ld-XQ7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="放缩帧动画展示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rPd-gc-4eW">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="unf-aU-Zsx" kind="show" id="dRR-bG-0wK"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -651,9 +671,86 @@
             </objects>
             <point key="canvasLocation" x="-1512" y="545"/>
         </scene>
+        <!--Frame Animation Controller-->
+        <scene sceneID="X20-RA-p7V">
+            <objects>
+                <viewController id="unf-aU-Zsx" customClass="FrameAnimationController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jIM-hy-2uP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNJ-c9-ZbN">
+                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-mZ-QKt">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="bFU-mZ-QKt" firstAttribute="top" secondItem="fNJ-c9-ZbN" secondAttribute="top" id="Unb-xP-rag"/>
+                                    <constraint firstItem="bFU-mZ-QKt" firstAttribute="leading" secondItem="fNJ-c9-ZbN" secondAttribute="leading" id="Uvl-Nh-Y9l"/>
+                                    <constraint firstAttribute="bottom" secondItem="bFU-mZ-QKt" secondAttribute="bottom" id="gbD-Z1-c1p"/>
+                                    <constraint firstAttribute="trailing" secondItem="bFU-mZ-QKt" secondAttribute="trailing" id="k98-9t-1nS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-2m-LHO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPa-Kh-a4J">
+                                        <rect key="frame" x="50" y="50" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="fcO-AW-3wb"/>
+                                            <constraint firstAttribute="height" constant="44" id="q7p-ng-RRn"/>
+                                        </constraints>
+                                        <state key="normal" title="测试"/>
+                                        <connections>
+                                            <action selector="didClickAction:" destination="unf-aU-Zsx" eventType="touchUpInside" id="PVF-pZ-8pQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IPa-Kh-a4J" firstAttribute="top" secondItem="wMk-2m-LHO" secondAttribute="top" constant="50" id="5fe-Kp-J6z"/>
+                                    <constraint firstItem="IPa-Kh-a4J" firstAttribute="leading" secondItem="wMk-2m-LHO" secondAttribute="leading" constant="50" id="hQW-lW-GMf"/>
+                                    <constraint firstAttribute="height" constant="128" id="sRs-O6-J4j"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlS-il-pAs">
+                                <rect key="frame" x="0.0" y="192" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wMk-2m-LHO" firstAttribute="leading" secondItem="KIt-n9-d6H" secondAttribute="leading" id="0Xw-zJ-zuH"/>
+                            <constraint firstItem="wlS-il-pAs" firstAttribute="leading" secondItem="KIt-n9-d6H" secondAttribute="leading" id="1ow-A9-aFR"/>
+                            <constraint firstItem="fNJ-c9-ZbN" firstAttribute="bottom" secondItem="KIt-n9-d6H" secondAttribute="bottom" id="6iO-57-u7U"/>
+                            <constraint firstItem="KIt-n9-d6H" firstAttribute="trailing" secondItem="wMk-2m-LHO" secondAttribute="trailing" id="NTS-Ph-Ur3"/>
+                            <constraint firstItem="wMk-2m-LHO" firstAttribute="top" secondItem="KIt-n9-d6H" secondAttribute="top" id="UzL-Q3-HcD"/>
+                            <constraint firstItem="fNJ-c9-ZbN" firstAttribute="leading" secondItem="KIt-n9-d6H" secondAttribute="leading" id="Zbu-pc-UsP"/>
+                            <constraint firstItem="KIt-n9-d6H" firstAttribute="trailing" secondItem="wlS-il-pAs" secondAttribute="trailing" id="c1i-rR-kiP"/>
+                            <constraint firstItem="wlS-il-pAs" firstAttribute="top" secondItem="KIt-n9-d6H" secondAttribute="top" constant="104" id="gji-XF-ddc"/>
+                            <constraint firstItem="fNJ-c9-ZbN" firstAttribute="trailing" secondItem="KIt-n9-d6H" secondAttribute="trailing" id="iEi-dJ-m3I"/>
+                            <constraint firstItem="fNJ-c9-ZbN" firstAttribute="top" secondItem="wlS-il-pAs" secondAttribute="bottom" id="n1B-OH-AxS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KIt-n9-d6H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U1i-kK-ELs"/>
+                    <connections>
+                        <outlet property="mybutton" destination="IPa-Kh-a4J" id="Ltc-Cj-caW"/>
+                        <outlet property="picView" destination="bFU-mZ-QKt" id="hKT-nX-QnM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm9-hE-tMA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2146" y="548"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.png" width="640" height="1136"/>
         <image name="11.png" width="720" height="1560"/>
+        <image name="2.png" width="750" height="1334"/>
     </resources>
 </document>
