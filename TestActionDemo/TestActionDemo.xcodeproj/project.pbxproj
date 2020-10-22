@@ -21,6 +21,8 @@
 		6798AB302500DB7C00FA37B7 /* GradientImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798AB2F2500DB7C00FA37B7 /* GradientImage.m */; };
 		6798AB332500DBFA00FA37B7 /* GradientImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798AB322500DBFA00FA37B7 /* GradientImageController.m */; };
 		6798AB352500DC4C00FA37B7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6798AB342500DC4C00FA37B7 /* 2.png */; };
+		67B7C0DF2541A180003913D0 /* MyDynamicSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0DE2541A17F003913D0 /* MyDynamicSliderView.m */; };
+		67B7C0EC2541A267003913D0 /* MySlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EB2541A267003913D0 /* MySlideViewController.m */; };
 		67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637524B81C3E00C80AEE /* MaskViewController.m */; };
 		67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637824B842E800C80AEE /* ViewHiracyController.m */; };
 		67D0342424AE1129008A676A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342324AE1129008A676A /* AppDelegate.m */; };
@@ -81,6 +83,10 @@
 		6798AB312500DBFA00FA37B7 /* GradientImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientImageController.h; sourceTree = "<group>"; };
 		6798AB322500DBFA00FA37B7 /* GradientImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientImageController.m; sourceTree = "<group>"; };
 		6798AB342500DC4C00FA37B7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		67B7C0DD2541A17F003913D0 /* MyDynamicSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDynamicSliderView.h; sourceTree = "<group>"; };
+		67B7C0DE2541A17F003913D0 /* MyDynamicSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDynamicSliderView.m; sourceTree = "<group>"; };
+		67B7C0EA2541A267003913D0 /* MySlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySlideViewController.h; sourceTree = "<group>"; };
+		67B7C0EB2541A267003913D0 /* MySlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySlideViewController.m; sourceTree = "<group>"; };
 		67C6637424B81C3E00C80AEE /* MaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		67C6637524B81C3E00C80AEE /* MaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		67C6637724B842E800C80AEE /* ViewHiracyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHiracyController.h; sourceTree = "<group>"; };
@@ -159,6 +165,114 @@
 			path = GradientImage;
 			sourceTree = "<group>";
 		};
+		67B7C0DC2541A171003913D0 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				67B7C0DD2541A17F003913D0 /* MyDynamicSliderView.h */,
+				67B7C0DE2541A17F003913D0 /* MyDynamicSliderView.m */,
+				67B7C0EA2541A267003913D0 /* MySlideViewController.h */,
+				67B7C0EB2541A267003913D0 /* MySlideViewController.m */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
+		67B7C0E02541A198003913D0 /* FrameObserve */ = {
+			isa = PBXGroup;
+			children = (
+				67413A7024B6AF9500913664 /* FrameObserverController.h */,
+				67413A7124B6AF9500913664 /* FrameObserverController.m */,
+			);
+			path = FrameObserve;
+			sourceTree = "<group>";
+		};
+		67B7C0E12541A1A6003913D0 /* TouchPass */ = {
+			isa = PBXGroup;
+			children = (
+				67413A7624B6FC8200913664 /* MyCoverView.h */,
+				67413A7724B6FC8200913664 /* MyCoverView.m */,
+				67413A7324B6F8E000913664 /* TouchPassViewController.h */,
+				67413A7424B6F8E000913664 /* TouchPassViewController.m */,
+			);
+			path = TouchPass;
+			sourceTree = "<group>";
+		};
+		67B7C0E22541A1B3003913D0 /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				67C6637424B81C3E00C80AEE /* MaskViewController.h */,
+				67C6637524B81C3E00C80AEE /* MaskViewController.m */,
+			);
+			path = Mask;
+			sourceTree = "<group>";
+		};
+		67B7C0E32541A1CB003913D0 /* ViewHiracy */ = {
+			isa = PBXGroup;
+			children = (
+				67C6637724B842E800C80AEE /* ViewHiracyController.h */,
+				67C6637824B842E800C80AEE /* ViewHiracyController.m */,
+			);
+			path = ViewHiracy;
+			sourceTree = "<group>";
+		};
+		67B7C0E42541A1ED003913D0 /* MyLayout */ = {
+			isa = PBXGroup;
+			children = (
+				677A95C524BC33C70035144E /* MyLayoutController.h */,
+				677A95C624BC33C70035144E /* MyLayoutController.m */,
+			);
+			path = MyLayout;
+			sourceTree = "<group>";
+		};
+		67B7C0E52541A1FA003913D0 /* MaskAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				67DF52E124F4AD960021D7BF /* MaskAnimateController.h */,
+				67DF52E224F4AD960021D7BF /* MaskAnimateController.m */,
+			);
+			path = MaskAnimation;
+			sourceTree = "<group>";
+		};
+		67B7C0E62541A208003913D0 /* RippleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				67810F0524F662FD00F6C423 /* RippleAnmationController.h */,
+				67810F0624F662FD00F6C423 /* RippleAnmationController.m */,
+			);
+			path = RippleAnimation;
+			sourceTree = "<group>";
+		};
+		67B7C0E72541A211003913D0 /* Gradienimg */ = {
+			isa = PBXGroup;
+			children = (
+				6798AB312500DBFA00FA37B7 /* GradientImageController.h */,
+				6798AB322500DBFA00FA37B7 /* GradientImageController.m */,
+			);
+			path = Gradienimg;
+			sourceTree = "<group>";
+		};
+		67B7C0E82541A230003913D0 /* FrameAnim */ = {
+			isa = PBXGroup;
+			children = (
+				6759CBBA2502304500EE13DB /* FrameAnimationController.h */,
+				6759CBBB2502304500EE13DB /* FrameAnimationController.m */,
+			);
+			path = FrameAnim;
+			sourceTree = "<group>";
+		};
+		67B7C0E92541A23F003913D0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6798AB342500DC4C00FA37B7 /* 2.png */,
+				67DF52DF24F4AD780021D7BF /* 1.png */,
+				67413A6824B5C72B00913664 /* 11.png */,
+				67D0342E24AE112C008A676A /* Assets.xcassets */,
+				67D0343024AE112C008A676A /* LaunchScreen.storyboard */,
+				67D0343324AE112C008A676A /* Info.plist */,
+				67D0343424AE112C008A676A /* main.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		67D0341624AE1129008A676A = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +298,17 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				67B7C0E92541A23F003913D0 /* Other */,
+				67B7C0E82541A230003913D0 /* FrameAnim */,
+				67B7C0E72541A211003913D0 /* Gradienimg */,
+				67B7C0E62541A208003913D0 /* RippleAnimation */,
+				67B7C0E52541A1FA003913D0 /* MaskAnimation */,
+				67B7C0E42541A1ED003913D0 /* MyLayout */,
+				67B7C0E32541A1CB003913D0 /* ViewHiracy */,
+				67B7C0E22541A1B3003913D0 /* Mask */,
+				67B7C0E12541A1A6003913D0 /* TouchPass */,
+				67B7C0E02541A198003913D0 /* FrameObserve */,
+				67B7C0DC2541A171003913D0 /* Slide */,
 				6798AB2D2500DB6700FA37B7 /* GradientImage */,
 				67810F0124F662E700F6C423 /* Ripple */,
 				67D0342224AE1129008A676A /* AppDelegate.h */,
@@ -195,33 +320,6 @@
 				67413A6D24B6AEC500913664 /* MyTableViewController.h */,
 				67413A6E24B6AEC500913664 /* MyTableViewController.m */,
 				67D0342B24AE1129008A676A /* Main.storyboard */,
-				6798AB342500DC4C00FA37B7 /* 2.png */,
-				67DF52DF24F4AD780021D7BF /* 1.png */,
-				67413A6824B5C72B00913664 /* 11.png */,
-				67D0342E24AE112C008A676A /* Assets.xcassets */,
-				67D0343024AE112C008A676A /* LaunchScreen.storyboard */,
-				67D0343324AE112C008A676A /* Info.plist */,
-				67D0343424AE112C008A676A /* main.m */,
-				67413A7024B6AF9500913664 /* FrameObserverController.h */,
-				67413A7124B6AF9500913664 /* FrameObserverController.m */,
-				67413A7324B6F8E000913664 /* TouchPassViewController.h */,
-				67413A7424B6F8E000913664 /* TouchPassViewController.m */,
-				67413A7624B6FC8200913664 /* MyCoverView.h */,
-				67413A7724B6FC8200913664 /* MyCoverView.m */,
-				67C6637424B81C3E00C80AEE /* MaskViewController.h */,
-				67C6637524B81C3E00C80AEE /* MaskViewController.m */,
-				67C6637724B842E800C80AEE /* ViewHiracyController.h */,
-				67C6637824B842E800C80AEE /* ViewHiracyController.m */,
-				677A95C524BC33C70035144E /* MyLayoutController.h */,
-				677A95C624BC33C70035144E /* MyLayoutController.m */,
-				67DF52E124F4AD960021D7BF /* MaskAnimateController.h */,
-				67DF52E224F4AD960021D7BF /* MaskAnimateController.m */,
-				67810F0524F662FD00F6C423 /* RippleAnmationController.h */,
-				67810F0624F662FD00F6C423 /* RippleAnmationController.m */,
-				6798AB312500DBFA00FA37B7 /* GradientImageController.h */,
-				6798AB322500DBFA00FA37B7 /* GradientImageController.m */,
-				6759CBBA2502304500EE13DB /* FrameAnimationController.h */,
-				6759CBBB2502304500EE13DB /* FrameAnimationController.m */,
 			);
 			path = TestActionDemo;
 			sourceTree = "<group>";
@@ -523,8 +621,10 @@
 				67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */,
 				67D0343524AE112C008A676A /* main.m in Sources */,
 				67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */,
+				67B7C0DF2541A180003913D0 /* MyDynamicSliderView.m in Sources */,
 				67D0342724AE1129008A676A /* SceneDelegate.m in Sources */,
 				677A95C724BC33C70035144E /* MyLayoutController.m in Sources */,
+				67B7C0EC2541A267003913D0 /* MySlideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
