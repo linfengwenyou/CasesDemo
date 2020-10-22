@@ -23,6 +23,8 @@
 		6798AB352500DC4C00FA37B7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6798AB342500DC4C00FA37B7 /* 2.png */; };
 		67B7C0DF2541A180003913D0 /* MyDynamicSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0DE2541A17F003913D0 /* MyDynamicSliderView.m */; };
 		67B7C0EC2541A267003913D0 /* MySlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EB2541A267003913D0 /* MySlideViewController.m */; };
+		67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */; };
+		67B7C0F32541A464003913D0 /* FoldMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0F22541A464003913D0 /* FoldMenuView.m */; };
 		67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637524B81C3E00C80AEE /* MaskViewController.m */; };
 		67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637824B842E800C80AEE /* ViewHiracyController.m */; };
 		67D0342424AE1129008A676A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342324AE1129008A676A /* AppDelegate.m */; };
@@ -87,6 +89,10 @@
 		67B7C0DE2541A17F003913D0 /* MyDynamicSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDynamicSliderView.m; sourceTree = "<group>"; };
 		67B7C0EA2541A267003913D0 /* MySlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySlideViewController.h; sourceTree = "<group>"; };
 		67B7C0EB2541A267003913D0 /* MySlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySlideViewController.m; sourceTree = "<group>"; };
+		67B7C0EE2541A3C2003913D0 /* MyFoldAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFoldAnimationController.h; sourceTree = "<group>"; };
+		67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFoldAnimationController.m; sourceTree = "<group>"; };
+		67B7C0F12541A464003913D0 /* FoldMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoldMenuView.h; sourceTree = "<group>"; };
+		67B7C0F22541A464003913D0 /* FoldMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoldMenuView.m; sourceTree = "<group>"; };
 		67C6637424B81C3E00C80AEE /* MaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		67C6637524B81C3E00C80AEE /* MaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		67C6637724B842E800C80AEE /* ViewHiracyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHiracyController.h; sourceTree = "<group>"; };
@@ -273,6 +279,17 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		67B7C0ED2541A3A7003913D0 /* FoldAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				67B7C0EE2541A3C2003913D0 /* MyFoldAnimationController.h */,
+				67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */,
+				67B7C0F12541A464003913D0 /* FoldMenuView.h */,
+				67B7C0F22541A464003913D0 /* FoldMenuView.m */,
+			);
+			path = FoldAnimation;
+			sourceTree = "<group>";
+		};
 		67D0341624AE1129008A676A = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +315,7 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				67B7C0ED2541A3A7003913D0 /* FoldAnimation */,
 				67B7C0E92541A23F003913D0 /* Other */,
 				67B7C0E82541A230003913D0 /* FrameAnim */,
 				67B7C0E72541A211003913D0 /* Gradienimg */,
@@ -606,11 +624,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B7C0F32541A464003913D0 /* FoldMenuView.m in Sources */,
 				67413A7824B6FC8200913664 /* MyCoverView.m in Sources */,
 				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
+				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				6798AB302500DB7C00FA37B7 /* GradientImage.m in Sources */,
 				6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */,

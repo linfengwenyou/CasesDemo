@@ -238,6 +238,26 @@
                                             <segue destination="Qfl-6F-Efs" kind="show" id="jdN-1K-Sjh"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="CvJ-1P-gmG" style="IBUITableViewCellStyleDefault" id="OXu-DV-7HI">
+                                        <rect key="frame" x="0.0" y="506.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OXu-DV-7HI" id="Th9-Pj-ogz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="按钮位置弹出图层" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CvJ-1P-gmG">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="HBE-m3-if5" kind="show" id="Fkv-4x-gwC"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -393,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sJ-9c-Wt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2223" y="207"/>
+            <point key="canvasLocation" x="2245" y="253"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="boW-t6-efu">
@@ -485,6 +505,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOb-vv-iaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1462" y="-374"/>
+        </scene>
+        <!--My Fold Animation Controller-->
+        <scene sceneID="ziy-HO-dbL">
+            <objects>
+                <viewController id="HBE-m3-if5" customClass="MyFoldAnimationController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6q9-of-La6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w40-cF-xTC">
+                                <rect key="frame" x="226" y="490" width="62" height="30"/>
+                                <state key="normal" title="弹出动画"/>
+                                <connections>
+                                    <action selector="popAnimationAction:" destination="HBE-m3-if5" eventType="touchUpInside" id="gmf-k4-p0o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w40-cF-xTC" firstAttribute="top" secondItem="AiK-ar-kn0" secondAttribute="top" constant="402" id="f5b-x1-SLE"/>
+                            <constraint firstItem="w40-cF-xTC" firstAttribute="leading" secondItem="AiK-ar-kn0" secondAttribute="leading" constant="226" id="nZB-8Q-eIE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AiK-ar-kn0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Vq-p1-oH1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t13-Ct-D3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="-412"/>
         </scene>
         <!--视图层级-->
         <scene sceneID="f54-OS-Rjx">
