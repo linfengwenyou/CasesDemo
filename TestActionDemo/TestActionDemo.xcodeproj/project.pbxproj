@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		2BA62E619CB7F0375917A0CE /* Pods_TestActionDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B954A417B50E1085CA0801BF /* Pods_TestActionDemoTests.framework */; };
 		3B1BEFF97E98D36E30FD73AD /* Pods_TestActionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD4251D58DC9A791529C683 /* Pods_TestActionDemo.framework */; };
+		672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE90B255BEE42009AE982 /* RASwitchImageView.m */; };
+		672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE911255BEEB6009AE982 /* RASwitchImageController.m */; };
+		672AE91C255BEEE7009AE982 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE917255BEEE7009AE982 /* 4.jpg */; };
+		672AE91D255BEEE7009AE982 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE918255BEEE7009AE982 /* 5.jpg */; };
+		672AE91E255BEEE7009AE982 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE919255BEEE7009AE982 /* 2.jpg */; };
+		672AE91F255BEEE7009AE982 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE91A255BEEE7009AE982 /* 3.jpg */; };
+		672AE920255BEEE7009AE982 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE91B255BEEE7009AE982 /* 1.jpg */; };
 		67413A6924B5C72C00913664 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 67413A6824B5C72B00913664 /* 11.png */; };
 		67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A6E24B6AEC500913664 /* MyTableViewController.m */; };
 		67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7124B6AF9500913664 /* FrameObserverController.m */; };
@@ -63,6 +70,15 @@
 		23A76755E7CE510D9262314A /* Pods-TestActionDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemoTests/Pods-TestActionDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25D3F1969111753FEF2EA302 /* Pods-TestActionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E42824021660CED70DE9E43 /* Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		672AE90A255BEE42009AE982 /* RASwitchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASwitchImageView.h; sourceTree = "<group>"; };
+		672AE90B255BEE42009AE982 /* RASwitchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASwitchImageView.m; sourceTree = "<group>"; };
+		672AE910255BEEB6009AE982 /* RASwitchImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RASwitchImageController.h; sourceTree = "<group>"; };
+		672AE911255BEEB6009AE982 /* RASwitchImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RASwitchImageController.m; sourceTree = "<group>"; };
+		672AE917255BEEE7009AE982 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		672AE918255BEEE7009AE982 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		672AE919255BEEE7009AE982 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		672AE91A255BEEE7009AE982 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		672AE91B255BEEE7009AE982 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		67413A6824B5C72B00913664 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 		67413A6D24B6AEC500913664 /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		67413A6E24B6AEC500913664 /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
@@ -153,6 +169,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672AE909255BEE2A009AE982 /* ImageViewAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				672AE916255BEEE7009AE982 /* image */,
+				672AE90A255BEE42009AE982 /* RASwitchImageView.h */,
+				672AE90B255BEE42009AE982 /* RASwitchImageView.m */,
+				672AE910255BEEB6009AE982 /* RASwitchImageController.h */,
+				672AE911255BEEB6009AE982 /* RASwitchImageController.m */,
+			);
+			path = ImageViewAnimate;
+			sourceTree = "<group>";
+		};
+		672AE916255BEEE7009AE982 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				672AE917255BEEE7009AE982 /* 4.jpg */,
+				672AE918255BEEE7009AE982 /* 5.jpg */,
+				672AE919255BEEE7009AE982 /* 2.jpg */,
+				672AE91A255BEEE7009AE982 /* 3.jpg */,
+				672AE91B255BEEE7009AE982 /* 1.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		67810F0124F662E700F6C423 /* Ripple */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +355,7 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				672AE909255BEE2A009AE982 /* ImageViewAnimate */,
 				67B7C0ED2541A3A7003913D0 /* FoldAnimation */,
 				67B7C0E92541A23F003913D0 /* Other */,
 				67B7C0E82541A230003913D0 /* FrameAnim */,
@@ -491,8 +532,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672AE920255BEEE7009AE982 /* 1.jpg in Resources */,
 				6798AB352500DC4C00FA37B7 /* 2.png in Resources */,
+				672AE91D255BEEE7009AE982 /* 5.jpg in Resources */,
+				672AE91C255BEEE7009AE982 /* 4.jpg in Resources */,
+				672AE91E255BEEE7009AE982 /* 2.jpg in Resources */,
 				67D0343224AE112C008A676A /* LaunchScreen.storyboard in Resources */,
+				672AE91F255BEEE7009AE982 /* 3.jpg in Resources */,
 				67D0342F24AE112C008A676A /* Assets.xcassets in Resources */,
 				67D0342D24AE1129008A676A /* Main.storyboard in Resources */,
 				67413A6924B5C72C00913664 /* 11.png in Resources */,
@@ -633,6 +679,8 @@
 				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				6798AB302500DB7C00FA37B7 /* GradientImage.m in Sources */,
+				672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */,
+				672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */,
 				6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
