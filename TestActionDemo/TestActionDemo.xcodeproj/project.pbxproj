@@ -16,6 +16,7 @@
 		672AE91E255BEEE7009AE982 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE919255BEEE7009AE982 /* 2.jpg */; };
 		672AE91F255BEEE7009AE982 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE91A255BEEE7009AE982 /* 3.jpg */; };
 		672AE920255BEEE7009AE982 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE91B255BEEE7009AE982 /* 1.jpg */; };
+		672AE931255BF6A0009AE982 /* AnimationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE92F255BF6A0009AE982 /* AnimationQueueManager.m */; };
 		67413A6924B5C72C00913664 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 67413A6824B5C72B00913664 /* 11.png */; };
 		67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A6E24B6AEC500913664 /* MyTableViewController.m */; };
 		67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7124B6AF9500913664 /* FrameObserverController.m */; };
@@ -79,6 +80,8 @@
 		672AE919255BEEE7009AE982 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		672AE91A255BEEE7009AE982 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		672AE91B255BEEE7009AE982 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		672AE92F255BF6A0009AE982 /* AnimationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationQueueManager.m; sourceTree = "<group>"; };
+		672AE930255BF6A0009AE982 /* AnimationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationQueueManager.h; sourceTree = "<group>"; };
 		67413A6824B5C72B00913664 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 		67413A6D24B6AEC500913664 /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		67413A6E24B6AEC500913664 /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
@@ -172,6 +175,7 @@
 		672AE909255BEE2A009AE982 /* ImageViewAnimate */ = {
 			isa = PBXGroup;
 			children = (
+				672AE92E255BF6A0009AE982 /* AnimationQueue */,
 				672AE916255BEEE7009AE982 /* image */,
 				672AE90A255BEE42009AE982 /* RASwitchImageView.h */,
 				672AE90B255BEE42009AE982 /* RASwitchImageView.m */,
@@ -191,6 +195,15 @@
 				672AE91B255BEEE7009AE982 /* 1.jpg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		672AE92E255BF6A0009AE982 /* AnimationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				672AE930255BF6A0009AE982 /* AnimationQueueManager.h */,
+				672AE92F255BF6A0009AE982 /* AnimationQueueManager.m */,
+			);
+			path = AnimationQueue;
 			sourceTree = "<group>";
 		};
 		67810F0124F662E700F6C423 /* Ripple */ = {
@@ -680,6 +693,7 @@
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				6798AB302500DB7C00FA37B7 /* GradientImage.m in Sources */,
 				672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */,
+				672AE931255BF6A0009AE982 /* AnimationQueueManager.m in Sources */,
 				672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */,
 				6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,

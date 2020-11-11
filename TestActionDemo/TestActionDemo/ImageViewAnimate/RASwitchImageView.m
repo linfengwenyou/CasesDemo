@@ -6,6 +6,7 @@
 //
 
 #import "RASwitchImageView.h"
+#import "AnimationQueueManager.h"
 
 @interface RASwitchImageView ()
 /*图片信息*/
@@ -14,7 +15,6 @@
 /*图片信息*/
 @property (nonatomic, strong) UIImageView *coverImageView;
 
-@property (nonatomic, strong) NSOperationQueue *animationQueue;
 // 构建一个队列，用来存储动画信息
 @property (nonatomic, assign) CGFloat animationDuration;
 @end
@@ -57,15 +57,9 @@
 - (void)setImage:(UIImage *)image {
     _image = image;
 
-    __weak typeof(self) weakSelf = self;
-    NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf updateContentImageWithImage:image];
-        });
-        [NSThread sleepForTimeInterval:self.animationDuration]; // 通过队列的方式进行操作
+    [[AnimationQueueManager shareInstance] addAnimationDuration:self.animationDuration withBlock:^{
+        [self updateContentImageWithImage:image];
     }];
-    
-    [self.animationQueue addOperation:op];
 }
 
 
@@ -86,11 +80,4 @@
     return _coverImageView;
 }
 
-- (NSOperationQueue *)animationQueue {
-    if (!_animationQueue) {
-        _animationQueue = [[NSOperationQueue alloc] init];
-        _animationQueue.maxConcurrentOperationCount = 1;
-    }
-    return _animationQueue;
-}
 @end
