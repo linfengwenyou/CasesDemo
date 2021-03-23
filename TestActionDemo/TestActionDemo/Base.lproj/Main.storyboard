@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ka0-GI-UzY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ka0-GI-UzY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -280,6 +280,26 @@
                                             <segue destination="Bfh-aQ-dYs" kind="show" id="qoh-Xw-OfO"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Uzr-5H-G0r" style="IBUITableViewCellStyleDefault" id="fnu-EP-zfi">
+                                        <rect key="frame" x="0.0" y="593.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fnu-EP-zfi" id="PfK-j2-YrI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="镂空按钮效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uzr-5H-G0r">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hh3-Ly-UO5" kind="show" id="IKd-eV-hf7"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -419,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro0-H6-9co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462" y="312"/>
+            <point key="canvasLocation" x="1496" y="321"/>
         </scene>
         <!--My Slide View Controller-->
         <scene sceneID="n6P-dC-NSg">
@@ -557,7 +577,7 @@
             </objects>
             <point key="canvasLocation" x="2245" y="-412"/>
         </scene>
-        <!--Switch Image Controller-->
+        <!--图片切换器-->
         <scene sceneID="3i7-nx-NRL">
             <objects>
                 <viewController id="Bfh-aQ-dYs" customClass="RASwitchImageController" sceneMemberID="viewController">
@@ -567,7 +587,7 @@
                         <viewLayoutGuide key="safeArea" id="wFK-NN-lCP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ugG-Zz-Fzd"/>
+                    <navigationItem key="navigationItem" title="图片切换器" id="ugG-Zz-Fzd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgd-B4-vjy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -869,6 +889,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fm9-hE-tMA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2146" y="548"/>
+        </scene>
+        <!--镂空按钮-->
+        <scene sceneID="mc3-ib-war">
+            <objects>
+                <viewController id="hh3-Ly-UO5" customClass="HollowButtonController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G7t-98-zOs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A3A-5l-1iN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="镂空按钮" id="TbI-zd-bQL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSB-zV-qIO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="1016"/>
         </scene>
     </scenes>
     <resources>
