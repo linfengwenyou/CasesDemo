@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BA62E619CB7F0375917A0CE /* Pods_TestActionDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B954A417B50E1085CA0801BF /* Pods_TestActionDemoTests.framework */; };
 		3B1BEFF97E98D36E30FD73AD /* Pods_TestActionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD4251D58DC9A791529C683 /* Pods_TestActionDemo.framework */; };
-		671CF364265E2285007520F8 /* CircleGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671CF363265E2285007520F8 /* CircleGradientController.m */; };
+		671CF364265E2285007520F8 /* RoundGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671CF363265E2285007520F8 /* RoundGradientController.m */; };
 		672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE90B255BEE42009AE982 /* RASwitchImageView.m */; };
 		672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE911255BEEB6009AE982 /* RASwitchImageController.m */; };
 		672AE91C255BEEE7009AE982 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE917255BEEE7009AE982 /* 4.jpg */; };
@@ -37,6 +37,7 @@
 		67B7C0EC2541A267003913D0 /* MySlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EB2541A267003913D0 /* MySlideViewController.m */; };
 		67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */; };
 		67B7C0F32541A464003913D0 /* FoldMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0F22541A464003913D0 /* FoldMenuView.m */; };
+		67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5C114265E2A7F001B0156 /* RoundGradientLayer.m */; };
 		67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637524B81C3E00C80AEE /* MaskViewController.m */; };
 		67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637824B842E800C80AEE /* ViewHiracyController.m */; };
 		67D0342424AE1129008A676A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342324AE1129008A676A /* AppDelegate.m */; };
@@ -75,8 +76,8 @@
 		23A76755E7CE510D9262314A /* Pods-TestActionDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemoTests/Pods-TestActionDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25D3F1969111753FEF2EA302 /* Pods-TestActionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E42824021660CED70DE9E43 /* Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		671CF362265E2285007520F8 /* CircleGradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleGradientController.h; sourceTree = "<group>"; };
-		671CF363265E2285007520F8 /* CircleGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleGradientController.m; sourceTree = "<group>"; };
+		671CF362265E2285007520F8 /* RoundGradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundGradientController.h; sourceTree = "<group>"; };
+		671CF363265E2285007520F8 /* RoundGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundGradientController.m; sourceTree = "<group>"; };
 		672AE90A255BEE42009AE982 /* RASwitchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASwitchImageView.h; sourceTree = "<group>"; };
 		672AE90B255BEE42009AE982 /* RASwitchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASwitchImageView.m; sourceTree = "<group>"; };
 		672AE910255BEEB6009AE982 /* RASwitchImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RASwitchImageController.h; sourceTree = "<group>"; };
@@ -123,6 +124,8 @@
 		67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFoldAnimationController.m; sourceTree = "<group>"; };
 		67B7C0F12541A464003913D0 /* FoldMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoldMenuView.h; sourceTree = "<group>"; };
 		67B7C0F22541A464003913D0 /* FoldMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoldMenuView.m; sourceTree = "<group>"; };
+		67C5C113265E2A7F001B0156 /* RoundGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundGradientLayer.h; sourceTree = "<group>"; };
+		67C5C114265E2A7F001B0156 /* RoundGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundGradientLayer.m; sourceTree = "<group>"; };
 		67C6637424B81C3E00C80AEE /* MaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		67C6637524B81C3E00C80AEE /* MaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		67C6637724B842E800C80AEE /* ViewHiracyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHiracyController.h; sourceTree = "<group>"; };
@@ -186,8 +189,10 @@
 		671CF361265E226B007520F8 /* CircleGradient */ = {
 			isa = PBXGroup;
 			children = (
-				671CF362265E2285007520F8 /* CircleGradientController.h */,
-				671CF363265E2285007520F8 /* CircleGradientController.m */,
+				67C5C113265E2A7F001B0156 /* RoundGradientLayer.h */,
+				67C5C114265E2A7F001B0156 /* RoundGradientLayer.m */,
+				671CF362265E2285007520F8 /* RoundGradientController.h */,
+				671CF363265E2285007520F8 /* RoundGradientController.m */,
 			);
 			path = CircleGradient;
 			sourceTree = "<group>";
@@ -732,7 +737,7 @@
 				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
-				671CF364265E2285007520F8 /* CircleGradientController.m in Sources */,
+				671CF364265E2285007520F8 /* RoundGradientController.m in Sources */,
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
 				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
@@ -744,6 +749,7 @@
 				6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
+				67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */,
 				6798AB332500DBFA00FA37B7 /* GradientImageController.m in Sources */,
 				67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */,
 				67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */,
