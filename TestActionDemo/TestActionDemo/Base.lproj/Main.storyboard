@@ -300,6 +300,26 @@
                                             <segue destination="hh3-Ly-UO5" kind="show" id="IKd-eV-hf7"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fNF-iY-QcV" style="IBUITableViewCellStyleDefault" id="bXX-G8-llk">
+                                        <rect key="frame" x="0.0" y="637" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bXX-G8-llk" id="NDM-or-30G">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="圆内渐变" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fNF-iY-QcV">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="H1i-5Y-kaa" kind="show" id="gCT-Fh-KDz"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -456,6 +476,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4sJ-9c-Wt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2245" y="253"/>
+        </scene>
+        <!--圆内渐变-->
+        <scene sceneID="AAd-qU-ccZ">
+            <objects>
+                <viewController id="H1i-5Y-kaa" customClass="CircleGradientController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGJ-qr-BKk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oR9-CG-POe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="圆内渐变" id="DNi-JE-ag6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEy-x1-q4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="1023"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="boW-t6-efu">

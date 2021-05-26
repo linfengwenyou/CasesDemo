@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BA62E619CB7F0375917A0CE /* Pods_TestActionDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B954A417B50E1085CA0801BF /* Pods_TestActionDemoTests.framework */; };
 		3B1BEFF97E98D36E30FD73AD /* Pods_TestActionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD4251D58DC9A791529C683 /* Pods_TestActionDemo.framework */; };
+		671CF364265E2285007520F8 /* CircleGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671CF363265E2285007520F8 /* CircleGradientController.m */; };
 		672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE90B255BEE42009AE982 /* RASwitchImageView.m */; };
 		672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE911255BEEB6009AE982 /* RASwitchImageController.m */; };
 		672AE91C255BEEE7009AE982 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE917255BEEE7009AE982 /* 4.jpg */; };
@@ -74,6 +75,8 @@
 		23A76755E7CE510D9262314A /* Pods-TestActionDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemoTests/Pods-TestActionDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25D3F1969111753FEF2EA302 /* Pods-TestActionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E42824021660CED70DE9E43 /* Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		671CF362265E2285007520F8 /* CircleGradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleGradientController.h; sourceTree = "<group>"; };
+		671CF363265E2285007520F8 /* CircleGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleGradientController.m; sourceTree = "<group>"; };
 		672AE90A255BEE42009AE982 /* RASwitchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASwitchImageView.h; sourceTree = "<group>"; };
 		672AE90B255BEE42009AE982 /* RASwitchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASwitchImageView.m; sourceTree = "<group>"; };
 		672AE910255BEEB6009AE982 /* RASwitchImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RASwitchImageController.h; sourceTree = "<group>"; };
@@ -180,6 +183,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671CF361265E226B007520F8 /* CircleGradient */ = {
+			isa = PBXGroup;
+			children = (
+				671CF362265E2285007520F8 /* CircleGradientController.h */,
+				671CF363265E2285007520F8 /* CircleGradientController.m */,
+			);
+			path = CircleGradient;
+			sourceTree = "<group>";
+		};
 		672AE909255BEE2A009AE982 /* ImageViewAnimate */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +408,7 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				671CF361265E226B007520F8 /* CircleGradient */,
 				676A3BE22609C3DD00298065 /* HollowButton */,
 				672AE909255BEE2A009AE982 /* ImageViewAnimate */,
 				67B7C0ED2541A3A7003913D0 /* FoldAnimation */,
@@ -719,6 +732,7 @@
 				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
+				671CF364265E2285007520F8 /* CircleGradientController.m in Sources */,
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
 				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
