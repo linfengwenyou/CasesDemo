@@ -49,6 +49,15 @@
 		67D0343524AE112C008A676A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0343424AE112C008A676A /* main.m */; };
 		67D0343F24AE112C008A676A /* TestActionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0343E24AE112C008A676A /* TestActionDemoTests.m */; };
 		67D0344A24AE112C008A676A /* TestActionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0344924AE112C008A676A /* TestActionDemoUITests.m */; };
+		67DCAE4826BE5F1600C66AA0 /* HorizenBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE4726BE5F1600C66AA0 /* HorizenBannerViewController.m */; };
+		67DCAE5826BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE4A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.m */; };
+		67DCAE5926BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE4B26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.m */; };
+		67DCAE5A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE4C26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m */; };
+		67DCAE5B26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE4D26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.m */; };
+		67DCAE5C26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE5026BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.m */; };
+		67DCAE5D26BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCAE5126BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.m */; };
+		67DCAE6126BE5FD700C66AA0 /* kg_ic_player_close_large@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DCAE5F26BE5FD600C66AA0 /* kg_ic_player_close_large@3x.png */; };
+		67DCAE6226BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DCAE6026BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png */; };
 		67DF52E024F4AD780021D7BF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DF52DF24F4AD780021D7BF /* 1.png */; };
 		67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DF52E224F4AD960021D7BF /* MaskAnimateController.m */; };
 		9760385D9610F4214F87FB43 /* Pods_TestActionDemo_TestActionDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D106F799607724852FF83BDA /* Pods_TestActionDemo_TestActionDemoUITests.framework */; };
@@ -148,6 +157,22 @@
 		67D0344524AE112C008A676A /* TestActionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestActionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D0344924AE112C008A676A /* TestActionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestActionDemoUITests.m; sourceTree = "<group>"; };
 		67D0344B24AE112C008A676A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DCAE4626BE5F1600C66AA0 /* HorizenBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizenBannerViewController.h; sourceTree = "<group>"; };
+		67DCAE4726BE5F1600C66AA0 /* HorizenBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizenBannerViewController.m; sourceTree = "<group>"; };
+		67DCAE4A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewVideoEntranceView.m; sourceTree = "<group>"; };
+		67DCAE4B26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewVideoEntranceListView.m; sourceTree = "<group>"; };
+		67DCAE4C26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewVideoEntranceListCell.m; sourceTree = "<group>"; };
+		67DCAE4D26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewVideoEntranceListLayout.m; sourceTree = "<group>"; };
+		67DCAE4F26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayViewVideoEntranceConfig.h; sourceTree = "<group>"; };
+		67DCAE5026BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewVideoEntranceConfig.m; sourceTree = "<group>"; };
+		67DCAE5126BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPLayViewVideoEntranceMainView.m; sourceTree = "<group>"; };
+		67DCAE5226BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayViewVideoEntranceListView.h; sourceTree = "<group>"; };
+		67DCAE5326BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayViewVideoEntranceView.h; sourceTree = "<group>"; };
+		67DCAE5526BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayViewVideoEntranceListLayout.h; sourceTree = "<group>"; };
+		67DCAE5626BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayViewVideoEntranceListCell.h; sourceTree = "<group>"; };
+		67DCAE5726BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPLayViewVideoEntranceMainView.h; sourceTree = "<group>"; };
+		67DCAE5F26BE5FD600C66AA0 /* kg_ic_player_close_large@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kg_ic_player_close_large@3x.png"; sourceTree = "<group>"; };
+		67DCAE6026BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kg_ic_player_video_play_small@3x.png"; sourceTree = "<group>"; };
 		67DF52DF24F4AD780021D7BF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		67DF52E124F4AD960021D7BF /* MaskAnimateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskAnimateController.h; sourceTree = "<group>"; };
 		67DF52E224F4AD960021D7BF /* MaskAnimateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskAnimateController.m; sourceTree = "<group>"; };
@@ -413,6 +438,7 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				67DCAE4526BE5F0100C66AA0 /* HorizenBanner */,
 				671CF361265E226B007520F8 /* CircleGradient */,
 				676A3BE22609C3DD00298065 /* HollowButton */,
 				672AE909255BEE2A009AE982 /* ImageViewAnimate */,
@@ -459,6 +485,45 @@
 				67D0344B24AE112C008A676A /* Info.plist */,
 			);
 			path = TestActionDemoUITests;
+			sourceTree = "<group>";
+		};
+		67DCAE4526BE5F0100C66AA0 /* HorizenBanner */ = {
+			isa = PBXGroup;
+			children = (
+				67DCAE4626BE5F1600C66AA0 /* HorizenBannerViewController.h */,
+				67DCAE4726BE5F1600C66AA0 /* HorizenBannerViewController.m */,
+				67DCAE5F26BE5FD600C66AA0 /* kg_ic_player_close_large@3x.png */,
+				67DCAE6026BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png */,
+				67DCAE4926BE5FCC00C66AA0 /* videoEntrance */,
+			);
+			path = HorizenBanner;
+			sourceTree = "<group>";
+		};
+		67DCAE4926BE5FCC00C66AA0 /* videoEntrance */ = {
+			isa = PBXGroup;
+			children = (
+				67DCAE4E26BE5FCC00C66AA0 /* config */,
+				67DCAE5626BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.h */,
+				67DCAE4C26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m */,
+				67DCAE5526BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.h */,
+				67DCAE4D26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.m */,
+				67DCAE5226BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.h */,
+				67DCAE4B26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.m */,
+				67DCAE5726BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.h */,
+				67DCAE5126BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.m */,
+				67DCAE5326BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.h */,
+				67DCAE4A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.m */,
+			);
+			path = videoEntrance;
+			sourceTree = "<group>";
+		};
+		67DCAE4E26BE5FCC00C66AA0 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				67DCAE4F26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.h */,
+				67DCAE5026BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.m */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 		B9D4F8823B41AD5BB4160682 /* Pods */ = {
@@ -602,6 +667,8 @@
 				672AE91F255BEEE7009AE982 /* 3.jpg in Resources */,
 				67D0342F24AE112C008A676A /* Assets.xcassets in Resources */,
 				67D0342D24AE1129008A676A /* Main.storyboard in Resources */,
+				67DCAE6226BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png in Resources */,
+				67DCAE6126BE5FD700C66AA0 /* kg_ic_player_close_large@3x.png in Resources */,
 				67413A6924B5C72C00913664 /* 11.png in Resources */,
 				67DF52E024F4AD780021D7BF /* 1.png in Resources */,
 			);
@@ -737,16 +804,22 @@
 				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
+				67DCAE5A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m in Sources */,
 				671CF364265E2285007520F8 /* RoundGradientController.m in Sources */,
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
 				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
+				67DCAE5B26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.m in Sources */,
+				67DCAE5926BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				676A3BE52609C3F500298065 /* HollowButtonController.m in Sources */,
+				67DCAE5C26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.m in Sources */,
+				67DCAE5D26BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.m in Sources */,
 				6798AB302500DB7C00FA37B7 /* GradientImage.m in Sources */,
 				672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */,
 				672AE931255BF6A0009AE982 /* AnimationQueueManager.m in Sources */,
 				672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */,
 				6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */,
+				67DCAE4826BE5F1600C66AA0 /* HorizenBannerViewController.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
 				67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */,
@@ -755,6 +828,7 @@
 				67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */,
 				67D0343524AE112C008A676A /* main.m in Sources */,
 				67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */,
+				67DCAE5826BE5FCC00C66AA0 /* KGPlayViewVideoEntranceView.m in Sources */,
 				67B7C0DF2541A180003913D0 /* MyDynamicSliderView.m in Sources */,
 				67D0342724AE1129008A676A /* SceneDelegate.m in Sources */,
 				677A95C724BC33C70035144E /* MyLayoutController.m in Sources */,
