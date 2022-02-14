@@ -109,7 +109,7 @@
             CGFloat distance = fabs(attributes.center.x - centerX);
             
             // 当前要求目标的比例是多少？
-            CGFloat rate = 62.0f / 76.0f;   // 最大和第二个的高度比例, 大概取个限制位数的小说
+            CGFloat rate = 64.0f / 76.0f;   // 最大和第二个的高度比例, 大概取个限制位数的小说
             
             // 让一个步幅的偏移正好对比这么大的rate
             CGFloat stepDistance = [self findStepDistance];

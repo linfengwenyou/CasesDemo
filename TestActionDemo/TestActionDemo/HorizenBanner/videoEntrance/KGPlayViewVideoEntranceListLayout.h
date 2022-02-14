@@ -20,6 +20,20 @@
 @property (nonatomic, assign) CGFloat itemPadding;
 
 
+/* 定制两个cell横向间距的方法：
+ * minimumLineSpacing , 设置这个量，相当于增加两个Cell之间横向的间距，均增加
+ * 示例如： a A a a a               A 代表当前最大展示，即不缩小， a为缩小到最小标准
+ * 需要注意的是，已有间距 A a 之间的间距  disAa = (最大宽 - 最小宽) / 2 + minimumLineSpacing;
+ *
+ * a a 之间的间距为 disaa  = 2 * disAa + minimumLineSpacing   如果设置了 itemPadding 则disaa = itemPadding + minimumLineSpacing
+ *
+ * 如果itemPadding 为固定 aa之间的距离
+ *
+ * 如果需要调整 A a 距离，可以通过minimumLineSpacing来调整
+ */
+
+
+
 /*如果需要对cell做动画：
  1. 调用 invalidateLayout
  

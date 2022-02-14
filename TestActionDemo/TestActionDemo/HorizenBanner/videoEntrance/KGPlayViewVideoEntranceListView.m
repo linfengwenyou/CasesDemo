@@ -179,10 +179,10 @@
     if (!_layout) {
         _layout = [[KGPlayViewVideoEntranceListLayout alloc] init];
         _layout.itemSize = CGSizeMake(136, 76);
-        _layout.minimumLineSpacing = 0; // 横向滑动为列间距
+        _layout.minimumLineSpacing = -10; // 横向滑动为列间距
         _layout.minimumInteritemSpacing = 0;
         _layout.leftPadding = 24;
-        _layout.itemPadding = 10;
+        _layout.itemPadding = 20;   // 怎么设置，看KGPlayViewVideoEntranceListLayout.h来实现
     }
     return _layout;
 }
