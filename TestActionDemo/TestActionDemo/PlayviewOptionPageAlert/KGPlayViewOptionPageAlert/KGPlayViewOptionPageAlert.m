@@ -251,7 +251,6 @@
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
-        _collectionView.layer.cornerRadius = 10;
         _collectionView.layer.masksToBounds = YES;
         _collectionView.contentInset = UIEdgeInsetsMake(0, kCollectionLeftRight, 0, kCollectionLeftRight);
         _collectionView.showsHorizontalScrollIndicator = NO;
@@ -276,8 +275,8 @@
 
 
 - (CALayer *)maskLayer {
-//    底部一个圆角矩形，上面一个小三角形
-    UIBezierPath *roundPath = [UIBezierPath bezierPathWithRoundedRect:self.collectionView.frame cornerRadius:10];
+//    底部一个圆角矩形，上面一个小三角形, 圆角在这里走
+    UIBezierPath *roundPath = [UIBezierPath bezierPathWithRoundedRect:self.collectionView.frame cornerRadius:19];
     
     CAShapeLayer *roundLayer = [[CAShapeLayer alloc] init];
     roundLayer.path = roundPath.CGPath;
