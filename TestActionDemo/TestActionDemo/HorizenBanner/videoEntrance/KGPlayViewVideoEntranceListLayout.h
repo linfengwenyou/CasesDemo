@@ -7,6 +7,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, KGVideoEntranceLayouType) {
+    KGVideoEntranceLayouType_None = 0,       // 默认状态是刷新使用，包括初始化
+    KGVideoEntranceLayouType_Show,           // 显示展示
+    KGVideoEntranceLayouType_hide,           // 隐藏展示
+};
+
+@interface KGPlayViewVideoEntranceAttributes : UICollectionViewLayoutAttributes
+@property (nonatomic, assign) CGFloat coverAlpha;
+@end
+
+
 @interface KGPlayViewVideoEntranceListLayout : UICollectionViewFlowLayout
 
 /*通过修改 sectionInset 属性的left来实现最大显示的视图，距离屏幕左边的距离;
@@ -19,6 +30,15 @@
  */
 @property (nonatomic, assign) CGFloat itemPadding;
 
+/*预处理机制*/
+- (void)prepareForShowType:(KGVideoEntranceLayouType)ype;
+
+/*刷新布局做动画*/
+- (void)refreshLayoutForShow:(KGVideoEntranceLayouType)type;
+
+@property (nonatomic, assign) CGPoint fromPoint;
+
+@property (nonatomic, strong, readonly) NSArray *visibleSortedIndex;
 
 /* 定制两个cell横向间距的方法：
  * minimumLineSpacing , 设置这个量，相当于增加两个Cell之间横向的间距，均增加

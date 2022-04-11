@@ -6,15 +6,83 @@
 //
 
 #import "KGPlayViewVideoEntranceListLayout.h"
+#import "KGPlayViewVideoEntranceListCell.h"
+#import "KGPlayViewVideoEntranceConfig.h"
+
+@implementation KGPlayViewVideoEntranceAttributes
+
+- (KGPlayViewVideoEntranceAttributes *)copyWithZone:(NSZone *)zone {
+    KGPlayViewVideoEntranceAttributes *newO = [super copyWithZone:zone];
+    newO.coverAlpha = _coverAlpha;
+    return newO;
+}
+
+- (BOOL)isEqual:(KGPlayViewVideoEntranceAttributes *)object {
+    BOOL isEqual = [super isEqual:object];
+    return isEqual && object.coverAlpha == self.coverAlpha;
+}
+
+@end
+
 
 @interface KGPlayViewVideoEntranceListLayout ()
 /// 记录上次滑动停止时 contentOffset 值
 @property (nonatomic, assign) CGPoint lastOffset;
+
+@property (nonatomic, assign) KGVideoEntranceLayouType type;
 @end
 
 
 @implementation KGPlayViewVideoEntranceListLayout
 
++ (Class)layoutAttributesClass {
+    return KGPlayViewVideoEntranceAttributes.class;
+}
+
+#pragma mark - refreshLayout
+- (void)prepareForShowType:(KGVideoEntranceLayouType)type {
+    _type = type;   /// 预处理机制，只处理一次
+    [self refreshWithDuration:0];
+}
+- (void)refreshLayoutForShow:(KGVideoEntranceLayouType)type {
+    if ([self shouldUpdateLayoutWithType:type]) {
+        [self refreshWithDuration:[KGPlayViewVideoEntranceConfig durateForUnfold]];
+    }
+}
+
+// 判断是否需要进行刷新
+- (BOOL)shouldUpdateLayoutWithType:(KGVideoEntranceLayouType)type {
+    if (type == KGVideoEntranceLayouType_None) {
+        return NO;
+    }
+    
+    if (type == _type) {
+        NSLog(@"当前的数据展示类型一样");
+        return NO;
+    }
+    _type = type;
+    return YES;
+}
+
+- (void)refreshWithDuration:(CGFloat)duration
+{
+    // 如果是全部刷新，使用
+    [UIView animateWithDuration:duration animations:^{
+        [self.collectionView performBatchUpdates:nil  completion:^(BOOL finished) {
+            [self.collectionView layoutIfNeeded];
+            self.collectionView.userInteractionEnabled = self.type == KGVideoEntranceLayouType_Show;
+        }];
+    }];
+    
+    
+    // 如果仅仅是改变单元格的布局
+    //    [self invalidateLayout];    // 触发刷新机制
+    //
+    //    [UIView animateWithDuration:0.25 animations:^{
+    //        [self.collectionView layoutIfNeeded];
+    //    }];
+    
+}
 #pragma mark - 其他配置展示
 /*返回最小的X，即展示为当前sectionInset设置的位置*/
 - (CGFloat)findMinOffsetX {
@@ -103,8 +171,9 @@
     
     /*计算相对最大展示视图的居中点*/
     CGFloat centerX = self.collectionView.contentOffset.x + self.sectionInset.left + self.itemSize.width / 2;
+    NSArray *showedIndexPaths = [self sortedVisiableIndexPaths];
     
-    for (UICollectionViewLayoutAttributes *attributes in arr) {
+    for (KGPlayViewVideoEntranceAttributes *attributes in arr) {
         @autoreleasepool {
             CGFloat distance = fabs(attributes.center.x - centerX);
             
@@ -138,10 +207,90 @@
             CGAffineTransform trans = CGAffineTransformScale(translateTrans, scale, scale);
             
             attributes.transform = trans;
+            
+            attributes.coverAlpha = (1 - scale) * 3;
+            
+            
+            if (self.type == KGVideoEntranceLayouType_hide
+                && [showedIndexPaths containsObject:attributes.indexPath]) {  // 如果需要隐藏
+                if (attributes.center.x >= self.collectionView.contentOffset.x) {   // 直接缩进
+                    CGFloat rate = 30 / self.itemSize.width;
+                    attributes.center = CGPointMake(self.collectionView.contentOffset.x + self.fromPoint.x, self.fromPoint.y);
+                    attributes.transform =  CGAffineTransformMakeScale(rate, rate);
+                    attributes.alpha = 1;
+                } else {
+                    attributes.alpha = 0;
+                }
+                
+            }
+            
         }
     }
     
     return arr;
 }
 
+
+#pragma mark - 尝试使用的方案
+// 通过下面的方法来实现初始值的刷新展示
+- (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
+    NSLog(@"动画初始的方法----------------------------");
+    return [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
+    
+    // 此处需要计算初始值的展示方案
+}
+
+-  (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
+    
+    // 此处需要计算结束值的展示方案
+    NSLog(@"动画结束时的方法");
+    return [super finalLayoutAttributesForDisappearingItemAtIndexPath:itemIndexPath];
+}
+
+/*返回默认的初始位置*/
+- (UICollectionViewLayoutAttributes *)defaultPointAttributesForIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionViewLayoutAttributes *actualAttr = [self attributeFromIndexPath:indexPath];
+    
+    CGFloat rate = 30 / self.itemSize.width;
+    
+    UICollectionViewLayoutAttributes *attr = [[UICollectionViewLayoutAttributes alloc] init];
+    
+    
+    if (actualAttr.center.x < self.collectionView.contentOffset.x) {
+        attr.center = actualAttr.center;
+        attr.transform = actualAttr.transform;
+        attr.alpha = 0;
+    } else {
+        attr.center = CGPointMake(self.collectionView.contentOffset.x + self.fromPoint.x, self.fromPoint.y);
+        attr.transform =  CGAffineTransformMakeScale(rate, rate);
+        attr.alpha = 1;
+    }
+    
+    return attr;
+}
+
+- (UICollectionViewLayoutAttributes *)attributeFromIndexPath:(NSIndexPath *)indexPath {
+    return [self.collectionView layoutAttributesForItemAtIndexPath:indexPath];
+}
+
+//- (void)updateCell:(UICollectionViewCell *)cell withAttributes:(UICollectionViewLayoutAttributes *)attr {
+//    cell.center = attr.center;
+//    cell.transform = attr.transform;
+//    cell.alpha = attr.alpha;
+//}
+
+/*返回当前可见的cell的indexPath*/
+- (NSArray *)sortedVisiableIndexPaths {
+    // 先排序再执行
+    NSArray *tmpArr = [self.collectionView.indexPathsForVisibleItems sortedArrayUsingComparator:^NSComparisonResult(NSIndexPath * obj1, NSIndexPath * obj2) {
+        return obj1.row > obj2.row;
+    }];
+    return tmpArr;
+}
+
+
+- (NSArray *)visibleSortedIndex {
+    return [self sortedVisiableIndexPaths];
+}
 @end

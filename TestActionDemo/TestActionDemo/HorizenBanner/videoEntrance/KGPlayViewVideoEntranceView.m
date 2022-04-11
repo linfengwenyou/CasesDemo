@@ -168,22 +168,28 @@
 
 /*显示折叠视图*/
 - (void)showFoldView {
+    self.userInteractionEnabled = NO;
     [UIView animateWithDuration:[self firstAnimationDuration] animations:^{
         self.unfoldContainer.alpha = 0;
         self.closeImageView.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:[self secondAnimationDuration] animations:^{
             self.foldContainer.alpha = 1;
+        } completion:^(BOOL finished) {
+            self.userInteractionEnabled  = YES;
         }];
     }];
 }
 
 /*显示展开视图*/
 - (void)showUnfoldView {
+    self.userInteractionEnabled = NO;
     self.foldContainer.alpha = 0;
     [UIView animateWithDuration:[self firstAnimationDuration] animations:^{
         self.unfoldContainer.alpha = 1;
         self.closeImageView.transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(179.5));
+    } completion:^(BOOL finished) {
+        self.userInteractionEnabled = YES;
     }];
 }
 
