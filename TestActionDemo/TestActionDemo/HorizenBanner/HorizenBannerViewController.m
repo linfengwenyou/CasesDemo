@@ -8,7 +8,6 @@
 
 #import "HorizenBannerViewController.h"
 #import "KGPLayViewVideoEntranceMainView.h"
-#import <Masonry/Masonry.h>
 
 @interface HorizenBannerViewController ()
 @property (nonatomic, strong) KGPLayViewVideoEntranceMainView *entranceMainView;

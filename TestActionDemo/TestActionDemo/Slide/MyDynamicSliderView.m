@@ -8,7 +8,6 @@
 //
 
 #import "MyDynamicSliderView.h"
-#import <Masonry/Masonry.h>
 
 @interface MyDynamicSliderView ()
 // 锚点信息

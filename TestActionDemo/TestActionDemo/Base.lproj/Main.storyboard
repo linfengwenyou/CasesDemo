@@ -360,6 +360,26 @@
                                             <segue destination="bJr-wU-RBY" kind="show" id="NNX-rz-zm3"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XBU-5a-rlo" style="IBUITableViewCellStyleDefault" id="4fY-7s-bcH">
+                                        <rect key="frame" x="0.0" y="784" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4fY-7s-bcH" id="sTQ-iQ-voy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="区域滑块展示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XBU-5a-rlo">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="29M-Cf-4BX" kind="showDetail" id="EAN-EI-y98"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -549,7 +569,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V5-nd-7gw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1059.4202898550725" y="-146.65178571428569"/>
+            <point key="canvasLocation" x="-1158" y="-157"/>
         </scene>
         <!--frame监听-->
         <scene sceneID="U0N-qb-3aS">
@@ -1014,11 +1034,39 @@
             </objects>
             <point key="canvasLocation" x="3029" y="89"/>
         </scene>
+        <!--Area Tab Controller-->
+        <scene sceneID="o8f-TF-ZyS">
+            <objects>
+                <viewController id="29M-Cf-4BX" customClass="KGAreaTabController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vP-w1-8e2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3eq-Hq-0cL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3fy-i3-1iy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3eq-Hq-0cL" secondAttribute="bottom" id="Uo3-K9-6RL"/>
+                            <constraint firstItem="3eq-Hq-0cL" firstAttribute="top" secondItem="5vP-w1-8e2" secondAttribute="top" id="W1z-3T-fRk"/>
+                            <constraint firstItem="3eq-Hq-0cL" firstAttribute="leading" secondItem="5vP-w1-8e2" secondAttribute="leading" id="eoO-vS-WOi"/>
+                            <constraint firstItem="3fy-i3-1iy" firstAttribute="trailing" secondItem="3eq-Hq-0cL" secondAttribute="trailing" id="p45-FB-Tha"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RZ3-u5-Ii1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpk-Kn-Pab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1707" y="-265"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.png" width="640" height="1136"/>
         <image name="11.png" width="720" height="1560"/>
         <image name="2.png" width="750" height="1334"/>
+        <image name="5.jpg" width="720" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

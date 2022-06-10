@@ -6,7 +6,6 @@
 //
 
 #import "KGPlayViewVideoEntranceListCell.h"
-#import <Masonry/Masonry.h>
 
 @interface KGPlayViewVideoEntranceListCell ()
 /*小说容器*/

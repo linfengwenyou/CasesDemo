@@ -24,6 +24,9 @@
 		6705835527E0A39100DC0F94 /* KGPlayViewOptionPageConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705834727E0A39100DC0F94 /* KGPlayViewOptionPageConfig.m */; };
 		6705835627E0A39100DC0F94 /* KGPlayViewOptionPageAlertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705834827E0A39100DC0F94 /* KGPlayViewOptionPageAlertCell.m */; };
 		6705835727E0A39100DC0F94 /* KGPlayViewOptionPageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705834927E0A39100DC0F94 /* KGPlayViewOptionPageAlert.m */; };
+		67149A2628535417004869BB /* KGAreaTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67149A2528535417004869BB /* KGAreaTabController.m */; };
+		67149A2C285355D1004869BB /* KGPlayQueueTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67149A2A285355D1004869BB /* KGPlayQueueTabCell.m */; };
+		67149A2D285355D1004869BB /* KGPlayQueueTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67149A2B285355D1004869BB /* KGPlayQueueTabView.m */; };
 		671CF364265E2285007520F8 /* RoundGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671CF363265E2285007520F8 /* RoundGradientController.m */; };
 		672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE90B255BEE42009AE982 /* RASwitchImageView.m */; };
 		672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE911255BEEB6009AE982 /* RASwitchImageController.m */; };
@@ -121,6 +124,13 @@
 		6705834827E0A39100DC0F94 /* KGPlayViewOptionPageAlertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewOptionPageAlertCell.m; sourceTree = "<group>"; };
 		6705834927E0A39100DC0F94 /* KGPlayViewOptionPageAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayViewOptionPageAlert.m; sourceTree = "<group>"; };
 		6705834A27E0A39100DC0F94 /* KGPlayViewOptionGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayViewOptionGuideView.h; sourceTree = "<group>"; };
+		67149A2428535417004869BB /* KGAreaTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGAreaTabController.h; sourceTree = "<group>"; };
+		67149A2528535417004869BB /* KGAreaTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KGAreaTabController.m; sourceTree = "<group>"; };
+		67149A28285355D1004869BB /* KGPlayQueueTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayQueueTabCell.h; sourceTree = "<group>"; };
+		67149A29285355D1004869BB /* KGPlayQueueTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPlayQueueTabView.h; sourceTree = "<group>"; };
+		67149A2A285355D1004869BB /* KGPlayQueueTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayQueueTabCell.m; sourceTree = "<group>"; };
+		67149A2B285355D1004869BB /* KGPlayQueueTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPlayQueueTabView.m; sourceTree = "<group>"; };
+		67149A2E28535609004869BB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		671CF362265E2285007520F8 /* RoundGradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundGradientController.h; sourceTree = "<group>"; };
 		671CF363265E2285007520F8 /* RoundGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundGradientController.m; sourceTree = "<group>"; };
 		672AE90A255BEE42009AE982 /* RASwitchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASwitchImageView.h; sourceTree = "<group>"; };
@@ -296,6 +306,27 @@
 				6705834527E0A39100DC0F94 /* player_bgmode_popups_ic_trumpet@3x.png */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		67149A23285353F2004869BB /* AreaTabView */ = {
+			isa = PBXGroup;
+			children = (
+				67149A27285355D1004869BB /* TabView */,
+				67149A2428535417004869BB /* KGAreaTabController.h */,
+				67149A2528535417004869BB /* KGAreaTabController.m */,
+			);
+			path = AreaTabView;
+			sourceTree = "<group>";
+		};
+		67149A27285355D1004869BB /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				67149A28285355D1004869BB /* KGPlayQueueTabCell.h */,
+				67149A29285355D1004869BB /* KGPlayQueueTabView.h */,
+				67149A2A285355D1004869BB /* KGPlayQueueTabCell.m */,
+				67149A2B285355D1004869BB /* KGPlayQueueTabView.m */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 		671CF361265E226B007520F8 /* CircleGradient */ = {
@@ -525,6 +556,7 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				67149A23285353F2004869BB /* AreaTabView */,
 				6705833427E0A38400DC0F94 /* Utils */,
 				6705833027E0A29100DC0F94 /* PlayviewOptionPageAlert */,
 				67DCAE4526BE5F0100C66AA0 /* HorizenBanner */,
@@ -554,6 +586,7 @@
 				67413A6D24B6AEC500913664 /* MyTableViewController.h */,
 				67413A6E24B6AEC500913664 /* MyTableViewController.m */,
 				67D0342B24AE1129008A676A /* Main.storyboard */,
+				67149A2E28535609004869BB /* PrefixHeader.pch */,
 			);
 			path = TestActionDemo;
 			sourceTree = "<group>";
@@ -898,12 +931,15 @@
 			files = (
 				67B7C0F32541A464003913D0 /* FoldMenuView.m in Sources */,
 				6705835527E0A39100DC0F94 /* KGPlayViewOptionPageConfig.m in Sources */,
+				67149A2D285355D1004869BB /* KGPlayQueueTabView.m in Sources */,
 				67413A7824B6FC8200913664 /* MyCoverView.m in Sources */,
 				676A3BEF2609C42C00298065 /* HollowButton.m in Sources */,
 				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
 				67DCAE5A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m in Sources */,
+				67149A2C285355D1004869BB /* KGPlayQueueTabCell.m in Sources */,
+				67149A2628535417004869BB /* KGAreaTabController.m in Sources */,
 				671CF364265E2285007520F8 /* RoundGradientController.m in Sources */,
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
 				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
@@ -1107,6 +1143,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TestActionDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = TestActionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1124,6 +1161,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TestActionDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = TestActionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

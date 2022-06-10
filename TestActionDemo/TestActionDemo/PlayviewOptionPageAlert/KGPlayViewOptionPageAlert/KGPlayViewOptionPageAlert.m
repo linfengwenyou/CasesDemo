@@ -6,7 +6,6 @@
 //
 
 #import "KGPlayViewOptionPageAlert.h"
-#import <Masonry/Masonry.h>
 #import "KGPlayViewOptionPageAlertCell.h"
 
 // 高度预算

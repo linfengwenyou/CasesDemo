@@ -7,7 +7,6 @@
 //
 
 #import "FrameObserverController.h"
-#import <Masonry/Masonry.h>
 
 @interface FrameObserverController ()
 @property (weak, nonatomic) IBOutlet UIView *containerView;

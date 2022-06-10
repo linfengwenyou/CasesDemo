@@ -7,7 +7,6 @@
 
 #import "KGPLayViewVideoEntranceMainView.h"
 #import "KGPlayViewVideoEntranceView.h"
-#import <Masonry/Masonry.h>
 #import "KGPlayViewVideoEntranceListView.h"
 
 @interface KGPLayViewVideoEntranceMainView ()

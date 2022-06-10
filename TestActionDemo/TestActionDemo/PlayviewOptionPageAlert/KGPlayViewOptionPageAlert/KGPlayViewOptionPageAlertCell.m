@@ -6,7 +6,6 @@
 //
 
 #import "KGPlayViewOptionPageAlertCell.h"
-#import <Masonry/Masonry.h>
 
 @interface KGPlayViewOptionPageAlertCell ()
 // 只是用作圆角展示，此处不切角，为了让右上角显示打钩选项

@@ -6,7 +6,6 @@
 //
 
 #import "KGPlayViewOptionGuideView.h"
-#import <Masonry/Masonry.h>
 
 // 高度预算
 #define kTrangleHeight 6

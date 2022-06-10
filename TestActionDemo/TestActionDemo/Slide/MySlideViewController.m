@@ -7,7 +7,6 @@
 //
 
 #import "MySlideViewController.h"
-#import <Masonry/Masonry.h>
 #import "MyDynamicSliderView.h"
 
 @interface MySlideViewController ()

@@ -6,7 +6,6 @@
 //
 
 #import "KGPlayViewVideoEntranceView.h"
-#import <Masonry/Masonry.h>
 #import "KGPlayViewVideoEntranceConfig.h"
 
 #define DEGREES_TO_RADIANS(x) (x * M_PI/180.0)
