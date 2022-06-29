@@ -101,16 +101,6 @@
 }
 
 
-#pragma mark - public
-CGPoint centerFromFrame(CGRect frame) {
-    return CGPointMake(frame.origin.x + frame.size.width/2.0f, frame.origin.y + frame.size.height/2.0f);
-}
-
-
-CGRect frameFromCenterSize(CGPoint center, CGSize size) {
-    return CGRectMake(center.x - size.width/2.0f, center.y - size.height/2.0f, size.width, size.height);
-}
-
 
 #pragma mark - setter & getter
 - (UIView *)mainView {

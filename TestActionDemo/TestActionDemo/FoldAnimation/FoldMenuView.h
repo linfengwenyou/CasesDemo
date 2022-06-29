@@ -17,13 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showWithAnimationWithShrnkedFrame:(CGRect)shrinkedFrame;
 
 
-
-#pragma mark - 开放方法
-// 通过frame获取center
-CGPoint centerFromFrame(CGRect frame);
-
-// 通过center,size获取frame
-CGRect frameFromCenterSize(CGPoint center, CGSize size);
 @end
 
 NS_ASSUME_NONNULL_END
