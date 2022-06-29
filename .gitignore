@@ -1,6 +1,25 @@
+# vim
+*.swp
+*.xcuserstate
 
+*.so
+*.pbxuser
+*.mode
+*.perspective*
+*.o
+*.lo
+*.la
+#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
 .DS_Store
+build
 xcuserdata
+build/
+.DS_Store
 
 TestActionDemo/Pods
 TestActionDemo/TestActionDemo.xcworkspace
