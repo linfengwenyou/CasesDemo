@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TouchPassViewController">
+            <connections>
+                <outlet property="button2" destination="grA-4c-l97" id="LTw-xp-xDN"/>
+                <outlet property="coverView1" destination="zYQ-qY-t2d" id="Kf9-ig-XVa"/>
+                <outlet property="view" destination="rtE-UV-bp9" id="TgA-Gg-6kC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rtE-UV-bp9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLB-6L-4Dp">
+                    <rect key="frame" x="129" y="210" width="52" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button1"/>
+                    <connections>
+                        <action selector="touchButtonAction:" destination="-1" eventType="touchUpInside" id="Apk-M7-cjU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYQ-qY-t2d" customClass="MyCoverView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grA-4c-l97">
+                            <rect key="frame" x="133" y="349" width="71" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="按钮测试2"/>
+                            <connections>
+                                <action selector="didTapViewAction:" destination="-1" eventType="touchUpInside" id="dDz-cr-xa9"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eB9-VS-IdG">
+                            <rect key="frame" x="0.0" y="618" width="414" height="200"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfn-oj-qMJ">
+                                    <rect key="frame" x="162" y="57" width="71" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="内层视图3">
+                                        <color key="titleColor" systemColor="systemPinkColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didClickInnerButton:" destination="-1" eventType="touchUpInside" id="KPr-BJ-o9Q"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="0pg-f7-leW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eB9-VS-IdG" firstAttribute="leading" secondItem="zYQ-qY-t2d" secondAttribute="leading" id="QGr-MY-XMn"/>
+                        <constraint firstAttribute="trailing" secondItem="eB9-VS-IdG" secondAttribute="trailing" id="mqb-M5-pGq"/>
+                        <constraint firstAttribute="bottom" secondItem="eB9-VS-IdG" secondAttribute="bottom" id="uDy-iA-wIT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="WDT-mE-fg5"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zYQ-qY-t2d" firstAttribute="top" secondItem="WDT-mE-fg5" secondAttribute="top" id="5yR-kh-Ie2"/>
+                <constraint firstItem="zYQ-qY-t2d" firstAttribute="leading" secondItem="WDT-mE-fg5" secondAttribute="leading" id="Gjm-jd-dfB"/>
+                <constraint firstItem="WDT-mE-fg5" firstAttribute="bottom" secondItem="zYQ-qY-t2d" secondAttribute="bottom" id="P2h-9o-m5S"/>
+                <constraint firstItem="zYQ-qY-t2d" firstAttribute="trailing" secondItem="WDT-mE-fg5" secondAttribute="trailing" id="am1-iL-rcE"/>
+            </constraints>
+            <point key="canvasLocation" x="1372" y="-321"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

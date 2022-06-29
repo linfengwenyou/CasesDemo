@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaskAnimateController">
+            <connections>
+                <outlet property="picView" destination="VE6-xC-4KF" id="UZq-yu-aCf"/>
+                <outlet property="view" destination="2Ie-df-Ose" id="sKT-f6-7zV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2Ie-df-Ose">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkI-pA-hHG">
+                    <rect key="frame" x="0.0" y="806" width="414" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FuB-mi-cR4"/>
+                    </constraints>
+                    <state key="normal" title="动画"/>
+                    <connections>
+                        <action selector="didTapAction:" destination="-1" eventType="touchUpInside" id="lGG-Q8-zPC"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VE6-xC-4KF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="742"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XnF-E9-mo7"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VE6-xC-4KF" firstAttribute="trailing" secondItem="XnF-E9-mo7" secondAttribute="trailing" id="Bbd-K9-3c1"/>
+                <constraint firstItem="GkI-pA-hHG" firstAttribute="leading" secondItem="XnF-E9-mo7" secondAttribute="leading" id="KeZ-F4-PpF"/>
+                <constraint firstItem="GkI-pA-hHG" firstAttribute="trailing" secondItem="XnF-E9-mo7" secondAttribute="trailing" id="P9S-rj-d6E"/>
+                <constraint firstAttribute="bottom" secondItem="GkI-pA-hHG" secondAttribute="bottom" constant="50" id="bHs-qt-Bne"/>
+                <constraint firstItem="VE6-xC-4KF" firstAttribute="top" secondItem="XnF-E9-mo7" secondAttribute="top" id="r9y-kN-1ha"/>
+                <constraint firstItem="VE6-xC-4KF" firstAttribute="leading" secondItem="XnF-E9-mo7" secondAttribute="leading" id="tiE-0b-Qv0"/>
+                <constraint firstItem="GkI-pA-hHG" firstAttribute="top" secondItem="VE6-xC-4KF" secondAttribute="bottom" constant="20" id="uXY-Z4-zXq"/>
+            </constraints>
+            <point key="canvasLocation" x="83" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="5.jpg" width="720" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

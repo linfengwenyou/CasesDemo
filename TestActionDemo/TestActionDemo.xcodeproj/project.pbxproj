@@ -37,11 +37,9 @@
 		672AE920255BEEE7009AE982 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672AE91B255BEEE7009AE982 /* 1.jpg */; };
 		672AE931255BF6A0009AE982 /* AnimationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 672AE92F255BF6A0009AE982 /* AnimationQueueManager.m */; };
 		67413A6924B5C72C00913664 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 67413A6824B5C72B00913664 /* 11.png */; };
-		67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A6E24B6AEC500913664 /* MyTableViewController.m */; };
 		67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7124B6AF9500913664 /* FrameObserverController.m */; };
 		67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7424B6F8E000913664 /* TouchPassViewController.m */; };
 		67413A7824B6FC8200913664 /* MyCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67413A7724B6FC8200913664 /* MyCoverView.m */; };
-		6748E40D286BEBF100CF9641 /* MyIntroduceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E40C286BEBF100CF9641 /* MyIntroduceController.m */; };
 		6748E418286BEC6200CF9641 /* back_mode_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E40F286BEC6100CF9641 /* back_mode_selected@2x.png */; };
 		6748E419286BEC6200CF9641 /* videoshare_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E410286BEC6100CF9641 /* videoshare_new@2x.png */; };
 		6748E41A286BEC6200CF9641 /* back_mode_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E411286BEC6100CF9641 /* back_mode_selected@3x.png */; };
@@ -74,6 +72,29 @@
 		6748E469286BEE7C00CF9641 /* DynamicSkinsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E45E286BEE7C00CF9641 /* DynamicSkinsManager.m */; };
 		6748E46F286BEF2900CF9641 /* KGDynamicVipTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E46D286BEF2900CF9641 /* KGDynamicVipTipView.m */; };
 		6748E472286BF03C00CF9641 /* MyDynamicSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E470286BF03C00CF9641 /* MyDynamicSliderView.m */; };
+		6748E47D286BF40F00CF9641 /* HomeViewConroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E47C286BF40F00CF9641 /* HomeViewConroller.m */; };
+		6748E480286C02B100CF9641 /* HomeViewConroller+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E47F286C02B100CF9641 /* HomeViewConroller+DataSource.m */; };
+		6748E483286C02FE00CF9641 /* HomeViewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E482286C02FE00CF9641 /* HomeViewDataModel.m */; };
+		6748E486286C051A00CF9641 /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E485286C051A00CF9641 /* MaskViewController.xib */; };
+		6748E490286C1DED00CF9641 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E48E286C1DED00CF9641 /* GradientViewController.m */; };
+		6748E491286C1DED00CF9641 /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E48F286C1DED00CF9641 /* GradientViewController.xib */; };
+		6748E493286C1F3C00CF9641 /* FrameObserverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E492286C1F3C00CF9641 /* FrameObserverController.xib */; };
+		6748E496286C22A900CF9641 /* TouchPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E495286C22A900CF9641 /* TouchPassViewController.xib */; };
+		6748E498286C234700CF9641 /* ViewHiracyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E497286C234700CF9641 /* ViewHiracyController.xib */; };
+		6748E49A286C242200CF9641 /* MyLayoutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E499286C242200CF9641 /* MyLayoutController.xib */; };
+		6748E49C286C289700CF9641 /* MaskAnimateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E49B286C289700CF9641 /* MaskAnimateController.xib */; };
+		6748E49E286C2B1700CF9641 /* RippleAnmationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E49D286C2B1700CF9641 /* RippleAnmationController.xib */; };
+		6748E4A0286C2C1C00CF9641 /* GradientImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E49F286C2C1C00CF9641 /* GradientImageController.xib */; };
+		6748E4A2286C2CF000CF9641 /* FrameAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4A1286C2CF000CF9641 /* FrameAnimationController.xib */; };
+		6748E4A7286C2E6200CF9641 /* DynamicIntroduceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E4A5286C2E6200CF9641 /* DynamicIntroduceController.m */; };
+		6748E4A8286C2E6200CF9641 /* DynamicIntroduceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4A6286C2E6200CF9641 /* DynamicIntroduceController.xib */; };
+		6748E4AA286C2FC200CF9641 /* MyFoldAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4A9286C2FC200CF9641 /* MyFoldAnimationController.xib */; };
+		6748E4AC286C306F00CF9641 /* RASwitchImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4AB286C306F00CF9641 /* RASwitchImageController.xib */; };
+		6748E4AE286C30F300CF9641 /* HollowButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4AD286C30F300CF9641 /* HollowButtonController.xib */; };
+		6748E4B0286C318700CF9641 /* RoundGradientController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4AF286C318700CF9641 /* RoundGradientController.xib */; };
+		6748E4B2286C322700CF9641 /* HorizenBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4B1286C322700CF9641 /* HorizenBannerViewController.xib */; };
+		6748E4B4286C32C200CF9641 /* OptionPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4B3286C32C200CF9641 /* OptionPageController.xib */; };
+		6748E4B6286C337800CF9641 /* KGAreaTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4B5286C337800CF9641 /* KGAreaTabController.xib */; };
 		6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759CBBB2502304500EE13DB /* FrameAnimationController.m */; };
 		676A3BE52609C3F500298065 /* HollowButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676A3BE42609C3F500298065 /* HollowButtonController.m */; };
 		676A3BEF2609C42C00298065 /* HollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 676A3BEE2609C42C00298065 /* HollowButton.m */; };
@@ -84,7 +105,6 @@
 		6798AB302500DB7C00FA37B7 /* GradientImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798AB2F2500DB7C00FA37B7 /* GradientImage.m */; };
 		6798AB332500DBFA00FA37B7 /* GradientImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798AB322500DBFA00FA37B7 /* GradientImageController.m */; };
 		6798AB352500DC4C00FA37B7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6798AB342500DC4C00FA37B7 /* 2.png */; };
-		67B7C0EC2541A267003913D0 /* MySlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EB2541A267003913D0 /* MySlideViewController.m */; };
 		67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */; };
 		67B7C0F32541A464003913D0 /* FoldMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B7C0F22541A464003913D0 /* FoldMenuView.m */; };
 		67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5C114265E2A7F001B0156 /* RoundGradientLayer.m */; };
@@ -92,7 +112,6 @@
 		67C6637924B842E800C80AEE /* ViewHiracyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C6637824B842E800C80AEE /* ViewHiracyController.m */; };
 		67D0342424AE1129008A676A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342324AE1129008A676A /* AppDelegate.m */; };
 		67D0342724AE1129008A676A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342624AE1129008A676A /* SceneDelegate.m */; };
-		67D0342A24AE1129008A676A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D0342924AE1129008A676A /* ViewController.m */; };
 		67D0342D24AE1129008A676A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D0342B24AE1129008A676A /* Main.storyboard */; };
 		67D0342F24AE112C008A676A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D0342E24AE112C008A676A /* Assets.xcassets */; };
 		67D0343224AE112C008A676A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D0343024AE112C008A676A /* LaunchScreen.storyboard */; };
@@ -177,16 +196,12 @@
 		672AE92F255BF6A0009AE982 /* AnimationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationQueueManager.m; sourceTree = "<group>"; };
 		672AE930255BF6A0009AE982 /* AnimationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationQueueManager.h; sourceTree = "<group>"; };
 		67413A6824B5C72B00913664 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
-		67413A6D24B6AEC500913664 /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		67413A6E24B6AEC500913664 /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		67413A7024B6AF9500913664 /* FrameObserverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameObserverController.h; sourceTree = "<group>"; };
 		67413A7124B6AF9500913664 /* FrameObserverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameObserverController.m; sourceTree = "<group>"; };
 		67413A7324B6F8E000913664 /* TouchPassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchPassViewController.h; sourceTree = "<group>"; };
 		67413A7424B6F8E000913664 /* TouchPassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPassViewController.m; sourceTree = "<group>"; };
 		67413A7624B6FC8200913664 /* MyCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoverView.h; sourceTree = "<group>"; };
 		67413A7724B6FC8200913664 /* MyCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoverView.m; sourceTree = "<group>"; };
-		6748E40B286BEBF100CF9641 /* MyIntroduceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyIntroduceController.h; sourceTree = "<group>"; };
-		6748E40C286BEBF100CF9641 /* MyIntroduceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIntroduceController.m; sourceTree = "<group>"; };
 		6748E40F286BEC6100CF9641 /* back_mode_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_mode_selected@2x.png"; sourceTree = "<group>"; };
 		6748E410286BEC6100CF9641 /* videoshare_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoshare_new@2x.png"; sourceTree = "<group>"; };
 		6748E411286BEC6100CF9641 /* back_mode_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_mode_selected@3x.png"; sourceTree = "<group>"; };
@@ -235,6 +250,34 @@
 		6748E46E286BEF2900CF9641 /* KGDynamicVipTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDynamicVipTipView.h; sourceTree = "<group>"; };
 		6748E470286BF03C00CF9641 /* MyDynamicSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDynamicSliderView.m; sourceTree = "<group>"; };
 		6748E471286BF03C00CF9641 /* MyDynamicSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDynamicSliderView.h; sourceTree = "<group>"; };
+		6748E47B286BF40F00CF9641 /* HomeViewConroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewConroller.h; sourceTree = "<group>"; };
+		6748E47C286BF40F00CF9641 /* HomeViewConroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewConroller.m; sourceTree = "<group>"; };
+		6748E47E286C02B100CF9641 /* HomeViewConroller+DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeViewConroller+DataSource.h"; sourceTree = "<group>"; };
+		6748E47F286C02B100CF9641 /* HomeViewConroller+DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HomeViewConroller+DataSource.m"; sourceTree = "<group>"; };
+		6748E481286C02FE00CF9641 /* HomeViewDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewDataModel.h; sourceTree = "<group>"; };
+		6748E482286C02FE00CF9641 /* HomeViewDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewDataModel.m; sourceTree = "<group>"; };
+		6748E485286C051A00CF9641 /* MaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
+		6748E48D286C1DED00CF9641 /* GradientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		6748E48E286C1DED00CF9641 /* GradientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
+		6748E48F286C1DED00CF9641 /* GradientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientViewController.xib; sourceTree = "<group>"; };
+		6748E492286C1F3C00CF9641 /* FrameObserverController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrameObserverController.xib; sourceTree = "<group>"; };
+		6748E495286C22A900CF9641 /* TouchPassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchPassViewController.xib; sourceTree = "<group>"; };
+		6748E497286C234700CF9641 /* ViewHiracyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewHiracyController.xib; sourceTree = "<group>"; };
+		6748E499286C242200CF9641 /* MyLayoutController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyLayoutController.xib; sourceTree = "<group>"; };
+		6748E49B286C289700CF9641 /* MaskAnimateController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaskAnimateController.xib; sourceTree = "<group>"; };
+		6748E49D286C2B1700CF9641 /* RippleAnmationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RippleAnmationController.xib; sourceTree = "<group>"; };
+		6748E49F286C2C1C00CF9641 /* GradientImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientImageController.xib; sourceTree = "<group>"; };
+		6748E4A1286C2CF000CF9641 /* FrameAnimationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrameAnimationController.xib; sourceTree = "<group>"; };
+		6748E4A4286C2E6200CF9641 /* DynamicIntroduceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicIntroduceController.h; sourceTree = "<group>"; };
+		6748E4A5286C2E6200CF9641 /* DynamicIntroduceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicIntroduceController.m; sourceTree = "<group>"; };
+		6748E4A6286C2E6200CF9641 /* DynamicIntroduceController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicIntroduceController.xib; sourceTree = "<group>"; };
+		6748E4A9286C2FC200CF9641 /* MyFoldAnimationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFoldAnimationController.xib; sourceTree = "<group>"; };
+		6748E4AB286C306F00CF9641 /* RASwitchImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RASwitchImageController.xib; sourceTree = "<group>"; };
+		6748E4AD286C30F300CF9641 /* HollowButtonController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HollowButtonController.xib; sourceTree = "<group>"; };
+		6748E4AF286C318700CF9641 /* RoundGradientController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundGradientController.xib; sourceTree = "<group>"; };
+		6748E4B1286C322700CF9641 /* HorizenBannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizenBannerViewController.xib; sourceTree = "<group>"; };
+		6748E4B3286C32C200CF9641 /* OptionPageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionPageController.xib; sourceTree = "<group>"; };
+		6748E4B5286C337800CF9641 /* KGAreaTabController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KGAreaTabController.xib; sourceTree = "<group>"; };
 		6759CBBA2502304500EE13DB /* FrameAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameAnimationController.h; sourceTree = "<group>"; };
 		6759CBBB2502304500EE13DB /* FrameAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameAnimationController.m; sourceTree = "<group>"; };
 		676A3BE32609C3F500298065 /* HollowButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HollowButtonController.h; sourceTree = "<group>"; };
@@ -253,8 +296,6 @@
 		6798AB312500DBFA00FA37B7 /* GradientImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientImageController.h; sourceTree = "<group>"; };
 		6798AB322500DBFA00FA37B7 /* GradientImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientImageController.m; sourceTree = "<group>"; };
 		6798AB342500DC4C00FA37B7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		67B7C0EA2541A267003913D0 /* MySlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySlideViewController.h; sourceTree = "<group>"; };
-		67B7C0EB2541A267003913D0 /* MySlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySlideViewController.m; sourceTree = "<group>"; };
 		67B7C0EE2541A3C2003913D0 /* MyFoldAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFoldAnimationController.h; sourceTree = "<group>"; };
 		67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFoldAnimationController.m; sourceTree = "<group>"; };
 		67B7C0F12541A464003913D0 /* FoldMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoldMenuView.h; sourceTree = "<group>"; };
@@ -270,8 +311,6 @@
 		67D0342324AE1129008A676A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67D0342524AE1129008A676A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		67D0342624AE1129008A676A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		67D0342824AE1129008A676A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		67D0342924AE1129008A676A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		67D0342C24AE1129008A676A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67D0342E24AE112C008A676A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D0343124AE112C008A676A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -342,6 +381,7 @@
 			children = (
 				6705833827E0A39100DC0F94 /* KGPlayViewOptionPageAlert */,
 				6705833127E0A2BA00DC0F94 /* OptionPageController.h */,
+				6748E4B3286C32C200CF9641 /* OptionPageController.xib */,
 				6705833227E0A2BA00DC0F94 /* OptionPageController.m */,
 			);
 			path = PlayviewOptionPageAlert;
@@ -350,6 +390,8 @@
 		6705833427E0A38400DC0F94 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6748E420286BECF700CF9641 /* UIView+Frame.h */,
+				6748E421286BECF700CF9641 /* UIView+Frame.m */,
 				6705833527E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m */,
 				6705833627E0A38400DC0F94 /* UIView+KGDeviceAdaptive.h */,
 			);
@@ -394,6 +436,7 @@
 				67149A27285355D1004869BB /* TabView */,
 				67149A2428535417004869BB /* KGAreaTabController.h */,
 				67149A2528535417004869BB /* KGAreaTabController.m */,
+				6748E4B5286C337800CF9641 /* KGAreaTabController.xib */,
 			);
 			path = AreaTabView;
 			sourceTree = "<group>";
@@ -416,6 +459,7 @@
 				67C5C114265E2A7F001B0156 /* RoundGradientLayer.m */,
 				671CF362265E2285007520F8 /* RoundGradientController.h */,
 				671CF363265E2285007520F8 /* RoundGradientController.m */,
+				6748E4AF286C318700CF9641 /* RoundGradientController.xib */,
 			);
 			path = CircleGradient;
 			sourceTree = "<group>";
@@ -429,6 +473,7 @@
 				672AE90B255BEE42009AE982 /* RASwitchImageView.m */,
 				672AE910255BEEB6009AE982 /* RASwitchImageController.h */,
 				672AE911255BEEB6009AE982 /* RASwitchImageController.m */,
+				6748E4AB286C306F00CF9641 /* RASwitchImageController.xib */,
 			);
 			path = ImageViewAnimate;
 			sourceTree = "<group>";
@@ -457,6 +502,7 @@
 		6748E40A286BEBD800CF9641 /* DynamicAlert */ = {
 			isa = PBXGroup;
 			children = (
+				6748E4A3286C2DF700CF9641 /* Slider */,
 				6748E423286BEE1600CF9641 /* Alert */,
 				6748E46C286BEF2900CF9641 /* vipTip */,
 				6748E45A286BEE7C00CF9641 /* menuView */,
@@ -464,8 +510,9 @@
 				6748E43A286BEE1700CF9641 /* NewAlert */,
 				6748E43D286BEE1700CF9641 /* Trumpet */,
 				6748E40E286BEC6100CF9641 /* introduceAlert */,
-				6748E40B286BEBF100CF9641 /* MyIntroduceController.h */,
-				6748E40C286BEBF100CF9641 /* MyIntroduceController.m */,
+				6748E4A4286C2E6200CF9641 /* DynamicIntroduceController.h */,
+				6748E4A5286C2E6200CF9641 /* DynamicIntroduceController.m */,
+				6748E4A6286C2E6200CF9641 /* DynamicIntroduceController.xib */,
 			);
 			path = DynamicAlert;
 			sourceTree = "<group>";
@@ -484,15 +531,6 @@
 				6748E417286BEC6100CF9641 /* dynamic_singer_photo.mp4 */,
 			);
 			path = introduceAlert;
-			sourceTree = "<group>";
-		};
-		6748E41F286BECE900CF9641 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				6748E420286BECF700CF9641 /* UIView+Frame.h */,
-				6748E421286BECF700CF9641 /* UIView+Frame.m */,
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		6748E423286BEE1600CF9641 /* Alert */ = {
@@ -588,12 +626,81 @@
 			path = vipTip;
 			sourceTree = "<group>";
 		};
+		6748E484286C036500CF9641 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				6748E47B286BF40F00CF9641 /* HomeViewConroller.h */,
+				6748E47C286BF40F00CF9641 /* HomeViewConroller.m */,
+				6748E47E286C02B100CF9641 /* HomeViewConroller+DataSource.h */,
+				6748E47F286C02B100CF9641 /* HomeViewConroller+DataSource.m */,
+				6748E481286C02FE00CF9641 /* HomeViewDataModel.h */,
+				6748E482286C02FE00CF9641 /* HomeViewDataModel.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		6748E48B286C1D9600CF9641 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				67149A23285353F2004869BB /* AreaTabView */,
+				6705833027E0A29100DC0F94 /* PlayviewOptionPageAlert */,
+				67DCAE4526BE5F0100C66AA0 /* HorizenBanner */,
+				671CF361265E226B007520F8 /* CircleGradient */,
+				676A3BE22609C3DD00298065 /* HollowButton */,
+				672AE909255BEE2A009AE982 /* ImageViewAnimate */,
+				67B7C0ED2541A3A7003913D0 /* FoldAnimation */,
+				6748E40A286BEBD800CF9641 /* DynamicAlert */,
+				67B7C0E82541A230003913D0 /* FrameAnim */,
+				67B7C0E72541A211003913D0 /* Gradienimg */,
+				67B7C0E62541A208003913D0 /* RippleAnimation */,
+				67B7C0E52541A1FA003913D0 /* MaskAnimation */,
+				67B7C0E42541A1ED003913D0 /* MyLayout */,
+				67B7C0E32541A1CB003913D0 /* ViewHiracy */,
+				67B7C0E12541A1A6003913D0 /* TouchPass */,
+				67B7C0E02541A198003913D0 /* FrameObserve */,
+				6748E48C286C1DBA00CF9641 /* Gradient */,
+				67B7C0E22541A1B3003913D0 /* Mask */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6748E48C286C1DBA00CF9641 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				6748E48D286C1DED00CF9641 /* GradientViewController.h */,
+				6748E48E286C1DED00CF9641 /* GradientViewController.m */,
+				6748E48F286C1DED00CF9641 /* GradientViewController.xib */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		6748E4A3286C2DF700CF9641 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				6748E471286BF03C00CF9641 /* MyDynamicSliderView.h */,
+				6748E470286BF03C00CF9641 /* MyDynamicSliderView.m */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		6748E4B8286C34BC00CF9641 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6798AB342500DC4C00FA37B7 /* 2.png */,
+				67DF52DF24F4AD780021D7BF /* 1.png */,
+				67413A6824B5C72B00913664 /* 11.png */,
+				67D0342E24AE112C008A676A /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		676A3BE22609C3DD00298065 /* HollowButton */ = {
 			isa = PBXGroup;
 			children = (
 				676A3BEC2609C41800298065 /* button */,
 				676A3BE32609C3F500298065 /* HollowButtonController.h */,
 				676A3BE42609C3F500298065 /* HollowButtonController.m */,
+				6748E4AD286C30F300CF9641 /* HollowButtonController.xib */,
 			);
 			path = HollowButton;
 			sourceTree = "<group>";
@@ -626,21 +733,11 @@
 			path = GradientImage;
 			sourceTree = "<group>";
 		};
-		67B7C0DC2541A171003913D0 /* Slide */ = {
-			isa = PBXGroup;
-			children = (
-				6748E471286BF03C00CF9641 /* MyDynamicSliderView.h */,
-				6748E470286BF03C00CF9641 /* MyDynamicSliderView.m */,
-				67B7C0EA2541A267003913D0 /* MySlideViewController.h */,
-				67B7C0EB2541A267003913D0 /* MySlideViewController.m */,
-			);
-			path = Slide;
-			sourceTree = "<group>";
-		};
 		67B7C0E02541A198003913D0 /* FrameObserve */ = {
 			isa = PBXGroup;
 			children = (
 				67413A7024B6AF9500913664 /* FrameObserverController.h */,
+				6748E492286C1F3C00CF9641 /* FrameObserverController.xib */,
 				67413A7124B6AF9500913664 /* FrameObserverController.m */,
 			);
 			path = FrameObserve;
@@ -649,6 +746,7 @@
 		67B7C0E12541A1A6003913D0 /* TouchPass */ = {
 			isa = PBXGroup;
 			children = (
+				6748E495286C22A900CF9641 /* TouchPassViewController.xib */,
 				67413A7624B6FC8200913664 /* MyCoverView.h */,
 				67413A7724B6FC8200913664 /* MyCoverView.m */,
 				67413A7324B6F8E000913664 /* TouchPassViewController.h */,
@@ -662,6 +760,7 @@
 			children = (
 				67C6637424B81C3E00C80AEE /* MaskViewController.h */,
 				67C6637524B81C3E00C80AEE /* MaskViewController.m */,
+				6748E485286C051A00CF9641 /* MaskViewController.xib */,
 			);
 			path = Mask;
 			sourceTree = "<group>";
@@ -671,6 +770,7 @@
 			children = (
 				67C6637724B842E800C80AEE /* ViewHiracyController.h */,
 				67C6637824B842E800C80AEE /* ViewHiracyController.m */,
+				6748E497286C234700CF9641 /* ViewHiracyController.xib */,
 			);
 			path = ViewHiracy;
 			sourceTree = "<group>";
@@ -680,6 +780,7 @@
 			children = (
 				677A95C524BC33C70035144E /* MyLayoutController.h */,
 				677A95C624BC33C70035144E /* MyLayoutController.m */,
+				6748E499286C242200CF9641 /* MyLayoutController.xib */,
 			);
 			path = MyLayout;
 			sourceTree = "<group>";
@@ -689,6 +790,7 @@
 			children = (
 				67DF52E124F4AD960021D7BF /* MaskAnimateController.h */,
 				67DF52E224F4AD960021D7BF /* MaskAnimateController.m */,
+				6748E49B286C289700CF9641 /* MaskAnimateController.xib */,
 			);
 			path = MaskAnimation;
 			sourceTree = "<group>";
@@ -696,8 +798,10 @@
 		67B7C0E62541A208003913D0 /* RippleAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				67810F0124F662E700F6C423 /* Ripple */,
 				67810F0524F662FD00F6C423 /* RippleAnmationController.h */,
 				67810F0624F662FD00F6C423 /* RippleAnmationController.m */,
+				6748E49D286C2B1700CF9641 /* RippleAnmationController.xib */,
 			);
 			path = RippleAnimation;
 			sourceTree = "<group>";
@@ -705,7 +809,9 @@
 		67B7C0E72541A211003913D0 /* Gradienimg */ = {
 			isa = PBXGroup;
 			children = (
+				6798AB2D2500DB6700FA37B7 /* GradientImage */,
 				6798AB312500DBFA00FA37B7 /* GradientImageController.h */,
+				6748E49F286C2C1C00CF9641 /* GradientImageController.xib */,
 				6798AB322500DBFA00FA37B7 /* GradientImageController.m */,
 			);
 			path = Gradienimg;
@@ -716,6 +822,7 @@
 			children = (
 				6759CBBA2502304500EE13DB /* FrameAnimationController.h */,
 				6759CBBB2502304500EE13DB /* FrameAnimationController.m */,
+				6748E4A1286C2CF000CF9641 /* FrameAnimationController.xib */,
 			);
 			path = FrameAnim;
 			sourceTree = "<group>";
@@ -723,10 +830,11 @@
 		67B7C0E92541A23F003913D0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				6798AB342500DC4C00FA37B7 /* 2.png */,
-				67DF52DF24F4AD780021D7BF /* 1.png */,
-				67413A6824B5C72B00913664 /* 11.png */,
-				67D0342E24AE112C008A676A /* Assets.xcassets */,
+				67D0342524AE1129008A676A /* SceneDelegate.h */,
+				67D0342624AE1129008A676A /* SceneDelegate.m */,
+				67149A2E28535609004869BB /* PrefixHeader.pch */,
+				67D0342224AE1129008A676A /* AppDelegate.h */,
+				67D0342324AE1129008A676A /* AppDelegate.m */,
 				67D0343024AE112C008A676A /* LaunchScreen.storyboard */,
 				67D0343324AE112C008A676A /* Info.plist */,
 				67D0343424AE112C008A676A /* main.m */,
@@ -739,6 +847,7 @@
 			children = (
 				67B7C0EE2541A3C2003913D0 /* MyFoldAnimationController.h */,
 				67B7C0EF2541A3C2003913D0 /* MyFoldAnimationController.m */,
+				6748E4A9286C2FC200CF9641 /* MyFoldAnimationController.xib */,
 				67B7C0F12541A464003913D0 /* FoldMenuView.h */,
 				67B7C0F22541A464003913D0 /* FoldMenuView.m */,
 			);
@@ -770,39 +879,12 @@
 		67D0342124AE1129008A676A /* TestActionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6748E41F286BECE900CF9641 /* Tools */,
-				6748E40A286BEBD800CF9641 /* DynamicAlert */,
-				67149A23285353F2004869BB /* AreaTabView */,
-				6705833427E0A38400DC0F94 /* Utils */,
-				6705833027E0A29100DC0F94 /* PlayviewOptionPageAlert */,
-				67DCAE4526BE5F0100C66AA0 /* HorizenBanner */,
-				671CF361265E226B007520F8 /* CircleGradient */,
-				676A3BE22609C3DD00298065 /* HollowButton */,
-				672AE909255BEE2A009AE982 /* ImageViewAnimate */,
-				67B7C0ED2541A3A7003913D0 /* FoldAnimation */,
-				67B7C0E92541A23F003913D0 /* Other */,
-				67B7C0E82541A230003913D0 /* FrameAnim */,
-				67B7C0E72541A211003913D0 /* Gradienimg */,
-				67B7C0E62541A208003913D0 /* RippleAnimation */,
-				67B7C0E52541A1FA003913D0 /* MaskAnimation */,
-				67B7C0E42541A1ED003913D0 /* MyLayout */,
-				67B7C0E32541A1CB003913D0 /* ViewHiracy */,
-				67B7C0E22541A1B3003913D0 /* Mask */,
-				67B7C0E12541A1A6003913D0 /* TouchPass */,
-				67B7C0E02541A198003913D0 /* FrameObserve */,
-				67B7C0DC2541A171003913D0 /* Slide */,
-				6798AB2D2500DB6700FA37B7 /* GradientImage */,
-				67810F0124F662E700F6C423 /* Ripple */,
-				67D0342224AE1129008A676A /* AppDelegate.h */,
-				67D0342324AE1129008A676A /* AppDelegate.m */,
-				67D0342524AE1129008A676A /* SceneDelegate.h */,
-				67D0342624AE1129008A676A /* SceneDelegate.m */,
-				67D0342824AE1129008A676A /* ViewController.h */,
-				67D0342924AE1129008A676A /* ViewController.m */,
-				67413A6D24B6AEC500913664 /* MyTableViewController.h */,
-				67413A6E24B6AEC500913664 /* MyTableViewController.m */,
+				6748E4B8286C34BC00CF9641 /* Source */,
+				6748E484286C036500CF9641 /* HomePage */,
+				6748E48B286C1D9600CF9641 /* Modules */,
 				67D0342B24AE1129008A676A /* Main.storyboard */,
-				67149A2E28535609004869BB /* PrefixHeader.pch */,
+				67B7C0E92541A23F003913D0 /* Other */,
+				6705833427E0A38400DC0F94 /* Utils */,
 			);
 			path = TestActionDemo;
 			sourceTree = "<group>";
@@ -830,6 +912,7 @@
 			children = (
 				67DCAE4626BE5F1600C66AA0 /* HorizenBannerViewController.h */,
 				67DCAE4726BE5F1600C66AA0 /* HorizenBannerViewController.m */,
+				6748E4B1286C322700CF9641 /* HorizenBannerViewController.xib */,
 				67DCAE5F26BE5FD600C66AA0 /* kg_ic_player_close_large@3x.png */,
 				67DCAE6026BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png */,
 				67DCAE4926BE5FCC00C66AA0 /* videoEntrance */,
@@ -996,6 +1079,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6748E44C286BEE1700CF9641 /* svg_kg_common_ic_player_mode_dynamic@3x.png in Resources */,
+				6748E4A0286C2C1C00CF9641 /* GradientImageController.xib in Resources */,
 				6748E446286BEE1700CF9641 /* dynamic_vip_alert@3x.png in Resources */,
 				6748E41E286BEC6200CF9641 /* dynamic_singer_photo.mp4 in Resources */,
 				672AE920255BEEE7009AE982 /* 1.jpg in Resources */,
@@ -1005,34 +1089,51 @@
 				6798AB352500DC4C00FA37B7 /* 2.png in Resources */,
 				6705835227E0A39100DC0F94 /* player_bgmode_ic_guide@3x.png in Resources */,
 				6748E457286BEE1700CF9641 /* player_mode_popups_trumpet_white@3x.jpg in Resources */,
+				6748E4B4286C32C200CF9641 /* OptionPageController.xib in Resources */,
 				6748E451286BEE1700CF9641 /* kg_icon_player_menu_mode_cd2_default@3x.png in Resources */,
+				6748E4B6286C337800CF9641 /* KGAreaTabController.xib in Resources */,
 				672AE91D255BEEE7009AE982 /* 5.jpg in Resources */,
 				6705835327E0A39100DC0F94 /* player_bgmode_popups_ic_trumpet@3x.png in Resources */,
+				6748E493286C1F3C00CF9641 /* FrameObserverController.xib in Resources */,
 				6748E448286BEE1700CF9641 /* headwear_alert_close_btn@2x.png in Resources */,
 				6748E450286BEE1700CF9641 /* kg_icon_player_menu_mode_cd2_photo@3x.png in Resources */,
 				676A3BF72609C4EE00298065 /* 1@3x.png in Resources */,
 				6705834D27E0A39100DC0F94 /* player_bgmode_popups_ic_mv@3x.png in Resources */,
 				672AE91C255BEEE7009AE982 /* 4.jpg in Resources */,
+				6748E49C286C289700CF9641 /* MaskAnimateController.xib in Resources */,
 				6748E419286BEC6200CF9641 /* videoshare_new@2x.png in Resources */,
 				6748E44F286BEE1700CF9641 /* kg_icon_player_menu_mode_cd2_square@3x.png in Resources */,
 				6705834B27E0A39100DC0F94 /* player_bgmode_popups_ic_dynamic@3x.png in Resources */,
+				6748E49A286C242200CF9641 /* MyLayoutController.xib in Resources */,
 				6748E41B286BEC6200CF9641 /* singerPhoto.jpg in Resources */,
 				672AE91E255BEEE7009AE982 /* 2.jpg in Resources */,
 				6748E418286BEC6200CF9641 /* back_mode_selected@2x.png in Resources */,
+				6748E4AE286C30F300CF9641 /* HollowButtonController.xib in Resources */,
 				67D0343224AE112C008A676A /* LaunchScreen.storyboard in Resources */,
 				6748E41A286BEC6200CF9641 /* back_mode_selected@3x.png in Resources */,
 				672AE91F255BEEE7009AE982 /* 3.jpg in Resources */,
 				67D0342F24AE112C008A676A /* Assets.xcassets in Resources */,
+				6748E4AC286C306F00CF9641 /* RASwitchImageController.xib in Resources */,
+				6748E4B0286C318700CF9641 /* RoundGradientController.xib in Resources */,
 				67D0342D24AE1129008A676A /* Main.storyboard in Resources */,
+				6748E4A2286C2CF000CF9641 /* FrameAnimationController.xib in Resources */,
+				6748E4AA286C2FC200CF9641 /* MyFoldAnimationController.xib in Resources */,
 				6705835027E0A39100DC0F94 /* player_bgmode_popups_bg_arrow@3x.png in Resources */,
 				67DCAE6226BE5FD700C66AA0 /* kg_ic_player_video_play_small@3x.png in Resources */,
 				6748E44D286BEE1700CF9641 /* svg_kg_playpage_mask_mode_ic_selcted@3x.png in Resources */,
+				6748E4B2286C322700CF9641 /* HorizenBannerViewController.xib in Resources */,
 				6705834C27E0A39100DC0F94 /* player_bgmode_ic_tab_arrow@3x.png in Resources */,
 				6705834F27E0A39100DC0F94 /* player_bgmode_popups_ic_selcted@3x.png in Resources */,
+				6748E486286C051A00CF9641 /* MaskViewController.xib in Resources */,
 				67DCAE6126BE5FD700C66AA0 /* kg_ic_player_close_large@3x.png in Resources */,
+				6748E49E286C2B1700CF9641 /* RippleAnmationController.xib in Resources */,
 				67413A6924B5C72C00913664 /* 11.png in Resources */,
+				6748E4A8286C2E6200CF9641 /* DynamicIntroduceController.xib in Resources */,
+				6748E491286C1DED00CF9641 /* GradientViewController.xib in Resources */,
 				6705834E27E0A39100DC0F94 /* player_bgmode_popups_ic_spectrum@3x.png in Resources */,
+				6748E498286C234700CF9641 /* ViewHiracyController.xib in Resources */,
 				67DF52E024F4AD780021D7BF /* 1.png in Resources */,
+				6748E496286C22A900CF9641 /* TouchPassViewController.xib in Resources */,
 				6748E44E286BEE1700CF9641 /* kg_icon_player_menu_mode_cd2_spin@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1165,15 +1266,17 @@
 				6748E453286BEE1700CF9641 /* KGPlayViewBackModeSwithchCell.m in Sources */,
 				6748E452286BEE1700CF9641 /* KGPlayViewBackModel.m in Sources */,
 				6705835527E0A39100DC0F94 /* KGPlayViewOptionPageConfig.m in Sources */,
+				6748E483286C02FE00CF9641 /* HomeViewDataModel.m in Sources */,
 				6748E459286BEE1700CF9641 /* KGPlayViewTrumpetMenuView.m in Sources */,
 				67149A2D285355D1004869BB /* KGPlayQueueTabView.m in Sources */,
 				67413A7824B6FC8200913664 /* MyCoverView.m in Sources */,
 				676A3BEF2609C42C00298065 /* HollowButton.m in Sources */,
-				67D0342A24AE1129008A676A /* ViewController.m in Sources */,
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				6748E454286BEE1700CF9641 /* KGDynamicGuideAlert.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
 				67DCAE5A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m in Sources */,
+				6748E4A7286C2E6200CF9641 /* DynamicIntroduceController.m in Sources */,
+				6748E480286C02B100CF9641 /* HomeViewConroller+DataSource.m in Sources */,
 				67149A2C285355D1004869BB /* KGPlayQueueTabCell.m in Sources */,
 				67149A2628535417004869BB /* KGAreaTabController.m in Sources */,
 				671CF364265E2285007520F8 /* RoundGradientController.m in Sources */,
@@ -1191,13 +1294,14 @@
 				672AE912255BEEB6009AE982 /* RASwitchImageController.m in Sources */,
 				672AE931255BF6A0009AE982 /* AnimationQueueManager.m in Sources */,
 				6748E422286BECF700CF9641 /* UIView+Frame.m in Sources */,
+				6748E490286C1DED00CF9641 /* GradientViewController.m in Sources */,
 				672AE90C255BEE42009AE982 /* RASwitchImageView.m in Sources */,
+				6748E47D286BF40F00CF9641 /* HomeViewConroller.m in Sources */,
 				6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */,
 				67DCAE4826BE5F1600C66AA0 /* HorizenBannerViewController.m in Sources */,
 				6748E41D286BEC6200CF9641 /* KGDynamicIntroduceMenu.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				6705833327E0A2BA00DC0F94 /* OptionPageController.m in Sources */,
-				6748E40D286BEBF100CF9641 /* MyIntroduceController.m in Sources */,
 				6748E44A286BEE1700CF9641 /* KGPlayViewBackModeCell.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
 				67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */,
@@ -1206,7 +1310,6 @@
 				6748E44B286BEE1700CF9641 /* KGPlayViewBackModeAlert.m in Sources */,
 				6798AB332500DBFA00FA37B7 /* GradientImageController.m in Sources */,
 				6748E449286BEE1700CF9641 /* KGDynamicVipAlertView.m in Sources */,
-				67413A6F24B6AEC500913664 /* MyTableViewController.m in Sources */,
 				67C6637624B81C3E00C80AEE /* MaskViewController.m in Sources */,
 				67D0343524AE112C008A676A /* main.m in Sources */,
 				6705835427E0A39100DC0F94 /* KGPlayViewOptionGuideView.m in Sources */,
@@ -1216,7 +1319,6 @@
 				67D0342724AE1129008A676A /* SceneDelegate.m in Sources */,
 				6748E472286BF03C00CF9641 /* MyDynamicSliderView.m in Sources */,
 				677A95C724BC33C70035144E /* MyLayoutController.m in Sources */,
-				67B7C0EC2541A267003913D0 /* MySlideViewController.m in Sources */,
 				6748E468286BEE7C00CF9641 /* KGDynamicMenuView.m in Sources */,
 				6705835727E0A39100DC0F94 /* KGPlayViewOptionPageAlert.m in Sources */,
 				6748E46F286BEF2900CF9641 /* KGDynamicVipTipView.m in Sources */,
