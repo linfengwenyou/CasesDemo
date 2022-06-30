@@ -17,6 +17,7 @@
 #import "KGPlayViewBackModeAlert.h"
 #import "KGPlayViewTrumpetAlert.h"
 #import "KGDynamicGuideAlert.h"
+#import "KGLyricEffectIntroduceAlert.h"
 
 
 @interface DynamicIntroduceController ()
@@ -29,6 +30,7 @@
 
 @property (nonatomic, strong) KGPlayViewTrumpetAlert *trumpetAlert;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (nonatomic, strong) KGLyricEffectIntroduceAlert *lyricAlert;
 @end
 
 @implementation DynamicIntroduceController
@@ -45,15 +47,29 @@
 
 
 - (IBAction)didClickButton:(UIButton *)sender {
-    [self.alert showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
-    //    [self.trumpetAlert  showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
-    
-    //    [self.backModeAlert showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
-    //    [self.menuView showWithAnimation];
-    //    [self.guidAlert show];
+    [self.backModeAlert showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
+ }
+
+// 律动
+- (IBAction)didClickTrumpet:(UIButton *)sender {
+    [self.trumpetAlert  showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
 }
 
+- (IBAction)didClickAlertAction:(UIButton *)sender {
+    [self.alert showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
+}
 
+- (IBAction)didClickLyricEffect:(UIButton *)sender {
+    [self.lyricAlert showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
+}
+
+- (IBAction)didClickMenu:(UIButton *)sender {
+        [self.menuView showWithAnimation];
+}
+
+- (IBAction)didClickGuideAction:(UIButton *)sender {
+    [self.guidAlert show];
+}
 
 - (void)showMySliderView {
     MyDynamicSliderView *slideView = [[MyDynamicSliderView alloc] initWithFrame:CGRectZero anchors:@[@"轻度",@"柔和",@"标准",@"强烈"]];
@@ -161,5 +177,12 @@
     }
     return _trumpetAlert;
 }
-
+// 歌词动效使用
+- (KGLyricEffectIntroduceAlert *)lyricAlert {
+    if (!_lyricAlert) {
+        _lyricAlert = [KGLyricEffectIntroduceAlert new];
+        _lyricAlert.dismissFrame = CGRectMake(200, 100, 20, 20);
+    }
+    return _lyricAlert;
+}
 @end

@@ -19,20 +19,65 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5d-c2-Kqj">
-                    <rect key="frame" x="166" y="432.5" width="82" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="背景效果"/>
-                    <connections>
-                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="jZg-wx-WNv"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WCt-Kj-tiF">
+                    <rect key="frame" x="156.5" y="280" width="101" height="336"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lr-fx-1Bo">
+                            <rect key="frame" x="24" y="0.0" width="53" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="律动"/>
+                            <connections>
+                                <action selector="didClickTrumpet:" destination="-1" eventType="touchUpInside" id="4Bo-gx-0bb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxT-P6-ShV">
+                            <rect key="frame" x="24" y="61" width="53" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="弹窗"/>
+                            <connections>
+                                <action selector="didClickAlertAction:" destination="-1" eventType="touchUpInside" id="ixq-OR-gKZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhb-g5-Rb2">
+                            <rect key="frame" x="10" y="122" width="81.5" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="歌词动效"/>
+                            <connections>
+                                <action selector="didClickLyricEffect:" destination="-1" eventType="touchUpInside" id="h4n-a9-VIw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbH-bo-G8d">
+                            <rect key="frame" x="0.0" y="183" width="101" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="menuAction"/>
+                            <connections>
+                                <action selector="didClickMenu:" destination="-1" eventType="touchUpInside" id="F4s-jk-Djv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5d-c2-Kqj">
+                            <rect key="frame" x="10" y="244" width="81.5" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="背景效果"/>
+                            <connections>
+                                <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="jZg-wx-WNv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nU1-Sy-Y95">
+                            <rect key="frame" x="24" y="305" width="53" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="引导"/>
+                            <connections>
+                                <action selector="didClickGuideAction:" destination="-1" eventType="touchUpInside" id="GBk-RD-jfN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="P5d-c2-Kqj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0vt-6O-OOC"/>
-                <constraint firstItem="P5d-c2-Kqj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5Qn-9p-XnG"/>
+                <constraint firstItem="WCt-Kj-tiF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="IqM-VG-Qp4"/>
+                <constraint firstItem="WCt-Kj-tiF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dbJ-U0-1wF"/>
             </constraints>
             <point key="canvasLocation" x="132" y="119"/>
         </view>

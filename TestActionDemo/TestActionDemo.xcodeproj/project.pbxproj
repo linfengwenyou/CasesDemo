@@ -95,6 +95,17 @@
 		6748E4B2286C322700CF9641 /* HorizenBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4B1286C322700CF9641 /* HorizenBannerViewController.xib */; };
 		6748E4B4286C32C200CF9641 /* OptionPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4B3286C32C200CF9641 /* OptionPageController.xib */; };
 		6748E4B6286C337800CF9641 /* KGAreaTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4B5286C337800CF9641 /* KGAreaTabController.xib */; };
+		6748E4E7286D49C200CF9641 /* KGLyricEffectIntroduceMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E4DB286D49C200CF9641 /* KGLyricEffectIntroduceMenu.m */; };
+		6748E4E8286D49C200CF9641 /* KGLyricEffectIntroduceAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E4DD286D49C200CF9641 /* KGLyricEffectIntroduceAlert.m */; };
+		6748E4E9286D49C200CF9641 /* lyric_ink_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4DF286D49C200CF9641 /* lyric_ink_default@3x.png */; };
+		6748E4EA286D49C200CF9641 /* lyric_effect_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E0286D49C200CF9641 /* lyric_effect_select@3x.png */; };
+		6748E4EB286D49C200CF9641 /* lyric_star_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E1286D49C200CF9641 /* lyric_star_default@3x.png */; };
+		6748E4EC286D49C200CF9641 /* lyric_effect_alert_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E2286D49C200CF9641 /* lyric_effect_alert_close@3x.png */; };
+		6748E4ED286D49C200CF9641 /* lyric_default_ink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E3286D49C200CF9641 /* lyric_default_ink.mp4 */; };
+		6748E4EE286D49C200CF9641 /* lyric_effect_unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E4286D49C200CF9641 /* lyric_effect_unselect@3x.png */; };
+		6748E4EF286D49C200CF9641 /* lyric_default_star.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E5286D49C200CF9641 /* lyric_default_star.mp4 */; };
+		6748E4F0286D49C200CF9641 /* lyric_effect_back_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6748E4E6286D49C200CF9641 /* lyric_effect_back_image@3x.png */; };
+		6748E4F3286D4B3000CF9641 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6748E4F1286D4B3000CF9641 /* UIColor+Tools.m */; };
 		6759CBBC2502304500EE13DB /* FrameAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6759CBBB2502304500EE13DB /* FrameAnimationController.m */; };
 		676A3BE52609C3F500298065 /* HollowButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676A3BE42609C3F500298065 /* HollowButtonController.m */; };
 		676A3BEF2609C42C00298065 /* HollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 676A3BEE2609C42C00298065 /* HollowButton.m */; };
@@ -278,6 +289,20 @@
 		6748E4B1286C322700CF9641 /* HorizenBannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizenBannerViewController.xib; sourceTree = "<group>"; };
 		6748E4B3286C32C200CF9641 /* OptionPageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionPageController.xib; sourceTree = "<group>"; };
 		6748E4B5286C337800CF9641 /* KGAreaTabController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KGAreaTabController.xib; sourceTree = "<group>"; };
+		6748E4DA286D49C200CF9641 /* KGLyricEffectIntroduceAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLyricEffectIntroduceAlert.h; sourceTree = "<group>"; };
+		6748E4DB286D49C200CF9641 /* KGLyricEffectIntroduceMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLyricEffectIntroduceMenu.m; sourceTree = "<group>"; };
+		6748E4DC286D49C200CF9641 /* KGLyricEffectIntroduceMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLyricEffectIntroduceMenu.h; sourceTree = "<group>"; };
+		6748E4DD286D49C200CF9641 /* KGLyricEffectIntroduceAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLyricEffectIntroduceAlert.m; sourceTree = "<group>"; };
+		6748E4DF286D49C200CF9641 /* lyric_ink_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyric_ink_default@3x.png"; sourceTree = "<group>"; };
+		6748E4E0286D49C200CF9641 /* lyric_effect_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyric_effect_select@3x.png"; sourceTree = "<group>"; };
+		6748E4E1286D49C200CF9641 /* lyric_star_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyric_star_default@3x.png"; sourceTree = "<group>"; };
+		6748E4E2286D49C200CF9641 /* lyric_effect_alert_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyric_effect_alert_close@3x.png"; sourceTree = "<group>"; };
+		6748E4E3286D49C200CF9641 /* lyric_default_ink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lyric_default_ink.mp4; sourceTree = "<group>"; };
+		6748E4E4286D49C200CF9641 /* lyric_effect_unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyric_effect_unselect@3x.png"; sourceTree = "<group>"; };
+		6748E4E5286D49C200CF9641 /* lyric_default_star.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lyric_default_star.mp4; sourceTree = "<group>"; };
+		6748E4E6286D49C200CF9641 /* lyric_effect_back_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyric_effect_back_image@3x.png"; sourceTree = "<group>"; };
+		6748E4F1286D4B3000CF9641 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		6748E4F2286D4B3000CF9641 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
 		6759CBBA2502304500EE13DB /* FrameAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameAnimationController.h; sourceTree = "<group>"; };
 		6759CBBB2502304500EE13DB /* FrameAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameAnimationController.m; sourceTree = "<group>"; };
 		676A3BE32609C3F500298065 /* HollowButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HollowButtonController.h; sourceTree = "<group>"; };
@@ -390,6 +415,8 @@
 		6705833427E0A38400DC0F94 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6748E4F2286D4B3000CF9641 /* UIColor+Tools.h */,
+				6748E4F1286D4B3000CF9641 /* UIColor+Tools.m */,
 				6748E420286BECF700CF9641 /* UIView+Frame.h */,
 				6748E421286BECF700CF9641 /* UIView+Frame.m */,
 				6705833527E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m */,
@@ -502,6 +529,7 @@
 		6748E40A286BEBD800CF9641 /* DynamicAlert */ = {
 			isa = PBXGroup;
 			children = (
+				6748E4D9286D49C200CF9641 /* LyricGuideAlert */,
 				6748E4A3286C2DF700CF9641 /* Slider */,
 				6748E423286BEE1600CF9641 /* Alert */,
 				6748E46C286BEF2900CF9641 /* vipTip */,
@@ -692,6 +720,33 @@
 				67D0342E24AE112C008A676A /* Assets.xcassets */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		6748E4D9286D49C200CF9641 /* LyricGuideAlert */ = {
+			isa = PBXGroup;
+			children = (
+				6748E4DA286D49C200CF9641 /* KGLyricEffectIntroduceAlert.h */,
+				6748E4DB286D49C200CF9641 /* KGLyricEffectIntroduceMenu.m */,
+				6748E4DC286D49C200CF9641 /* KGLyricEffectIntroduceMenu.h */,
+				6748E4DD286D49C200CF9641 /* KGLyricEffectIntroduceAlert.m */,
+				6748E4DE286D49C200CF9641 /* src */,
+			);
+			path = LyricGuideAlert;
+			sourceTree = "<group>";
+		};
+		6748E4DE286D49C200CF9641 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6748E4DF286D49C200CF9641 /* lyric_ink_default@3x.png */,
+				6748E4E0286D49C200CF9641 /* lyric_effect_select@3x.png */,
+				6748E4E1286D49C200CF9641 /* lyric_star_default@3x.png */,
+				6748E4E2286D49C200CF9641 /* lyric_effect_alert_close@3x.png */,
+				6748E4E3286D49C200CF9641 /* lyric_default_ink.mp4 */,
+				6748E4E4286D49C200CF9641 /* lyric_effect_unselect@3x.png */,
+				6748E4E5286D49C200CF9641 /* lyric_default_star.mp4 */,
+				6748E4E6286D49C200CF9641 /* lyric_effect_back_image@3x.png */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		676A3BE22609C3DD00298065 /* HollowButton */ = {
@@ -1081,6 +1136,7 @@
 				6748E44C286BEE1700CF9641 /* svg_kg_common_ic_player_mode_dynamic@3x.png in Resources */,
 				6748E4A0286C2C1C00CF9641 /* GradientImageController.xib in Resources */,
 				6748E446286BEE1700CF9641 /* dynamic_vip_alert@3x.png in Resources */,
+				6748E4EA286D49C200CF9641 /* lyric_effect_select@3x.png in Resources */,
 				6748E41E286BEC6200CF9641 /* dynamic_singer_photo.mp4 in Resources */,
 				672AE920255BEEE7009AE982 /* 1.jpg in Resources */,
 				6748E456286BEE1700CF9641 /* svg_kg_common_ic_trumpet@3x.png in Resources */,
@@ -1098,24 +1154,30 @@
 				6748E448286BEE1700CF9641 /* headwear_alert_close_btn@2x.png in Resources */,
 				6748E450286BEE1700CF9641 /* kg_icon_player_menu_mode_cd2_photo@3x.png in Resources */,
 				676A3BF72609C4EE00298065 /* 1@3x.png in Resources */,
+				6748E4EF286D49C200CF9641 /* lyric_default_star.mp4 in Resources */,
+				6748E4F0286D49C200CF9641 /* lyric_effect_back_image@3x.png in Resources */,
 				6705834D27E0A39100DC0F94 /* player_bgmode_popups_ic_mv@3x.png in Resources */,
 				672AE91C255BEEE7009AE982 /* 4.jpg in Resources */,
 				6748E49C286C289700CF9641 /* MaskAnimateController.xib in Resources */,
 				6748E419286BEC6200CF9641 /* videoshare_new@2x.png in Resources */,
 				6748E44F286BEE1700CF9641 /* kg_icon_player_menu_mode_cd2_square@3x.png in Resources */,
 				6705834B27E0A39100DC0F94 /* player_bgmode_popups_ic_dynamic@3x.png in Resources */,
+				6748E4EB286D49C200CF9641 /* lyric_star_default@3x.png in Resources */,
 				6748E49A286C242200CF9641 /* MyLayoutController.xib in Resources */,
 				6748E41B286BEC6200CF9641 /* singerPhoto.jpg in Resources */,
 				672AE91E255BEEE7009AE982 /* 2.jpg in Resources */,
 				6748E418286BEC6200CF9641 /* back_mode_selected@2x.png in Resources */,
+				6748E4E9286D49C200CF9641 /* lyric_ink_default@3x.png in Resources */,
 				6748E4AE286C30F300CF9641 /* HollowButtonController.xib in Resources */,
 				67D0343224AE112C008A676A /* LaunchScreen.storyboard in Resources */,
 				6748E41A286BEC6200CF9641 /* back_mode_selected@3x.png in Resources */,
 				672AE91F255BEEE7009AE982 /* 3.jpg in Resources */,
+				6748E4EC286D49C200CF9641 /* lyric_effect_alert_close@3x.png in Resources */,
 				67D0342F24AE112C008A676A /* Assets.xcassets in Resources */,
 				6748E4AC286C306F00CF9641 /* RASwitchImageController.xib in Resources */,
 				6748E4B0286C318700CF9641 /* RoundGradientController.xib in Resources */,
 				67D0342D24AE1129008A676A /* Main.storyboard in Resources */,
+				6748E4EE286D49C200CF9641 /* lyric_effect_unselect@3x.png in Resources */,
 				6748E4A2286C2CF000CF9641 /* FrameAnimationController.xib in Resources */,
 				6748E4AA286C2FC200CF9641 /* MyFoldAnimationController.xib in Resources */,
 				6705835027E0A39100DC0F94 /* player_bgmode_popups_bg_arrow@3x.png in Resources */,
@@ -1126,6 +1188,7 @@
 				6705834F27E0A39100DC0F94 /* player_bgmode_popups_ic_selcted@3x.png in Resources */,
 				6748E486286C051A00CF9641 /* MaskViewController.xib in Resources */,
 				67DCAE6126BE5FD700C66AA0 /* kg_ic_player_close_large@3x.png in Resources */,
+				6748E4ED286D49C200CF9641 /* lyric_default_ink.mp4 in Resources */,
 				6748E49E286C2B1700CF9641 /* RippleAnmationController.xib in Resources */,
 				67413A6924B5C72C00913664 /* 11.png in Resources */,
 				6748E4A8286C2E6200CF9641 /* DynamicIntroduceController.xib in Resources */,
@@ -1265,6 +1328,7 @@
 				67B7C0F32541A464003913D0 /* FoldMenuView.m in Sources */,
 				6748E453286BEE1700CF9641 /* KGPlayViewBackModeSwithchCell.m in Sources */,
 				6748E452286BEE1700CF9641 /* KGPlayViewBackModel.m in Sources */,
+				6748E4F3286D4B3000CF9641 /* UIColor+Tools.m in Sources */,
 				6705835527E0A39100DC0F94 /* KGPlayViewOptionPageConfig.m in Sources */,
 				6748E483286C02FE00CF9641 /* HomeViewDataModel.m in Sources */,
 				6748E459286BEE1700CF9641 /* KGPlayViewTrumpetMenuView.m in Sources */,
@@ -1301,11 +1365,13 @@
 				67DCAE4826BE5F1600C66AA0 /* HorizenBannerViewController.m in Sources */,
 				6748E41D286BEC6200CF9641 /* KGDynamicIntroduceMenu.m in Sources */,
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
+				6748E4E7286D49C200CF9641 /* KGLyricEffectIntroduceMenu.m in Sources */,
 				6705833327E0A2BA00DC0F94 /* OptionPageController.m in Sources */,
 				6748E44A286BEE1700CF9641 /* KGPlayViewBackModeCell.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
 				67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */,
 				6748E469286BEE7C00CF9641 /* DynamicSkinsManager.m in Sources */,
+				6748E4E8286D49C200CF9641 /* KGLyricEffectIntroduceAlert.m in Sources */,
 				6748E41C286BEC6200CF9641 /* KGDynamicIntroduceAlert.m in Sources */,
 				6748E44B286BEE1700CF9641 /* KGPlayViewBackModeAlert.m in Sources */,
 				6798AB332500DBFA00FA37B7 /* GradientImageController.m in Sources */,

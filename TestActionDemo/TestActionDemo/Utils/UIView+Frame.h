@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 CGPoint centerFromFrame(CGRect frame);
 CGRect frameFromCenterSize(CGPoint center, CGSize size);
 
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign, readonly) CGFloat x;
+@property (nonatomic, assign, readonly) CGFloat y;
+@property (nonatomic, assign, readonly) CGFloat width;
+@property (nonatomic, assign, readonly) CGFloat height;
 @end
 
 NS_ASSUME_NONNULL_END
