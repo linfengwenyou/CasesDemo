@@ -12,8 +12,8 @@
 #import "UIView+Frame.h"
 
 // 主视图信息
-#define pMainViewHeight 372.0f
-#define pMainViewWidth 265.0f
+#define pMainViewHeight kgADW(372.0f)
+#define pMainViewWidth kgADW(265.0f)
 
 
 @interface KGLyricEffectIntroduceAlert ()
@@ -71,9 +71,9 @@
     closeImag.image = [UIImage imageNamed:@"lyric_effect_alert_close"];
     [self.mainView addSubview:closeImag];
     [closeImag mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.mainView.mas_bottom).mas_offset(25);
+        make.top.mas_equalTo(self.mainView.mas_bottom).mas_offset(kgADW(25));
         make.centerX.mas_equalTo(self.mainView);
-        make.size.mas_equalTo(CGSizeMake(36, 36));
+        make.size.mas_equalTo(CGSizeMake(kgADW(36), kgADW(36)));
     }];
     
     [self.mainView addSubview:self.backImageView];
@@ -88,24 +88,24 @@
     
     
     [self.leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(20);
-        make.top.mas_equalTo(89);
-        make.right.mas_equalTo(self.rightView.mas_left).offset(-15);
-        make.height.mas_equalTo(223);
+        make.left.mas_equalTo(kgADW(20));
+        make.top.mas_equalTo(kgADW(89));
+        make.right.mas_equalTo(self.rightView.mas_left).offset(-kgADW(15));
+        make.height.mas_equalTo(kgADW(223));
     }];
     
     [self.rightView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.leftView);
         make.width.mas_equalTo(self.leftView);
-        make.right.mas_equalTo(-20);
+        make.right.mas_equalTo(-kgADW(20));
         make.height.mas_equalTo(self.leftView);
     }];
     
     [self.ensureButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.leftView.mas_bottom).offset(0);
-        make.left.mas_equalTo(28);
-        make.right.mas_equalTo(-28);
-        make.height.mas_equalTo(35);
+        make.left.mas_equalTo(kgADW(28));
+        make.right.mas_equalTo(-kgADW(28));
+        make.height.mas_equalTo(kgADW(35));
     }];
     
     [self.leftView setupImageUrl:@"lyric_star_default" isMV:NO];
@@ -267,10 +267,10 @@
 - (UIButton *)ensureButton {
     if (!_ensureButton) {
         _ensureButton = [[UIButton alloc]  init];
-        _ensureButton.layer.cornerRadius = 18.0f;
+        _ensureButton.layer.cornerRadius = kgADW(18.0f);
         _ensureButton.layer.masksToBounds = YES;
         _ensureButton.backgroundColor = kLyricSelectedColor;
-        _ensureButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+        _ensureButton.titleLabel.font = [UIFont systemFontOfSize:kgADW(15.0f)];
         [_ensureButton setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
         [_ensureButton addTarget:self action:@selector(didSelectEnsureAction:) forControlEvents:UIControlEventTouchUpInside];
     }

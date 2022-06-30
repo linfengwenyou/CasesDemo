@@ -55,17 +55,17 @@
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.selectedImageView.mas_right).mas_offset(5);
+        make.left.mas_equalTo(self.selectedImageView.mas_right).mas_offset(kgADW(5));
         make.centerY.mas_equalTo(self.selectedImageView);
     }];
     
     [self.selectedImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.picImageView.mas_left).mas_offset(17);
-        make.top.mas_equalTo(self.picImageView.mas_bottom).mas_offset(17);
-        make.size.mas_equalTo(CGSizeMake(16, 16));
+        make.left.mas_equalTo(self.picImageView.mas_left).mas_offset(kgADW(17));
+        make.top.mas_equalTo(self.picImageView.mas_bottom).mas_offset(kgADW(17));
+        make.size.mas_equalTo(CGSizeMake(kgADW(16), kgADW(16)));
     }];
 
-    self.imageOutterLayer = [self outterLayerWithView:self.picContainerView borderWidth:1.5f];
+    self.imageOutterLayer = [self outterLayerWithView:self.picContainerView borderWidth:kgADW(1.5f)];
     [self.picContainerView.layer addSublayer:self.imageOutterLayer];
     
     [self updateState:NO];  // 初始设置为NO
@@ -122,7 +122,7 @@
     playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     playerLayer.frame = self.picImageView.bounds;
     playerLayer.opacity = 0.f;
-    playerLayer.cornerRadius = 6.0f;
+    playerLayer.cornerRadius = kgADW(6.0f);
     playerLayer.masksToBounds = YES;
     
     self.playerLayer = playerLayer;
@@ -179,14 +179,14 @@
 - (UIView *)picContainerView {
     if (!_picContainerView) {
         _picContainerView = [[UIView alloc] init];
-        _picContainerView.layer.cornerRadius = 9.0f;
+        _picContainerView.layer.cornerRadius = kgADW(9.0f);
         _picContainerView.backgroundColor = UIColor.lightGrayColor;
         
         
         // 设置阴影效果
         _picContainerView.layer.shadowColor = UIColorFromRGB(0x3873CA).CGColor;
-        _picContainerView.layer.shadowOffset = CGSizeMake(12, 24);
-        _picContainerView.layer.shadowRadius = 24.f;
+        _picContainerView.layer.shadowOffset = CGSizeMake(kgADW(12), kgADW(24));
+        _picContainerView.layer.shadowRadius = kgADW(24.f);
         _picContainerView.layer.shadowOpacity = 0.12f;
         
         
@@ -198,7 +198,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textColor = [UIColor colorWithRed:129/255.0 green:136/255.0 blue:148/255.0 alpha:1.0];
-        _titleLabel.font = [UIFont systemFontOfSize:12.0f];
+        _titleLabel.font = [UIFont systemFontOfSize:kgADW(12.0f)];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel;
@@ -250,7 +250,7 @@
     if (!_picImageView) {
         _picImageView = [[UIImageView alloc] init];
         _picImageView.contentMode = UIViewContentModeScaleAspectFit;
-        _picImageView.layer.cornerRadius = 9;
+        _picImageView.layer.cornerRadius = kgADW(9);
         _picImageView.layer.masksToBounds = YES;
     }
     return _picImageView;

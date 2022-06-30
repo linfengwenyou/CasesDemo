@@ -14,4 +14,5 @@
 #import <Masonry/Masonry.h>
 #import "UIView+Frame.h"
 #import "UIColor+Tools.h"
+#import "UIView+KGDeviceAdaptive.h"
 #endif /* PrefixHeader_pch */
