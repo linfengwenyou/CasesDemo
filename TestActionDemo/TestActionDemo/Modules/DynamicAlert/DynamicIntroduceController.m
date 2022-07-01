@@ -18,7 +18,7 @@
 #import "KGPlayViewTrumpetAlert.h"
 #import "KGDynamicGuideAlert.h"
 #import "KGLyricEffectIntroduceAlert.h"
-
+#import "KGLyricBackPlayer.h"
 
 @interface DynamicIntroduceController ()
 
@@ -31,6 +31,7 @@
 @property (nonatomic, strong) KGPlayViewTrumpetAlert *trumpetAlert;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (nonatomic, strong) KGLyricEffectIntroduceAlert *lyricAlert;
+@property (nonatomic, strong) KGLyricBackPlayer *backPlayView;
 @end
 
 @implementation DynamicIntroduceController
@@ -41,10 +42,31 @@
     // 显示滑块视图
     [self showMySliderView];
     
+    KGLyricBackPlayer *backPlayView = [[KGLyricBackPlayer alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    [self.view insertSubview:backPlayView atIndex:0];
+    self.backPlayView = backPlayView;
+
     // 显示VIP提示条
 }
 
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.backPlayView.isAppear = YES;
+    NSString *backVideoUrl = [[NSBundle mainBundle] pathForResource:@"back_ink_default" ofType:@"mp4"];
+    [self.backPlayView playWithUrl:backVideoUrl];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+    
+    if (self.backPlayView.isPlaying) {
+        [self.backPlayView pause];
+    } else {
+        [self.backPlayView play];
+    }
+}
 
 - (IBAction)didClickButton:(UIButton *)sender {
     [self.backModeAlert showWithShrinkedFrame:frameFromCenterSize(sender.center, CGSizeZero)];
