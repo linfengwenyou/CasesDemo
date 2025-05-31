@@ -102,13 +102,24 @@ static NSString * const reuseIdentifier = @"HomeViewControllerCell";
 - (UIViewController *)vcWihHomeVCModel:(HomeViewDataModel *)model {
     Class vcClass = NSClassFromString(model.className);
     
-    UIViewController *vcc = [vcClass alloc];
-    UIViewController *vc = [vcc initWithNibName:model.className bundle:nil];
-    vc.title = model.title;
+    // 判断文件是否存在，如果不存在xib，则使用init
+    UIViewController *vc = nil;
+    if([self isExistWithName:model.className]) {
+        UIViewController *vcc = [vcClass alloc];
+        vc = [vcc initWithNibName:model.className bundle:nil];
+        vc.title = model.title;
+    } else {
+        vc = [[vcClass alloc] init];
+        vc.title = model.title;
+    }
     
     return vc;
 }
 
+- (BOOL)isExistWithName:(NSString *)xibName {
+    NSString *xibPath = [[NSBundle mainBundle] pathForResource:xibName ofType:@"nib"];
+    return xibPath.length > 0;
+}
 
 
 

@@ -90,6 +90,10 @@
     HomeViewDataModel *ruleModel = [HomeViewDataModel dataModelWithTitle:@"通用尺子" className:@"CommonRulerController"];
     [tmpArr addObject:ruleModel];
     
+    // 星星评分
+    HomeViewDataModel *rateModel = [HomeViewDataModel dataModelWithTitle:@"星星评分" className:@"StarRateController"];
+    [tmpArr addObject:rateModel];
+    
     return tmpArr;
 }
 
