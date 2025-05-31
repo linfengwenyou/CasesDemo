@@ -7,6 +7,7 @@ target 'TestActionDemo' do
 
   # Pods for TestActionDemo
 	pod 'Masonry'
+  pod 'BlocksKit'
 
   target 'TestActionDemoTests' do
     inherit! :search_paths

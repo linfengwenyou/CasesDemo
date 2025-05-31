@@ -86,6 +86,10 @@
     HomeViewDataModel *sliderArea = [HomeViewDataModel dataModelWithTitle:@"区域滑块" className:@"KGAreaTabController"];
     [tmpArr addObject:sliderArea];
     
+    // 通用尺子类型
+    HomeViewDataModel *ruleModel = [HomeViewDataModel dataModelWithTitle:@"通用尺子" className:@"CommonRulerController"];
+    [tmpArr addObject:ruleModel];
+    
     return tmpArr;
 }
 

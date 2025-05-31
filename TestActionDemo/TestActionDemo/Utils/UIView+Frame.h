@@ -18,6 +18,8 @@ CGRect frameFromCenterSize(CGPoint center, CGSize size);
 @property (nonatomic, assign, readonly) CGFloat y;
 @property (nonatomic, assign, readonly) CGFloat width;
 @property (nonatomic, assign, readonly) CGFloat height;
+@property(nonatomic, assign) CGFloat centerX;
+@property(nonatomic, assign) CGFloat centerY;
 @end
 
 NS_ASSUME_NONNULL_END

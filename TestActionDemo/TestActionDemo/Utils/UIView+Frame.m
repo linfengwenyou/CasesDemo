@@ -37,4 +37,11 @@ CGRect frameFromCenterSize(CGPoint center, CGSize size) {
     return self.frame.size.height;
 }
 
+- (CGFloat)centerX {
+    return self.x + self.width / 2.f;
+}
+
+- (CGFloat)centerY {
+    return self.y + self.height / 2.f;
+}
 @end

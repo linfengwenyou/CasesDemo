@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2BA62E619CB7F0375917A0CE /* Pods_TestActionDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B954A417B50E1085CA0801BF /* Pods_TestActionDemoTests.framework */; };
 		3B1BEFF97E98D36E30FD73AD /* Pods_TestActionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD4251D58DC9A791529C683 /* Pods_TestActionDemo.framework */; };
+		3C4F527A2DEAFB0800F5C7CA /* QCCommonRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F52752DEAFB0800F5C7CA /* QCCommonRulerView.m */; };
+		3C4F527B2DEAFB0800F5C7CA /* QCProgressCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F52782DEAFB0800F5C7CA /* QCProgressCircleView.m */; };
+		3C4F527C2DEAFB0800F5C7CA /* QCProgressCircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F52792DEAFB0800F5C7CA /* QCProgressCircleView.xib */; };
+		3C4F527D2DEAFB0800F5C7CA /* QCCommonRulerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F52762DEAFB0800F5C7CA /* QCCommonRulerView.xib */; };
+		3C4F52802DEAFB8E00F5C7CA /* CommonRulerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F527F2DEAFB8E00F5C7CA /* CommonRulerController.m */; };
+		3C4F52822DEB014E00F5C7CA /* CommonRulerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F52812DEB014E00F5C7CA /* CommonRulerController.xib */; };
 		6705833327E0A2BA00DC0F94 /* OptionPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705833227E0A2BA00DC0F94 /* OptionPageController.m */; };
 		6705833727E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705833527E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m */; };
 		6705834B27E0A39100DC0F94 /* player_bgmode_popups_ic_dynamic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6705833D27E0A39100DC0F94 /* player_bgmode_popups_ic_dynamic@3x.png */; };
@@ -167,6 +173,15 @@
 		16E029387BB08B574D2B91D1 /* Pods-TestActionDemo-TestActionDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		23A76755E7CE510D9262314A /* Pods-TestActionDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemoTests/Pods-TestActionDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25D3F1969111753FEF2EA302 /* Pods-TestActionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4F52742DEAFB0800F5C7CA /* QCCommonRulerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCCommonRulerView.h; sourceTree = "<group>"; };
+		3C4F52752DEAFB0800F5C7CA /* QCCommonRulerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCCommonRulerView.m; sourceTree = "<group>"; };
+		3C4F52762DEAFB0800F5C7CA /* QCCommonRulerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QCCommonRulerView.xib; sourceTree = "<group>"; };
+		3C4F52772DEAFB0800F5C7CA /* QCProgressCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCProgressCircleView.h; sourceTree = "<group>"; };
+		3C4F52782DEAFB0800F5C7CA /* QCProgressCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCProgressCircleView.m; sourceTree = "<group>"; };
+		3C4F52792DEAFB0800F5C7CA /* QCProgressCircleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QCProgressCircleView.xib; sourceTree = "<group>"; };
+		3C4F527E2DEAFB8E00F5C7CA /* CommonRulerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonRulerController.h; sourceTree = "<group>"; };
+		3C4F527F2DEAFB8E00F5C7CA /* CommonRulerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonRulerController.m; sourceTree = "<group>"; };
+		3C4F52812DEB014E00F5C7CA /* CommonRulerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonRulerController.xib; sourceTree = "<group>"; };
 		4E42824021660CED70DE9E43 /* Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6705833127E0A2BA00DC0F94 /* OptionPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionPageController.h; sourceTree = "<group>"; };
 		6705833227E0A2BA00DC0F94 /* OptionPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionPageController.m; sourceTree = "<group>"; };
@@ -408,6 +423,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4F52732DEAFAF600F5C7CA /* CommonRuler */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F52742DEAFB0800F5C7CA /* QCCommonRulerView.h */,
+				3C4F52752DEAFB0800F5C7CA /* QCCommonRulerView.m */,
+				3C4F52762DEAFB0800F5C7CA /* QCCommonRulerView.xib */,
+				3C4F52772DEAFB0800F5C7CA /* QCProgressCircleView.h */,
+				3C4F52782DEAFB0800F5C7CA /* QCProgressCircleView.m */,
+				3C4F52792DEAFB0800F5C7CA /* QCProgressCircleView.xib */,
+				3C4F527E2DEAFB8E00F5C7CA /* CommonRulerController.h */,
+				3C4F527F2DEAFB8E00F5C7CA /* CommonRulerController.m */,
+				3C4F52812DEB014E00F5C7CA /* CommonRulerController.xib */,
+			);
+			path = CommonRuler;
+			sourceTree = "<group>";
+		};
 		6705833027E0A29100DC0F94 /* PlayviewOptionPageAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -678,6 +709,7 @@
 		6748E48B286C1D9600CF9641 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3C4F52732DEAFAF600F5C7CA /* CommonRuler */,
 				67149A23285353F2004869BB /* AreaTabView */,
 				6705833027E0A29100DC0F94 /* PlayviewOptionPageAlert */,
 				67DCAE4526BE5F0100C66AA0 /* HorizenBanner */,
@@ -1159,6 +1191,7 @@
 				6748E41E286BEC6200CF9641 /* dynamic_singer_photo.mp4 in Resources */,
 				672AE920255BEEE7009AE982 /* 1.jpg in Resources */,
 				6748E456286BEE1700CF9641 /* svg_kg_common_ic_trumpet@3x.png in Resources */,
+				3C4F52822DEB014E00F5C7CA /* CommonRulerController.xib in Resources */,
 				6748E458286BEE1700CF9641 /* player_mode_popups_trumpet_purple@3x.jpg in Resources */,
 				6705835127E0A39100DC0F94 /* player_bgmode_popups_ic_heartbeat@3x.png in Resources */,
 				6798AB352500DC4C00FA37B7 /* 2.png in Resources */,
@@ -1175,6 +1208,8 @@
 				676A3BF72609C4EE00298065 /* 1@3x.png in Resources */,
 				6748E4EF286D49C200CF9641 /* lyric_default_star.mp4 in Resources */,
 				6748E4F0286D49C200CF9641 /* lyric_effect_back_image@3x.png in Resources */,
+				3C4F527C2DEAFB0800F5C7CA /* QCProgressCircleView.xib in Resources */,
+				3C4F527D2DEAFB0800F5C7CA /* QCCommonRulerView.xib in Resources */,
 				6705834D27E0A39100DC0F94 /* player_bgmode_popups_ic_mv@3x.png in Resources */,
 				672AE91C255BEEE7009AE982 /* 4.jpg in Resources */,
 				6748E49C286C289700CF9641 /* MaskAnimateController.xib in Resources */,
@@ -1291,9 +1326,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1308,9 +1347,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1389,6 +1432,9 @@
 				67D0342424AE1129008A676A /* AppDelegate.m in Sources */,
 				6748E4E7286D49C200CF9641 /* KGLyricEffectIntroduceMenu.m in Sources */,
 				6705833327E0A2BA00DC0F94 /* OptionPageController.m in Sources */,
+				3C4F527A2DEAFB0800F5C7CA /* QCCommonRulerView.m in Sources */,
+				3C4F527B2DEAFB0800F5C7CA /* QCProgressCircleView.m in Sources */,
+				3C4F52802DEAFB8E00F5C7CA /* CommonRulerController.m in Sources */,
 				6748E44A286BEE1700CF9641 /* KGPlayViewBackModeCell.m in Sources */,
 				67DF52E324F4AD960021D7BF /* MaskAnimateController.m in Sources */,
 				67C5C115265E2A7F001B0156 /* RoundGradientLayer.m in Sources */,
