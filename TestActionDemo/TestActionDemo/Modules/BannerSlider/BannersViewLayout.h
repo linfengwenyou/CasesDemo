@@ -22,9 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) CGFloat leftPadding;
 
-/* 两个item中间的距离, 由于视图进行了缩小处理，会导致本身为0的间距会变大为更大空间，
- * 这个值是用来计算找到合适的offsetX来调整itme的间距展示
- */
+/// 放缩后要求展示间距
 @property (nonatomic, assign) CGFloat itemPadding;
 @end
 

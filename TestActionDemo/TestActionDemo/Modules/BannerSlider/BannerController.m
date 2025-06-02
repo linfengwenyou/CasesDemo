@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = UIColor.lightGrayColor;
+    self.view.backgroundColor = UIColor.redColor;
     
     [self.view addSubview:self.entranceMainView];
     CGFloat width = kScreenW - 2*40;
@@ -32,15 +32,30 @@
         make.left.right.mas_equalTo(0);
         make.height.mas_equalTo(height);
     }];
+ 
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    
+    [self.entranceMainView layoutIfNeeded];
+    
+    [self.entranceMainView showContainer];
     
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
+}
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
 //    [self.entranceMainView refreshWithData:nil];
-    [self.entranceMainView showContainer];
+  
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -52,6 +67,7 @@
 - (BannersView *)entranceMainView {
     if (!_entranceMainView) {
         _entranceMainView = [[BannersView alloc] init];
+        _entranceMainView.defaultIndex = 1;
 //        _entranceMainView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     }
     return _entranceMainView;

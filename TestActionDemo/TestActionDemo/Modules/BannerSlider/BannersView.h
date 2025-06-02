@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BannersView : UIView
 
-
+@property(nonatomic, assign) NSInteger defaultIndex;
 /*显示容器*/
 - (void)showContainer;
 @end

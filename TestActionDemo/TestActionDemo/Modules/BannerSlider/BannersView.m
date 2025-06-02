@@ -22,29 +22,27 @@
 
 @implementation BannersView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    if (self = [super initWithFrame:frame]) {
-        [self createSubviews];
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupUI];
+        [self makeConstraints];
+        [self.collectionView reloadData];
     }
     return self;
 }
 
+#pragma mark - UI
 
-- (void)createSubviews {
+- (void)setupUI {
     [self addSubview:self.collectionView];
     [self registerCell];
-    [self resetDefaultState];
 }
 
-
-- (void)updateConstraints {
-    
+- (void)makeConstraints {
     [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self);
     }];
-    
-    [super updateConstraints];
 }
 
 
@@ -52,16 +50,11 @@
     [self.collectionView registerClass:KGPlayViewVideoEntranceListCell.class forCellWithReuseIdentifier:NSStringFromClass(KGPlayViewVideoEntranceListCell.class)];
 }
 
-/*回置为初始状态*/
-- (void)resetDefaultState {
-    self.collectionView.alpha = 1;
-}
-
-
 #pragma mark - public
 - (void)showContainer {
-
-   
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_defaultIndex inSection:0]
+                                atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
+                                        animated:NO];
 }
 
 #pragma mark - delegate & datasource
@@ -101,15 +94,12 @@
         
         CGFloat width = kScreenW - 2*40;
         CGFloat height =  kScreenW / width * 405;
-        CGFloat leftPadding = 10;
-        
         
         _layout = [[BannersViewLayout alloc] init];
         _layout.itemSize = CGSizeMake(width, height);
-        _layout.minimumLineSpacing = 0; // 横向滑动为列间距
-        _layout.minimumInteritemSpacing = 0;
-        _layout.leftPadding = 12;
-        _layout.itemPadding = 10;   // 怎么设置，看KGPlayViewVideoEntranceListLayout.h来实现
+
+        _layout.leftPadding = 40;
+        _layout.itemPadding = 12;
     }
     return _layout;
 }

@@ -57,6 +57,9 @@
 - (void)prepareLayout {
     [super prepareLayout];
     
+    self.minimumLineSpacing = 0; // 横向滑动为列间距
+    self.minimumInteritemSpacing = 0;
+    
     CGFloat right = self.collectionView.bounds.size.width - self.leftPadding - self.itemSize.width;
     
     self.sectionInset = UIEdgeInsetsMake(0, self.leftPadding, 0, right);      // 如何让cell展示的区域变大
@@ -87,7 +90,7 @@
     CGFloat offsetForCurrentPointX = ABS(proposedContentOffset.x - _lastOffset.x);
     CGFloat velocityX = velocity.x;
     
-    if (offsetForCurrentPointX > pageSpace / 8.f && _lastOffset.x >= offsetMin && _lastOffset.x <= offsetMax) {
+    if (offsetForCurrentPointX > pageSpace / 4.f && _lastOffset.x >= offsetMin && _lastOffset.x <= offsetMax) {
         // 分页因子，用于计算滑过的 cell 个数
         NSInteger pageFactor = 0;
         BOOL isLeftScroll = (proposedContentOffset.x - _lastOffset.x) > 0;  // 区分左右滑动
@@ -121,96 +124,53 @@
 
 /// 设置放大动画
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSArray *arr = [super layoutAttributesForElementsInRect:rect].copy;
+    NSArray *originalAttrs = [super layoutAttributesForElementsInRect:rect];
+    NSMutableArray *attrsArray = [NSMutableArray arrayWithCapacity:originalAttrs.count];
     
-    /*计算相对最大展示视图的居中点*/
-    CGFloat centerX = self.collectionView.contentOffset.x + self.sectionInset.left + self.itemSize.width / 2;
+    CGFloat collectionViewCenterX = self.collectionView.contentOffset.x + self.collectionView.bounds.size.width / 2.0;
+    CGFloat itemWidth = self.itemSize.width;
     
-    for (BannersViewLayoutAttributes *attributes in arr) {
-        @autoreleasepool {
-            CGFloat distance = fabs(attributes.center.x - centerX);
-            
-            // 当前要求目标的比例是多少？
-            CGFloat rate = 341.0f / 405.0f;   // 最大和第二个的高度比例, 大概取个限制位数的小说
-            
-            // 让一个步幅的偏移正好对比这么大的rate
-            CGFloat stepDistance = [self findStepDistance];
-            
-            CGFloat step = distance / stepDistance - 1;  // 距离当前中心第几个位置
-            
-            if (distance > stepDistance) {  // 第二个之后所有的保持一样的缩小比例
-                distance = stepDistance;
-            }
-            
-            // distance / stepDistance 为偏移中心的距离  (1-rate)为当前偏移距离为1个步幅时需要缩小的倍数
-            // 注意这个scale最小的情况等于rate
-            CGFloat scale = 1 - (distance / stepDistance) * (1-rate);
-            
-            // 高度处理 (1-scale) 代表的为实际缩小的值  *0.5是因为要取高度差的一半来保持底部平齐
-            CGFloat width = attributes.size.width;
-            CGFloat offsetY = attributes.size.height * (1-scale) * 0.5f;
-            CGFloat offsetX = -width * (1-scale) * step; // 这里数据为25 * step, 相当于后面的数据都隐藏
-            
-            CGFloat maxPadding = width * (1-rate);
-            
-            offsetX = (maxPadding - self.itemPadding) / maxPadding * offsetX;
-            
-            CGAffineTransform translateTrans = CGAffineTransformMakeTranslation(offsetX, offsetY);
-            
-            CGAffineTransform trans = CGAffineTransformScale(translateTrans, scale, scale);
-            
-            attributes.transform = trans;
-            
-            attributes.coverAlpha = (1 - scale) * 3;
+    CGFloat maxScale = 1.0;
+    CGFloat minScale = 341.0 / 405.0;
+    CGFloat scaleRange = maxScale - minScale;
+    
+    CGFloat maxOffset = itemWidth + self.itemPadding; // 一个 cell 位置偏移最大
+    
+    for (UICollectionViewLayoutAttributes *attributes in originalAttrs) {
+        BannersViewLayoutAttributes *attr = [attributes copy];
+        
+        CGFloat distanceFromCenter = fabs(attr.center.x - collectionViewCenterX);
+        if (distanceFromCenter > maxOffset) {
+            distanceFromCenter = maxOffset; // 只处理最近的左右两个
         }
+        
+        CGFloat distanceX = attr.center.x - collectionViewCenterX;
+        CGFloat absDistance = fabs(distanceX);
+        
+        CGFloat ratio = distanceFromCenter / maxOffset;
+        CGFloat scale = maxScale - scaleRange * ratio;
+        
+        
+        CGFloat transX = 0;
+        if (absDistance != 0) {
+            
+            CGFloat direction = distanceX > 0 ? -1 : 1; // 右边的往左，左边的往右
+            
+            transX = (scaleRange * ratio * (itemWidth/2.f) - (ratio * self.itemPadding)) * direction;
+            
+        }
+        
+        CGAffineTransform translate = CGAffineTransformMakeTranslation(transX, 0);
+        
+        attr.transform = CGAffineTransformScale(translate, scale, scale);
+        
+        // 设置 coverAlpha（可选）
+        attr.coverAlpha = (1.0 - scale) * 3;
+        
+        [attrsArray addObject:attr];
     }
     
-    return arr;
-}
-
-
-#pragma mark - 尝试使用的方案
-// 通过下面的方法来实现初始值的刷新展示
-- (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
-    NSLog(@"动画初始的方法----------------------------");
-    return [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
-    
-    // 此处需要计算初始值的展示方案
-}
-
--  (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
-    
-    // 此处需要计算结束值的展示方案
-    NSLog(@"动画结束时的方法");
-    return [super finalLayoutAttributesForDisappearingItemAtIndexPath:itemIndexPath];
-}
-
-/*返回默认的初始位置*/
-- (UICollectionViewLayoutAttributes *)defaultPointAttributesForIndexPath:(NSIndexPath *)indexPath {
-    
-    UICollectionViewLayoutAttributes *actualAttr = [self attributeFromIndexPath:indexPath];
-    
-    CGFloat rate = 30 / self.itemSize.width;
-    
-    UICollectionViewLayoutAttributes *attr = [[UICollectionViewLayoutAttributes alloc] init];
-    
-    
-    if (actualAttr.center.x < self.collectionView.contentOffset.x) {
-        attr.center = actualAttr.center;
-        attr.transform = actualAttr.transform;
-        attr.alpha = 0;
-    } else {
-        attr.center = actualAttr.center;
-//        attr.center = CGPointMake(self.collectionView.contentOffset.x , self.fromPoint.y);
-        attr.transform =  CGAffineTransformMakeScale(rate, rate);
-        attr.alpha = 1;
-    }
-    
-    return attr;
-}
-
-- (UICollectionViewLayoutAttributes *)attributeFromIndexPath:(NSIndexPath *)indexPath {
-    return [self.collectionView layoutAttributesForItemAtIndexPath:indexPath];
+    return attrsArray;
 }
 
 @end
