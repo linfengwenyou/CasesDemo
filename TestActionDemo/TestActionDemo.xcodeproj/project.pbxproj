@@ -19,6 +19,9 @@
 		3C4F528D2DEB317300F5C7CA /* icon_star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F52862DEB317300F5C7CA /* icon_star_yellow@2x.png */; };
 		3C4F528F2DEB317300F5C7CA /* icon_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F52852DEB317300F5C7CA /* icon_star_gray@2x.png */; };
 		3C4F52932DEB319000F5C7CA /* StarRateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F52922DEB319000F5C7CA /* StarRateController.m */; };
+		3C4F53422DEDBE5500F5C7CA /* BannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F53412DEDBE5500F5C7CA /* BannerController.m */; };
+		3C4F53452DEDBF9600F5C7CA /* BannersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F53442DEDBF9600F5C7CA /* BannersView.m */; };
+		3C4F53482DEDC40600F5C7CA /* BannersViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F53472DEDC40600F5C7CA /* BannersViewLayout.m */; };
 		6705833327E0A2BA00DC0F94 /* OptionPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705833227E0A2BA00DC0F94 /* OptionPageController.m */; };
 		6705833727E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6705833527E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m */; };
 		6705834B27E0A39100DC0F94 /* player_bgmode_popups_ic_dynamic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6705833D27E0A39100DC0F94 /* player_bgmode_popups_ic_dynamic@3x.png */; };
@@ -192,6 +195,12 @@
 		3C4F528A2DEB317300F5C7CA /* RAYStarRateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAYStarRateView.m; sourceTree = "<group>"; };
 		3C4F52912DEB319000F5C7CA /* StarRateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarRateController.h; sourceTree = "<group>"; };
 		3C4F52922DEB319000F5C7CA /* StarRateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarRateController.m; sourceTree = "<group>"; };
+		3C4F53402DEDBE5500F5C7CA /* BannerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerController.h; sourceTree = "<group>"; };
+		3C4F53412DEDBE5500F5C7CA /* BannerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerController.m; sourceTree = "<group>"; };
+		3C4F53432DEDBF9600F5C7CA /* BannersView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannersView.h; sourceTree = "<group>"; };
+		3C4F53442DEDBF9600F5C7CA /* BannersView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannersView.m; sourceTree = "<group>"; };
+		3C4F53462DEDC40600F5C7CA /* BannersViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannersViewLayout.h; sourceTree = "<group>"; };
+		3C4F53472DEDC40600F5C7CA /* BannersViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannersViewLayout.m; sourceTree = "<group>"; };
 		4E42824021660CED70DE9E43 /* Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6705833127E0A2BA00DC0F94 /* OptionPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionPageController.h; sourceTree = "<group>"; };
 		6705833227E0A2BA00DC0F94 /* OptionPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionPageController.m; sourceTree = "<group>"; };
@@ -478,6 +487,19 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		3C4F533F2DEDBE3800F5C7CA /* BannerSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F53402DEDBE5500F5C7CA /* BannerController.h */,
+				3C4F53412DEDBE5500F5C7CA /* BannerController.m */,
+				3C4F53432DEDBF9600F5C7CA /* BannersView.h */,
+				3C4F53442DEDBF9600F5C7CA /* BannersView.m */,
+				3C4F53462DEDC40600F5C7CA /* BannersViewLayout.h */,
+				3C4F53472DEDC40600F5C7CA /* BannersViewLayout.m */,
+			);
+			path = BannerSlider;
+			sourceTree = "<group>";
+		};
 		6705833027E0A29100DC0F94 /* PlayviewOptionPageAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -748,6 +770,7 @@
 		6748E48B286C1D9600CF9641 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3C4F533F2DEDBE3800F5C7CA /* BannerSlider */,
 				3C4F52832DEB313800F5C7CA /* StarRate */,
 				3C4F52732DEAFAF600F5C7CA /* CommonRuler */,
 				67149A23285353F2004869BB /* AreaTabView */,
@@ -1444,6 +1467,7 @@
 				67810F0424F662E700F6C423 /* RippleAnimationView.m in Sources */,
 				6748E454286BEE1700CF9641 /* KGDynamicGuideAlert.m in Sources */,
 				67413A7224B6AF9500913664 /* FrameObserverController.m in Sources */,
+				3C4F53482DEDC40600F5C7CA /* BannersViewLayout.m in Sources */,
 				67DCAE5A26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListCell.m in Sources */,
 				6748E4A7286C2E6200CF9641 /* DynamicIntroduceController.m in Sources */,
 				6748E480286C02B100CF9641 /* HomeViewConroller+DataSource.m in Sources */,
@@ -1453,11 +1477,13 @@
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
 				67B7C0F02541A3C2003913D0 /* MyFoldAnimationController.m in Sources */,
 				67DCAE5B26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListLayout.m in Sources */,
+				3C4F53422DEDBE5500F5C7CA /* BannerController.m in Sources */,
 				67DCAE5926BE5FCC00C66AA0 /* KGPlayViewVideoEntranceListView.m in Sources */,
 				67413A7524B6F8E000913664 /* TouchPassViewController.m in Sources */,
 				676A3BE52609C3F500298065 /* HollowButtonController.m in Sources */,
 				3C4F528C2DEB317300F5C7CA /* RAYStarRateView.m in Sources */,
 				67DCAE5C26BE5FCC00C66AA0 /* KGPlayViewVideoEntranceConfig.m in Sources */,
+				3C4F53452DEDBF9600F5C7CA /* BannersView.m in Sources */,
 				6748E466286BEE7C00CF9641 /* KGDynamicMenuSkinCell.m in Sources */,
 				6705833727E0A38400DC0F94 /* UIView+KGDeviceAdaptive.m in Sources */,
 				67DCAE5D26BE5FCC00C66AA0 /* KGPLayViewVideoEntranceMainView.m in Sources */,

@@ -14,21 +14,27 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - LookinServer (1.2.8):
+    - LookinServer/Core (= 1.2.8)
+  - LookinServer/Core (1.2.8)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - BlocksKit
+  - LookinServer
   - Masonry
 
 SPEC REPOS:
   trunk:
     - BlocksKit
+    - LookinServer
     - Masonry
 
 SPEC CHECKSUMS:
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
+  LookinServer: 1b2b61c6402ae29fa22182d48f5cd067b4e99e80
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 1f64ccaae4343f1d1e2271386f31adf84932993a
+PODFILE CHECKSUM: 08931f79d9de8de67405aad0f95df9b33a268ca9
 
 COCOAPODS: 1.16.2

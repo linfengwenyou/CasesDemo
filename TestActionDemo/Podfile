@@ -9,6 +9,7 @@ target 'TestActionDemo' do
 	pod 'Masonry'
   pod 'BlocksKit'
 
+  pod 'LookinServer', :configurations => ['Debug']
   target 'TestActionDemoTests' do
     inherit! :search_paths
     # Pods for testing

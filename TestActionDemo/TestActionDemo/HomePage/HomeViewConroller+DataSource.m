@@ -94,6 +94,10 @@
     HomeViewDataModel *rateModel = [HomeViewDataModel dataModelWithTitle:@"星星评分" className:@"StarRateController"];
     [tmpArr addObject:rateModel];
     
+    // 横向banner
+    HomeViewDataModel *bannerModel = [HomeViewDataModel dataModelWithTitle:@"放缩Banner" className:@"BannerController"];
+    [tmpArr addObject:bannerModel];
+    
     return tmpArr;
 }
 
