@@ -50,11 +50,28 @@
     [self.collectionView registerClass:KGPlayViewVideoEntranceListCell.class forCellWithReuseIdentifier:NSStringFromClass(KGPlayViewVideoEntranceListCell.class)];
 }
 
+
+
 #pragma mark - public
 - (void)showContainer {
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_defaultIndex inSection:0]
-                                atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
-                                        animated:NO];
+    
+    CGPoint offset = [self.layout contentXForScrollToIndex:1];
+    [self.collectionView setContentOffset:offset];
+    
+    // 等 scrollTo 完成后再强制 layout 刷新
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionView.collectionViewLayout invalidateLayout];
+        [self.collectionView performBatchUpdates:^{} completion:nil];
+    });
+   
+    
+    
+    
+    
+    
+    
+//    [self.collectionView.collectionViewLayout invalidateLayout];
+//    self.layout.defaultIndex = 1;
 }
 
 #pragma mark - delegate & datasource
@@ -98,7 +115,6 @@
         _layout = [[BannersViewLayout alloc] init];
         _layout.itemSize = CGSizeMake(width, height);
 
-        _layout.leftPadding = 40;
         _layout.itemPadding = 12;
     }
     return _layout;

@@ -8,20 +8,6 @@
 
 #import "BannersViewLayout.h"
 
-@implementation BannersViewLayoutAttributes
-
-- (BannersViewLayoutAttributes *)copyWithZone:(NSZone *)zone {
-    BannersViewLayoutAttributes *newO = [super copyWithZone:zone];
-    newO.coverAlpha = _coverAlpha;
-    return newO;
-}
-
-- (BOOL)isEqual:(BannersViewLayoutAttributes *)object {
-    BOOL isEqual = [super isEqual:object];
-    return isEqual && object.coverAlpha == self.coverAlpha;
-}
-
-@end
 
 
 @interface BannersViewLayout ()
@@ -31,10 +17,6 @@
 @end
 
 @implementation BannersViewLayout
-
-+ (Class)layoutAttributesClass {
-    return BannersViewLayoutAttributes.class;
-}
 
 
 #pragma mark - 其他配置展示
@@ -60,9 +42,9 @@
     self.minimumLineSpacing = 0; // 横向滑动为列间距
     self.minimumInteritemSpacing = 0;
     
-    CGFloat right = self.collectionView.bounds.size.width - self.leftPadding - self.itemSize.width;
+    CGFloat inset = (self.collectionView.bounds.size.width - self.itemSize.width)/2.f;
     
-    self.sectionInset = UIEdgeInsetsMake(0, self.leftPadding, 0, right);      // 如何让cell展示的区域变大
+    self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);      // 如何让cell展示的区域变大
     
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
@@ -71,6 +53,11 @@
 /*屏幕尺寸发生变化需要刷新布局信息*/
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
+}
+
+- (CGPoint)contentXForScrollToIndex:(NSInteger)index {
+    return [self targetContentOffsetForProposedContentOffset:CGPointMake(index *[self findStepDistance], 0)
+                                       withScrollingVelocity:CGPointZero];;
 }
 
 /// 计算停止滚动时的偏移量
@@ -103,7 +90,6 @@
             pageFactor = ABS(offsetForCurrentPointX / pageSpace);
         }
         
-        // 设置pageFactor上限为 2, 防止滑动速率过大，导致翻页过多
         pageFactor = pageFactor < 1 ? 1 : (pageFactor < 3 ? 1 : 2);
         
         CGFloat pageOffsetX = pageSpace * pageFactor;
@@ -137,7 +123,7 @@
     CGFloat maxOffset = itemWidth + self.itemPadding; // 一个 cell 位置偏移最大
     
     for (UICollectionViewLayoutAttributes *attributes in originalAttrs) {
-        BannersViewLayoutAttributes *attr = [attributes copy];
+        UICollectionViewLayoutAttributes *attr = [attributes copy];
         
         CGFloat distanceFromCenter = fabs(attr.center.x - collectionViewCenterX);
         if (distanceFromCenter > maxOffset) {
@@ -165,7 +151,7 @@
         attr.transform = CGAffineTransformScale(translate, scale, scale);
         
         // 设置 coverAlpha（可选）
-        attr.coverAlpha = (1.0 - scale) * 3;
+        attr.alpha = (1-ratio)*0.3+0.7;
         
         [attrsArray addObject:attr];
     }

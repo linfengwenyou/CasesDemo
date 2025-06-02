@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = UIColor.redColor;
+    self.view.backgroundColor = UIColor.whiteColor;
     
     [self.view addSubview:self.entranceMainView];
     CGFloat width = kScreenW - 2*40;
@@ -40,9 +40,7 @@
     [super viewWillAppear:animated];
     
     
-    [self.entranceMainView layoutIfNeeded];
-    
-    [self.entranceMainView showContainer];
+ 
     
 }
 
@@ -54,6 +52,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
+    [self.entranceMainView showContainer];
 //    [self.entranceMainView refreshWithData:nil];
   
 }
@@ -67,7 +66,6 @@
 - (BannersView *)entranceMainView {
     if (!_entranceMainView) {
         _entranceMainView = [[BannersView alloc] init];
-        _entranceMainView.defaultIndex = 1;
 //        _entranceMainView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     }
     return _entranceMainView;

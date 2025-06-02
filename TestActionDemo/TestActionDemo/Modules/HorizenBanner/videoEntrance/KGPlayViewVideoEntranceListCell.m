@@ -90,7 +90,7 @@
     if (!_imageView) {
         _imageView = [[UIImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleAspectFill;
-        _imageView.image = [UIImage imageNamed:@"2.jpg"];
+        _imageView.image = [UIImage imageNamed:@"2"];
     }
     return _imageView;
 }
