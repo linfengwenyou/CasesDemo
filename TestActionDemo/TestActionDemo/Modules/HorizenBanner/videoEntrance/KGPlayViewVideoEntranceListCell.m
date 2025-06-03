@@ -11,7 +11,8 @@
 /*小说容器*/
 @property (nonatomic, strong) UIView *novelContainer;
 
-
+/// <#desc#>
+//@property(nonatomic, strong) UILabel *nameLabel;
 /*mv容器*/
 @property (nonatomic, strong) UIView *mvContainer;
 
@@ -39,6 +40,7 @@
     [self.contentView addSubview:self.mvContainer];
     
     [self.contentView addSubview:self.imageView];
+    [self.contentView addSubview:self.nameLabel];
     
 #warning lius 测试
     UIColor *randomColor = [[UIColor alloc] initWithRed:arc4random() %255/255.0 green:arc4random() %255/255.0 blue:arc4random() %255/255.0 alpha:1];
@@ -64,6 +66,9 @@
         make.edges.mas_equalTo(self.contentView);
     }];
     
+    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.leading.mas_equalTo(0);
+    }];
     // call super
     [super updateConstraints];
 }
@@ -95,4 +100,15 @@
     return _imageView;
 }
 
+
+- (UILabel *)nameLabel
+{
+    if (!_nameLabel) {
+        _nameLabel = [UILabel new];
+        _nameLabel.text = @"--";
+        _nameLabel.textColor = [UIColor redColor];
+        _nameLabel.font = [UIFont systemFontOfSize:14];
+    }
+    return _nameLabel;
+}
 @end

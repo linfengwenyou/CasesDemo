@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (CGPoint)contentXForScrollToIndex:(NSInteger)index;
+// 初始化布局更新
+- (void)updateContentOffsetXForIndex:(NSInteger)index;
 @end
 
 NS_ASSUME_NONNULL_END

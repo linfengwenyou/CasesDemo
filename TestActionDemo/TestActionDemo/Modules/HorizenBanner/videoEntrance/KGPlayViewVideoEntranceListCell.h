@@ -8,5 +8,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KGPlayViewVideoEntranceListCell : UICollectionViewCell
+@property(nonatomic, strong) UILabel *nameLabel;
 - (void)refresh;
 @end

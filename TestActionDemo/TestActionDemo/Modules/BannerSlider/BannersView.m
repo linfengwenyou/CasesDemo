@@ -54,8 +54,10 @@
 
 #pragma mark - public
 - (void)showContainer {
+    NSInteger index = 1;
     
-    CGPoint offset = [self.layout contentXForScrollToIndex:1];
+    [self.layout updateContentOffsetXForIndex:index];
+    CGPoint offset = [self.layout contentXForScrollToIndex:index];
     [self.collectionView setContentOffset:offset];
     
     // 等 scrollTo 完成后再强制 layout 刷新
@@ -64,14 +66,10 @@
         [self.collectionView performBatchUpdates:^{} completion:nil];
     });
    
-    
-    
-    
-    
-    
-    
-//    [self.collectionView.collectionViewLayout invalidateLayout];
-//    self.layout.defaultIndex = 1;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    NSLog(@"---索引：%.2f", scrollView.contentOffset.x);
 }
 
 #pragma mark - delegate & datasource
@@ -84,6 +82,7 @@
     // 根据不同的section展示不同的UI样式
     KGPlayViewVideoEntranceListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(KGPlayViewVideoEntranceListCell.class) forIndexPath:indexPath];
     [cell refresh];
+    cell.nameLabel.text = [NSString stringWithFormat:@"测试顺序:%ld", indexPath.row];
     return cell;
 }
 
@@ -102,6 +101,7 @@
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.semanticContentAttribute = UISemanticContentAttributeForceRightToLeft;
     }
     return _collectionView;
 }

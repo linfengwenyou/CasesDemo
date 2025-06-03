@@ -19,6 +19,19 @@
 @implementation BannersViewLayout
 
 
+- (instancetype)init {
+    if(self = [super init]) {
+        self.minimumLineSpacing = 0; // 横向滑动为列间距
+        self.minimumInteritemSpacing = 0;
+        
+        self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
+        
+    }
+    
+    return self;
+}
+
 #pragma mark - 其他配置展示
 /*返回最小的X，即展示为当前sectionInset设置的位置*/
 - (CGFloat)findMinOffsetX {
@@ -35,19 +48,16 @@
     return self.itemSize.width + self.minimumLineSpacing;
 }
 
+- (BOOL)isRTL {
+    return self.collectionView.effectiveUserInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionRightToLeft;
+}
 #pragma mark - 方法重写
 - (void)prepareLayout {
     [super prepareLayout];
     
-    self.minimumLineSpacing = 0; // 横向滑动为列间距
-    self.minimumInteritemSpacing = 0;
-    
     CGFloat inset = (self.collectionView.bounds.size.width - self.itemSize.width)/2.f;
-    
     self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);      // 如何让cell展示的区域变大
-    
-    self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
+  
 }
 
 /*屏幕尺寸发生变化需要刷新布局信息*/
@@ -55,9 +65,27 @@
     return YES;
 }
 
+- (NSInteger)toIndex:(NSInteger)index {
+    if([self isRTL]) {
+        index = [self.collectionView numberOfItemsInSection:0] - index - 1;
+    }
+    return index;
+}
+
 - (CGPoint)contentXForScrollToIndex:(NSInteger)index {
-    return [self targetContentOffsetForProposedContentOffset:CGPointMake(index *[self findStepDistance], 0)
-                                       withScrollingVelocity:CGPointZero];;
+   
+    return [self targetContentOffsetForProposedContentOffset:CGPointMake([self toIndex:index] *[self findStepDistance], 0)
+                                       withScrollingVelocity:CGPointZero];
+}
+
+- (void)updateContentOffsetXForIndex:(NSInteger)index {
+    // 这个只能触发一次，需要换一个地方
+    CGFloat x = 0;
+    if([self isRTL]) {
+        x =  [self toIndex:index] * [self findStepDistance];
+    }
+    self.lastOffset = CGPointMake(x, 0);
+
 }
 
 /// 计算停止滚动时的偏移量
@@ -103,7 +131,7 @@
     
     // 记录状态
     _lastOffset.x = proposedContentOffset.x;
-    
+    NSLog(@"输出要定位到的偏移点:%.2f",proposedContentOffset.x);
     return proposedContentOffset;
     
 }
