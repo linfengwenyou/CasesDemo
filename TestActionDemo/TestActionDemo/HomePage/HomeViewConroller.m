@@ -129,7 +129,7 @@ static NSString * const reuseIdentifier = @"HomeViewControllerCell";
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    CGFloat width = (self.view.width - (kMaxShowCellCount + 1) * kCellPadding) / kMaxShowCellCount;
+    CGFloat width = (self.view.width - (kMaxShowCellCount + 1) * kCellPadding - 4) / kMaxShowCellCount;
     return CGSizeMake(width, kCellHeight);
 }
 
