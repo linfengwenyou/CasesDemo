@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2BA62E619CB7F0375917A0CE /* Pods_TestActionDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B954A417B50E1085CA0801BF /* Pods_TestActionDemoTests.framework */; };
 		3B1BEFF97E98D36E30FD73AD /* Pods_TestActionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD4251D58DC9A791529C683 /* Pods_TestActionDemo.framework */; };
+		3C4A98402DF57474005ECE5F /* KGCircleBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A983A2DF57474005ECE5F /* KGCircleBubbleView.m */; };
+		3C4A98412DF57474005ECE5F /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A983E2DF57474005ECE5F /* UIImage+Pixels.m */; };
+		3C4A98472DF575E2005ECE5F /* Real_0216a27c67531e10149a49fa80b9d0ab.jpg_720x1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A98462DF575E2005ECE5F /* Real_0216a27c67531e10149a49fa80b9d0ab.jpg_720x1280.jpg */; };
+		3C4A984B2DF5762C005ECE5F /* ImagePixelsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A984A2DF5762C005ECE5F /* ImagePixelsController.xib */; };
+		3C4A984C2DF5762C005ECE5F /* ImagePixelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A98492DF5762C005ECE5F /* ImagePixelsController.m */; };
 		3C4F527A2DEAFB0800F5C7CA /* QCCommonRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F52752DEAFB0800F5C7CA /* QCCommonRulerView.m */; };
 		3C4F527B2DEAFB0800F5C7CA /* QCProgressCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F52782DEAFB0800F5C7CA /* QCProgressCircleView.m */; };
 		3C4F527C2DEAFB0800F5C7CA /* QCProgressCircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F52792DEAFB0800F5C7CA /* QCProgressCircleView.xib */; };
@@ -180,6 +185,14 @@
 		16E029387BB08B574D2B91D1 /* Pods-TestActionDemo-TestActionDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo-TestActionDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo-TestActionDemoUITests/Pods-TestActionDemo-TestActionDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		23A76755E7CE510D9262314A /* Pods-TestActionDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemoTests/Pods-TestActionDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25D3F1969111753FEF2EA302 /* Pods-TestActionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestActionDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestActionDemo/Pods-TestActionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4A98392DF57474005ECE5F /* KGCircleBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGCircleBubbleView.h; sourceTree = "<group>"; };
+		3C4A983A2DF57474005ECE5F /* KGCircleBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KGCircleBubbleView.m; sourceTree = "<group>"; };
+		3C4A983D2DF57474005ECE5F /* UIImage+Pixels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pixels.h"; sourceTree = "<group>"; };
+		3C4A983E2DF57474005ECE5F /* UIImage+Pixels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pixels.m"; sourceTree = "<group>"; };
+		3C4A98462DF575E2005ECE5F /* Real_0216a27c67531e10149a49fa80b9d0ab.jpg_720x1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Real_0216a27c67531e10149a49fa80b9d0ab.jpg_720x1280.jpg; sourceTree = "<group>"; };
+		3C4A98482DF5762C005ECE5F /* ImagePixelsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePixelsController.h; sourceTree = "<group>"; };
+		3C4A98492DF5762C005ECE5F /* ImagePixelsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePixelsController.m; sourceTree = "<group>"; };
+		3C4A984A2DF5762C005ECE5F /* ImagePixelsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePixelsController.xib; sourceTree = "<group>"; };
 		3C4F52742DEAFB0800F5C7CA /* QCCommonRulerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCCommonRulerView.h; sourceTree = "<group>"; };
 		3C4F52752DEAFB0800F5C7CA /* QCCommonRulerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCCommonRulerView.m; sourceTree = "<group>"; };
 		3C4F52762DEAFB0800F5C7CA /* QCCommonRulerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QCCommonRulerView.xib; sourceTree = "<group>"; };
@@ -442,6 +455,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4A98382DF57453005ECE5F /* ImagePixel */ = {
+			isa = PBXGroup;
+			children = (
+				3C4A98392DF57474005ECE5F /* KGCircleBubbleView.h */,
+				3C4A983A2DF57474005ECE5F /* KGCircleBubbleView.m */,
+				3C4A983D2DF57474005ECE5F /* UIImage+Pixels.h */,
+				3C4A983E2DF57474005ECE5F /* UIImage+Pixels.m */,
+				3C4A98482DF5762C005ECE5F /* ImagePixelsController.h */,
+				3C4A98492DF5762C005ECE5F /* ImagePixelsController.m */,
+				3C4A984A2DF5762C005ECE5F /* ImagePixelsController.xib */,
+			);
+			path = ImagePixel;
+			sourceTree = "<group>";
+		};
 		3C4F52732DEAFAF600F5C7CA /* CommonRuler */ = {
 			isa = PBXGroup;
 			children = (
@@ -770,6 +797,7 @@
 		6748E48B286C1D9600CF9641 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A98382DF57453005ECE5F /* ImagePixel */,
 				3C4F533F2DEDBE3800F5C7CA /* BannerSlider */,
 				3C4F52832DEB313800F5C7CA /* StarRate */,
 				3C4F52732DEAFAF600F5C7CA /* CommonRuler */,
@@ -817,6 +845,7 @@
 		6748E4B8286C34BC00CF9641 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A98462DF575E2005ECE5F /* Real_0216a27c67531e10149a49fa80b9d0ab.jpg_720x1280.jpg */,
 				6798AB342500DC4C00FA37B7 /* 2.png */,
 				67DF52DF24F4AD780021D7BF /* 1.png */,
 				67413A6824B5C72B00913664 /* 11.png */,
@@ -1271,6 +1300,7 @@
 				676A3BF72609C4EE00298065 /* 1@3x.png in Resources */,
 				6748E4EF286D49C200CF9641 /* lyric_default_star.mp4 in Resources */,
 				6748E4F0286D49C200CF9641 /* lyric_effect_back_image@3x.png in Resources */,
+				3C4A984B2DF5762C005ECE5F /* ImagePixelsController.xib in Resources */,
 				3C4F527C2DEAFB0800F5C7CA /* QCProgressCircleView.xib in Resources */,
 				3C4F527D2DEAFB0800F5C7CA /* QCCommonRulerView.xib in Resources */,
 				6705834D27E0A39100DC0F94 /* player_bgmode_popups_ic_mv@3x.png in Resources */,
@@ -1282,6 +1312,7 @@
 				6748E4EB286D49C200CF9641 /* lyric_star_default@3x.png in Resources */,
 				67C81570286EE3C600F4B437 /* back_star_default.mp4 in Resources */,
 				6748E49A286C242200CF9641 /* MyLayoutController.xib in Resources */,
+				3C4A98472DF575E2005ECE5F /* Real_0216a27c67531e10149a49fa80b9d0ab.jpg_720x1280.jpg in Resources */,
 				6748E41B286BEC6200CF9641 /* singerPhoto.jpg in Resources */,
 				672AE91E255BEEE7009AE982 /* 2.jpg in Resources */,
 				6748E418286BEC6200CF9641 /* back_mode_selected@2x.png in Resources */,
@@ -1472,6 +1503,8 @@
 				6748E4A7286C2E6200CF9641 /* DynamicIntroduceController.m in Sources */,
 				6748E480286C02B100CF9641 /* HomeViewConroller+DataSource.m in Sources */,
 				67149A2C285355D1004869BB /* KGPlayQueueTabCell.m in Sources */,
+				3C4A98402DF57474005ECE5F /* KGCircleBubbleView.m in Sources */,
+				3C4A98412DF57474005ECE5F /* UIImage+Pixels.m in Sources */,
 				67149A2628535417004869BB /* KGAreaTabController.m in Sources */,
 				671CF364265E2285007520F8 /* RoundGradientController.m in Sources */,
 				67810F0724F662FD00F6C423 /* RippleAnmationController.m in Sources */,
@@ -1525,6 +1558,7 @@
 				677A95C724BC33C70035144E /* MyLayoutController.m in Sources */,
 				6748E468286BEE7C00CF9641 /* KGDynamicMenuView.m in Sources */,
 				6705835727E0A39100DC0F94 /* KGPlayViewOptionPageAlert.m in Sources */,
+				3C4A984C2DF5762C005ECE5F /* ImagePixelsController.m in Sources */,
 				6748E46F286BEF2900CF9641 /* KGDynamicVipTipView.m in Sources */,
 				6748E455286BEE1700CF9641 /* KGPlayViewTrumpetAlert.m in Sources */,
 			);

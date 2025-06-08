@@ -14,6 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - GPUImage (0.1.7)
   - LookinServer (1.2.8):
     - LookinServer/Core (= 1.2.8)
   - LookinServer/Core (1.2.8)
@@ -21,20 +22,23 @@ PODS:
 
 DEPENDENCIES:
   - BlocksKit
+  - GPUImage
   - LookinServer
   - Masonry
 
 SPEC REPOS:
   trunk:
     - BlocksKit
+    - GPUImage
     - LookinServer
     - Masonry
 
 SPEC CHECKSUMS:
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   LookinServer: 1b2b61c6402ae29fa22182d48f5cd067b4e99e80
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 08931f79d9de8de67405aad0f95df9b33a268ca9
+PODFILE CHECKSUM: 47bd51815cda479254af4a4d095b1058383addb1
 
 COCOAPODS: 1.16.2

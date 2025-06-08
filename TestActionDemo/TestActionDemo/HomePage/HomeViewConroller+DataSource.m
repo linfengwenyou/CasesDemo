@@ -98,6 +98,10 @@
     HomeViewDataModel *bannerModel = [HomeViewDataModel dataModelWithTitle:@"放缩Banner" className:@"BannerController"];
     [tmpArr addObject:bannerModel];
     
+    // 像素处理
+    HomeViewDataModel *pixelModel = [HomeViewDataModel dataModelWithTitle:@"像素处理" className:@"ImagePixelsController"];
+    [tmpArr addObject:pixelModel];
+    
     return tmpArr;
 }
 

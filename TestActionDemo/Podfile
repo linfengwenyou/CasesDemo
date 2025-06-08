@@ -8,6 +8,7 @@ target 'TestActionDemo' do
   # Pods for TestActionDemo
 	pod 'Masonry'
   pod 'BlocksKit'
+  pod 'GPUImage'
 
   pod 'LookinServer', :configurations => ['Debug']
   target 'TestActionDemoTests' do
